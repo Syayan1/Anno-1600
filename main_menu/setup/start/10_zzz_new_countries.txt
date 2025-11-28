@@ -14,6 +14,7 @@
 # our_cores_conquered_by_others # 我方核心被他国占领
 
 current_age = age_4_reformation
+
 countries = {
 	countries = {
 ###Japan
@@ -1284,7 +1285,7 @@ countries = {
 	##Ryukyu
 	RYY = { #Ryūkyū
 		own_control_core = {
-			oozato urasoe nakijin tokunoshima amami_ooshima iriomote ishigaki miyakojima     __
+			oozato urasoe nakijin tokunoshima amami_ooshima iriomote ishigaki miyakojima
 		}
 		government = {
 			type = monarchy
@@ -1295,6 +1296,407 @@ countries = {
 		}
 
 #------------------------ Regions done by Syayan ----------------------------
+###China
+	KOR = { #Korea
+		own_control_core = {
+			seogyeong jeungsan samhwa junghwa seongcheon yangam
+			deokju yeongwon gaeju sukju sunju
+			uiju sakju seonju gwiju
+			ganggye huju chosan huicheon unju
+			myeongju uljin samcheok goseong tongcheon ingnyeong ulleungdo
+			dongju geumseong hoeyang ichon pyeonggang
+			chunju hongcheon inje nangcheon yanggu
+			wonju yeongwol pyeongchang jeongseon hoengcheon
+			andong bonghwa yeongcheon mungyeong sangju
+			seongju taegu gaeryeong uiseong seonsan
+			gyeongju yeongil yeongju boseongbu yeongdeok yeongyang
+			jinju hadong namhae sacheon geoje geochang hapcheon
+			dongnae uian miryang ulju
+			kaesong papyeong yangju pocheon gapyeong inju jipyeong
+			namgyeong gwangju suwon icheon
+			jeonju gimje jinan mupung
+			naju haenam jindo jangheung yeonggam muan hwasun hekusando yeonggwang
+			namwon imsil jeongeup musong
+			suncheon boseong heungyang gokseong
+			tamna seongwi
+			haeju ongjin jangyeon baekcheon cheongsong pungcheon jaeryeong
+			hwangju bongju anak tosan pyeongju suan gokju
+			chungju eumseong goeju jecheon danyang_korea
+			gongju yeonsan jinjam yeongdong cheongju cheonan
+			hongju boryeong hansan seosan aju
+			gapsan samsu musan
+			gyeongseong buryeong gilju myeongcheon onseong heoryeong
+			hamheung dancheon bukcheong jangjin
+			hwaju munju deungju north_jeongju goju
+		}
+		government = {
+			type = monarchy
+		}
+		capital = kaesong
+		starting_technology_level = 5
+		country_rank = rank_kingdom 
+	}
+
+	MNG= { #Ming
+		own_control_core = {
+			#Soutch China
+			maoming xinyi_gaozhou dianbai baoning
+			shilong shicheng wuchuan_huazhou
+			haikang qingdao zhanchuan suixi xuwen
+			hepu lingshan anyuan_lianzhou ruxi xiaodong gaoyang
+			yilun yande ganen changhua
+			qiongshan shuihui dingan lehui chengmai lingao wenchang
+			wanan_wananjun lingshui ningyuan_wananjun limushan
+
+			haiyang sanhe_chaozhou pantian chengxiang huilai chaoyang pingyuan_mei puning sanrao jieyang
+			duanxi shuangshui ducheng jinkang
+			dongguan baoan_dongguan guanfu
+			guangzhou shunde nanhai huiqi qingyuan panyu
+			heyuan heping lankou lianping
+			guishan khuzhupai haifeng lufeng_haifeng boluo pingshan_huiyang qinjiang zuokeng
+			liannan lianshan lianzhou yangshan
+			yangjiang yangchun enping guliang duling xinxing_nanen
+			baochang_nanxiong shixing
+			conghua xinfeng_panyu zhengcheng longmen
+			qujiang mengli lechang renhua ruyuan nanling4
+			xinhui guanghai xiangshan_xinhui
+			longchuan_xunzhou changle_xunzhou xingning
+			yingde hanguang wengyuan
+			gaoyao gaoming guangning_zhaoqing sanshui sihui
+
+			baishan anding_mashan duyang yongshun
+			lingfang shanglin qianjiang_binzhou
+			guishun xiaozhenan zhenan_guishun
+			ningpu yongning_hengzhou qianlong
+			nandan bama donglan zhishan nadi liuzhai
+			xuanhua_nanning langning wuyuan_nanning
+			yishan anhua_huanjiang hechi sien xincheng_xincheng libo
+			sicheng xilin wangmu lucheng luodian tongle duyangshan
+			siming pingxiang_pingxiang shangsi qianlong_siming
+			chongshan longzhou_longzhou mingying doukang guwan
+			laian_tianzhou baise sienzhou tianzhou tangxing
+			xilong bada ceheng machang zhenfeng
+
+			lingui lingchuan yining xingan yongfu
+			linhe fengcheng guiling fuchuan
+			maping liucheng wuxian_liuzhou yangshou laibin
+			luorong  lipu yangshuo
+			pingle gongcheng lishan_pingle longping_pingle
+			qingxiang guanyang liupu xiyan nanling2
+			rongshui changan luocheng huaiyuan_rongzhou tongdao_rongzhou
+			puning_rongzhou beiliu luchuan_rongzhou
+			tanjin cenxi wutun
+			cangwu dongan huaiji fengchuan rongcheng
+			guiping luoxiu guizhou_xunzhou pingnan watang
+			nanliu bobai shahe_bobai
+
+			annan xinxing_annan xincheng_annan
+			puding guangsuoling dingnan_anshun kangzuo xibao zhenning
+			bozhou wujiang_bozhou zizhou renhuai shaxi
+			duyun bazhai_duyun dushan pingzhu lantu
+			guizhou_guizhou jinzhu xintian bafan suidong longli weiqing
+			liping xiajiang guzhou qingjiang_liping tonggu_liping taigong yongcong
+			pingyue kaili maxia
+			puan_puan huangcaoba anlong lemin
+			shuitejiang dejiang wuchuan_sinan yanhe longquanping shiqian yinjiang
+			taipengruodong qiongshui panqiao zhenyuan_sizhou
+			dizhai caoni cengtai dafang dagu_shunyuan shuixi longchang jinji
+			tongren wuluo tixi
+			huangping baini wengshui rongshan
+			shuicheng pingba zhijin huozhu
+			zhengan zhenzhou suiyang bochuan
+
+			beisheng langqu yongning_baisheng ningfan
+			taihe_dali menghua yunlong binchuan yangbei yunnan langqiong
+			heqing jianchuan 
+			lanzhou_lanzhou zhiziluo adeqiu zhuluo gongshan luzhang
+			tongan_lijiang linxi dadandang jujin nixi xiaodandang
+			mangshi longchuan luchuan_mangshi 
+			mengding gengma mengdong mengmeng
+			mulian matman menglei pangyang musuo shan_hills2
+			shunning midu dingbian_shunning baotong youdian
+			tengchong wadian zhenxi nandan_tengcheng nandian 
+			yaozhou dayao juque
+			yongchang_yongchang zhenkang shidian kongwei yongping_yongchang rouyuan 
+
+			jinglong daolong gengdang mengban_jihong menghai mengla 
+			heyang jiangchuan lunan 
+			weichu dingyuan_chuxiong zhennan nanan 
+			guangnan bangban boai fuzhou_guangnan zhehong
+			guangxi shizong qiubei mile wucao
+			nalou situo luokong  phong_tho 
+			kainan baodian zheledian
+			kunyang anning chenggong yimen
+			jianshui ami xisha tonghai shiping
+			pingdian  xie
+			mengzi bazhai lihua jiaha mengding_mengzi jiaohua nanlang weimo xisa
+			nanning kedu luoxiong zhanyi  luoshan_qujing luliang
+			sime niuwu 
+			yuanjiang_yuanjiang  tongguan_yuanjiang
+			kunming lufeng yiliang songming fumin 
+			weiyuan mengtong 
+			hequ_wuding luquan rende yuanmou
+			dayaoshan xinxing malongtalang jinshajiang wujiang lujiang malong_qujing
+			puri_simao mengban_weiyuan yinshaluo muong_te yot_ou talang wujing
+			
+			#East China
+			ningde fuan changshi
+			minxian lianjiang luoyuan houguan minqing changle_fujian gutian yongfu_fuzhou
+			ouning jianan pucheng_jianning songxi jianyang chongan zhenghe wuyishan2
+			jinjiang tongan anxi dehua huian yongchun nanan_quanzhou
+			shaowu guangze taining jianning
+			changting ninghua_tingzhou liancheng shanghang qingliu wuping mingxi yongding_shanghang
+			putian fuqing xianyou
+			nanping datian shaxian jiangle shunchang yongan_sha youxi
+			longxi zhaoan huafeng longyan pinghe nansheng zhangpu changtai zhangping
+
+			baicang baima longhui shaoyang suxi xinhua
+			changsha anhua_anhua dongping yiyang_changsha ningxiang qiaokou xiangyin
+			chenyang guidong guiyang_chenzhou yizhang yongxing xinning_chen wugangshan wanyangshan
+			yingdao yongming ningyuan jianghua nanling3
+			pingyang_guiyang changning lanshan leiyang linwu
+			hengyang anren hengshan lingxian xincheng
+			wugang chengbu xiakou xinning_wugang nanling1
+			xiangxiang loudi xiangtan yongfeng_xiangxiang lukou
+			lingling dongan_yongzhou lengshuitan guiyang_hengyang qiyang
+			youzhou chaling yongan_youzhou liling liuyang
+			baling changshou_pingjiang huarong linxiang pingjiang
+
+			wuling taoyuan longyang yuanjiang yuannan
+			yuanling chenxi huaihua xupu madi_yuanling luxi
+			yongping suining_jing huitong tongdao tianzhu
+			liyang_lizhou anfu_li anxiang cili shimen tianping shixi dayong
+			shizhou datian_shizhou lichuan rongmei wufeng sanmao zhonglu shinan wulingshan
+			yongshun_yongshun guzhang shangxi baojing wuzhai
+			luyang qianyang_yuanzhou mayang
+
+			zhongxiang fengle shipai fushui jingshan
+			anlu xiaogan yingcheng yunmeng
+			fangling banqiao baokang baihekou bomoping zhushan zhuxi fengxi
+			zigui xingshan xinhua_guizhou badong
+			hanyang hanchuan
+			huanggang qichun luotian huangan huangpi huangmei macheng qishui guangji
+			changlin dangyang shayang
+			jiangling gongan songzi qianjiang jianli shishou zhijiang
+			yun wudang huanglong shangjin yunxi
+			yusha jingling xindi
+			suixian gaocheng_suizhou yingshan tangcheng meiqiu
+			jiangxia wuchang jinkou tongcheng_wuchang puqi chongyang xianning jiayu
+			xiangyang gucheng jinxiangping guanghua lutoudian nanzhang fancheng yicheng zaoyang
+			yongxing_xingguo daye tongshan
+			yiling changyang yuanan jinzhuping yidu
+
+			dingnan changning_anyuan longnan anyuan_dingnan
+			linchuan lean_fuzhou chongren yihuang dongxiang jinxi
+			ganxian yudu xinfeng xingguo
+			shangrao yushan_guangxin yanshan_guangxin guixi_guangxin yiyang_guangxin yongfeng
+			luling yongfeng_jian futian anfu_jian jishui
+			nancheng nanfeng xincheng_jianchang guangchang
+			dehua_jiujiang pengze dean ruichang hukou
+			qingjiang xingan_linjiang xinyu
+			dayu chongyi nankang shangyou
+			nanchang fengcheng_fengcheng jinxian xinjian
+			xingzi duchang anyi jianchang
+			ningdu qianhua shicheng_ningdu ruijin huichang
+			fenning fengxin jingan wuning tonggu jiulingshan
+			taihe_taihe wanan yongxin yongning_taihe longquan_taihe
+			poyang anren_raozhou dexing fuliang leping shimen_poyang wannian yugan
+			gaoan shanggao xinchang_yifeng
+			yichun fenyi wanzai pingxiang
+
+			wujin jiangyin wuxi yixing ge_lake tai_lake
+			guichi shidai qingyang tongling dongliu
+			guangde jianping liyang
+			shexian yixian xiuning jixi_huizhou tunxi qimen wuyuan_huizhou
+			ningguo taiping_ningguo jingxian jingde nanling xuancheng nanyi_lake
+			huating nanhui shanghai dianshan_lake
+			wuxian changshu chongming jiading kunshan wujiang yangcheng_lake
+			dangtu fanchang wuhu shijiu_lake
+			shangyuan jiangning jurong luhe lishui_yingtian wujiang_yingtian
+			dantu danyang jintan tao_lake
+
+			gaoyou xinghua baoying
+			qushan banpu gaoqiao ganyu shuyang
+			shanyang_huaian andong_huaian qinghe_huaian yancheng funing_huaian taoyuan_huaian
+			xiapi suining_pizhou suqian xinyi
+			hailing xixi rugao
+			jinghai_tongzhou juegang haimen
+			xuzhou dangshan fengxian xiaoxian peixian
+			jiangdu taixing yangzi
+
+			huaining qianshan susong taihu tongcheng_anqing wangjiang zongyang
+			qiaoxian chengfu mengcheng
+			qingliu_chuzhou zhaoxin quanjiao laian
+			zhongli dingyuan_fengyang huaiyuan
+			hezhou_he hanshan wuwei
+			luan huoqiu huoshan mabu shucheng yuexi yingshan_luan
+			hefei chaoxian liangxian lujiang_luzhou
+			shouchun shuihu xiacai
+			hongxian linhuai tianchang wuhe xuyi
+			suzhou_fengyang guzhen lingbi linhuan
+			yingzhou yingshui yingshang shenqiu taihe
+
+			amis paiwan takbanuao truku nanhudashan yushan
+			basai kavalan ketagalan kulun pakuali squliq
+			siraya ishbukun lloa makatao rukai takitudu tsou
+			papora arikun babuza mayrinax seediq taokas xueshan
+
+			lishui daxue qingtian minghe longquan suichang qingyuan_chuzhou jinyun songyang yunhe wuyishan1
+			hangzhou fuyang_hangzhou haining linan yuhang
+			wuxing anji deqing changxing
+			jiaxing chongde haiyan
+			jinhua dongyang wuyi_jinhua lanxi pujiang yiwu yongkang
+			dinghai cixi xiangshan fenghua yinxian changguo
+			xian_quzhou jiangshan kaihua longyou changshan
+			shaoxing shangyu shengxian xiaoshan xinchang yuyao zhuji
+			linhai xianzhu huangyan ninghai wenling tiantai xianju
+			yongjia pingyang yueqing luoyang_wenzhou ruian shuangxi
+			jiande chunan suian tonglu
+			
+			#West China
+			ganzhou hongshui liyuan qidaban qilian shandan qilianshan1
+			shazhou anding_suzhou dangcheng kuyu_shazhou guazhou niuquanzi yangguan hala_nur
+			suzhou_gansu gaotai jinta chijin
+			xining datong_xining gushan haomen nianbo zhuanglang qilianshan2
+			yongchang_ganzhou anyuan gulang jinchang xiliang baiting zhenfan
+			fuzhou_yanan luochuan zhongbu yijun
+			kaicheng_guyuan xianzhou zhenrong
+			jiazhou fugu kaiguang shenmu
+			jingning longde sanchuan shuiluo
+			jingchuan guangan zhenyuan lingtai
+			lingzhou dingyuan_lingzhou yanchi ningxia
+			mingsha fuchuan_ningxia lingwu yingli
+			pingliang huating_pingliang chongxin
+			anhua baimachen huachi huanzhou_qingyang zhenning_qingyang heshui ningzhou
+			suide dingrong mizhi qingjian
+			fushi anding baoan yichuan ganquan yanchang yanchuan ansai
+			yulin dingbian huaiyuan_mizhi anbian jingbian
+			longxi_gongchang dingxi fuqiang huizhou_gongchang ningyuan_gongchang tongwei zhangxian
+			hezhou guide jishi dingqiang
+			huizhou chengzhou xihe_huizhou liangdang lidian
+			jiezhou baimaguan wenxian_gongchang
+			didao kangu lanzhou lutang weiyuan_lintao
+			minzhou tanchang xigu
+			chengji qinan sancha qingshui
+			kedang amchok kuntokling taktsang liulin sangqu tewo tso_gon
+			xinping chunhua yongshou sanshui_binzhou
+			baoji fengxiang fufeng linyou longzhou_fengxiang meixian qianyang qishan longan
+			liuba liangquan guochuan
+			nanzheng chenggu lueyang duoshui daan
+			huazhou huayin pucheng weinan
+			qianzhou zhouzhi liquan
+			shangzhou lantian shangluo luonan qianyou sanyao shangnan shanyang zhenan
+			tongzhou baishui chengcheng hancheng heyang_xian fucheng
+			jingzhao xianning_xian huxian jingyang lintong xianyang
+			xicheng hanyin ningshan pingli shiquan xunyang ziyang_xingan goupingguan
+			yangzhou xixiang yangyuan foping
+			huayuan fuping_xian sanyuan tongguan_tongchuan
+			dazu rongchang yongchuan
+			baxian banan bishan qijiang jiangjin nanchuan
+			tongchuan_dazhou xinning_dazhou dongxiang_dazhou mingtong taiping
+			fuzhou_sichuan changshou_changshou wulong
+			shizhao tongliang dingyuan
+			fengjie daning_kuizhou kaizhou liangshan wanzhou jianshi yunyang
+			luzhou naxi hejiang jiangan
+			youyang xiushan pengshui qianjiang_shaoqing
+			linjiang dianjiang fengdu shizhu
+			runyan mala pingchuan zuosuo
+			changning_changning luoji yunlian rongxian
+			dechang huili huichuan_dechang mingyi
+			dongchuan qiaojia tangdan zhehai
+			longyou_jiading emei jiajiang rongzhou weiyuan_jiading qianwei
+			hanyuan suzhou lugu qiongbu shimian zhenxi_lizhou
+			mahu lizhou_mahu leibo mabian muchuan
+			meizhou qingshen danleng pengshan
+			qiongzhou pujiang_qiongzhou dayi
+			jianchang_sichuan kuozhou puge beishe
+			wusa zhaoban heizhang
+			wumeng daguan luozuoguan yongshan
+			yibin fushun nanxi qingfu xuanhua
+			yandao rongjing diaomen mingshan
+			yongning gulin luojiao mangbu guihua
+			langzhong cangxi nanbu
+			huacheng zengkou nanjiang tongjiang
+			chengdu pixian shuangliu xindu jintang
+			liujiang huaying linshui qujiang_guangan yuechi dazhu
+			miangu jiachuan zhaohua
+			deyang anzhou shifang mianzhu
+			puan zhangming mianzhou zitong
+			jianzhou zixian neijiang renshou jingyan ziyang_zizhong
+			pingwu jiangyou qingchuan
+			wenchuan wenshan shiquan_maozhou baoning_maozhou
+			pengzhou jinyuan guanzhou
+			xiaoxi pengxi lezhi anyue suining
+			nanchong yingshan_shunqing xichong yilong xiangru
+			songzhou_songpan dazhasi gurkyang heishui maerkang hongyuan muge fuzhou_songpan qiongxi rinpung
+			qixian_tongchuan shehong yanting zhongjiang
+			wushan lushan_yazhou
+			
+			#Tibet
+			chabcha buha caka dulan dungkar_amdo guolimu qardam sanjiaocheng
+			darlag amnye_machen bayan_har lungkya madoi
+			sharu drichu duolundu hoh_xil jilibulake kunlun qumarleb
+			nangchen chodrak gechak jang_tana pelme zurmang_namgyaltse
+			dartang droge metsang takden
+			chogyal_khar balgatai dsun gashun nalinggele temirlik tsaidam yuka tsaidam_dunes
+			jiekundo dzagyal khana lab lungsho serkar
+			zeku muxihe quge sailahai
+
+			gerze_tibet bairab cemar cozha dagze dogai dorsotung yurba
+			serzhik shantsa zangdan
+			namtso_doring gonkri ronglung tsedzong zagya
+
+			chamdo karma_densa khamgar
+			dartsedo lhagang baurang
+			derge jomda katok kharak sibda tromge wara_kham
+			gonjo drayab sho tangkya
+			zhanggu durgyeling geshitsa rahor yungdrung
+			sampheling dzingcho sangme
+			longtang gegong mangge sershul
+			litang daoba kazhi nyachukha
+			muli kheong waerhdje
+			nakchu barom rongpo
+			biru pembar riwoche samda shopando sok tengchen yangdzong
+			nyarong chodrak_kham dawu dzogon khordong
+			lhakhang pasho pema
+			pome chumdo lhari shukden
+			batang markham shar_yelpuk
+			serta dzamtang nubzur shukjung
+			ganze manigango trotsang
+			tsakhalkho dzogang mengung
+			rima sangacho walong
+
+			skardu khaplu shigar
+			toling dungkar tsaparang
+			leh charasa kargil karpokhar lamayuru shey
+			mendong samten selephu
+			dzongkar baryang dargyeling lo_mustang tradun
+			purang gyanema khyunglung tokchen
+			rutok drangtse gartok hanle ormogang rala tashigang tsherlung
+			nako tabo tsorub
+			padum phuktal zangla
+
+			dingri chorten_nyima gonga_chode nyalam pelmo
+			sakya ganden_delingshar lhadrak ngamring tagmo_lingkha
+			gyantse nenying ralung
+			shigatse jonang namling tropu tsangdram
+
+			gyamda buchu daklha_gampo zhokha
+			trigu chikchar gonpatsi lhodrak lho_taklung tragor zangchen
+			metog rigyal tirkong
+			lhasa damzhung drigung galo gyama taklung tsora tsurphu
+			nedong densatil gongkar nyemo rinpung_yarlung samye
+			jyekundo 
+		}
+		government = {
+			type = monarchy
+		}
+		capital = dadu
+		starting_technology_level = 5  
+		country_rank = rank_empire 
+	}
+
+
 ###British Isles
 	ENG = { #England
 		own_control_core = {
@@ -1776,8 +2178,8 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-			ruler = por_john_iv_braganza
-			heir = por_afonso_vi_braganza
+			ruler = spa_philip_iv_habsburg
+			heir_selection = cognatic_primogeniture
 
 			reforms = {
 				portuguese_monarchy_reform
@@ -2024,23 +2426,6 @@ countries = {
 		starting_technology_level = 4
 	}
 	
-	CAT = {
-		own_control_core = {
-			barcelona sitges terrassa villafranca_del_penedes girona besalu castellon_ampurias ripoll sant_feliu tarragona flix lleida montblanc tarrega tortosa vic berga cardona cervera manresa perpignan prades puigcerda lagoon_of_salses seu_durgell agramunt balaguer talarn vielha
-		}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "catholic_bishopric_no_coast"
-
-		government = {
-			type = monarchy
-		}
-		capital = barcelona
-		country_rank = rank_county
-		starting_technology_level = 4
-	}
-	
 	ANR = {
 		own_control_core = {
 			andorra_la_vella
@@ -2218,12 +2603,6 @@ countries = {
 			
 			valence condorcet die vienne
 			metz fresnes verdun clermont_en_argonne toul vic_sur_seille
-		}
-		
-		own_colony = {
-			cayenne carucairi iguanacaera hewanorra
-			marien iguamuco guahaba tortuga baynoa
-			jaragua guanabo cahay guacayakima haniguayagua yaquimo yaguana
 		}
 		
 		government = {
@@ -2673,10 +3052,6 @@ countries = {
 			koporye ivangorod khotchino moloskovitsa soikino yama
 			valjala kuressaare tallinn narva padise paide rakvere rapla toolse vasknarva cesis aluksne gulbene rauna valmiera parnu karksi poltsamaa saarde suure_jaani viljandi lake_vorts hapsal kaina lihula st_martin riga koknese limbazi salaspils sigulda straupe tartu valka vastseliina vonnu
 		}
-		
-		own_control_conquered = {
-			minguannan tappahanna shackamaxon tetamekanch
-		}
 
 		government = {
 			type = monarchy
@@ -2793,38 +3168,7 @@ MOR = { #Morocco
 		}
 	}
 
-###European Colonial Nations
-	NEN = { #New England
-		own_control_core = {
-			weyanock kiskiack wicocomico werowocomoco rappahannock nentego patuxent wicomico chicamacomico matapeake accomac
-			quinnipiac rippowam saukiog siccanemos nehantuck
-			patuxet assonet nauset nantucket seekonk sagadahoc casco kennebunk squamscott naumkeag shawmut
-			#Newfoundland
-			cape_race cape_spear bacalhieu placentia mollyhuajeck mekwiskajk
-		}
-		government = {
-			type = republic
-			ruler = random
-		}
-		capital = weyanock
-		country_rank = rank_duchy
-		starting_technology_level = 5
-	}
-	
-	NFR = { #New France
-		own_control_core = {
-			eimastukwek epwikek kutapuskuj upsukdaskooch belle_isle wipetikil naskwotchu mekapisk
-			ekwentondie wolinak andawaohie wachilmezi kikonteku stadacona etchemin ahwendoe ondaonnentakwi menahkwesk nmejuaqnek
-		}
-		government = {
-			type = republic
-			ruler = random
-		}
-		capital = ahwendoe
-		country_rank = rank_duchy
-		starting_technology_level = 5
-	}
-	
+###European Colonial Nations	
 	NSP = { #New Spain
 		own_control_core = {
 			#Mesoamerica
@@ -2900,8 +3244,6 @@ MOR = { #Morocco
 			veragua caribaro terbi dererri tariaca kabeka
 			
 			#Aridoamerica
-			yenecamu guaycura monqui cadegomo mti_pa
-			guadalupe_island cochimi nakipa koleeu akwaala kumeyaay salada_lagoon
 			kwapa north_hia_ced_oodham south_hia_ced_oodham huhuhla xiica_hai_iic_coii koklolodi tohono_oodham himuris
 			tahejoc comcaac cucurpe xiica_xnaai_iic_coii pitic ures aconchi aritpa
 			yoreme huatabampo chinipas makurawe cosihuiriachi
@@ -2937,6 +3279,7 @@ MOR = { #Morocco
 			maguana jarabacoa cibao azua bani banique cordrilla_central
 			yaqui magorix bohio moca samana cubao ciguayo cotui
 			guaynabo guaraca guaynia guama arasibo ayamaco
+			jaragua guanabo cahay guacayakima haniguayagua yaquimo yaguana
 		}
 		
 		own_control_conquered = {
@@ -2945,6 +3288,8 @@ MOR = { #Morocco
 			mapimi sisimbles osatayogliglas cacalotito
 			alazapa cuanales masacuajulam gualeguas tilijais guazapayogliglas huajuco
 			chisos espopolames gueiquesales muruam chichitames cauitaome yeme
+			tih_go_tel teypana shiewhibak aaku halona_idiwana
+			tsiya tuf_shur_tia than_u_ge ohkweeo_owingeh ialophaybo nde_nda_i
 		}
 		
 		government = {
@@ -3095,6 +3440,8 @@ MOR = { #Morocco
 			apiai
 			sao_luis_do_paraitinga lorena guaratingueta taubate paraibuna jacarei
 			charrua ombu yaros
+			upaon_acu miritiba tapuios igaracu jenipaboacu tremembe anace tapeba pitaguari payaku
+			monxoro kaaysara potiguara paraiba caxanga yapuata karapoto kariri arakaiu sauipe
 		}
 		
 		own_conquered = {
@@ -3385,16 +3732,6 @@ MOR = { #Morocco
 			lingen
 			bruges
 			orange
-		}
-		
-		own_control_colony = {
-			#New Netherlands
-			manhattan tappan nochpeem massapequa poughkeepsie ponkhockie kitchawanc
-			#Brazil
-			upaon_acu miritiba tapuios igaracu jenipaboacu tremembe anace tapeba pitaguari payaku
-			monxoro kaaysara potiguara paraiba caxanga yapuata karapoto kariri arakaiu sauipe
-			#Guyana
-			essequibo demerara berbice
 		}
 		
 		starting_technology_level = 3

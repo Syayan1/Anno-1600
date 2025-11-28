@@ -1,8 +1,6 @@
 diplomacy_manager = {
     ##British Isles
-    dependency = { first = ROE second = PLE subject_type = fiefdom }
 	dependency = { first = ROE second = MNN subject_type = dominion }
-	dependency = { first = ROE second = NEN subject_type = dominion }
 
 	##Iberia
     dependency = { first = SPA second = ARA subject_type = fiefdom }
@@ -28,8 +26,6 @@ diplomacy_manager = {
 	dependency = { first = FRA second = BOU subject_type = dominion }
 	dependency = { first = FRA second = POI subject_type = dominion }
 	dependency = { first = FRA second = BUR subject_type = dominion }
-	dependency = { first = FRA second = CAT subject_type = vassal }
-	dependency = { first = FRA second = NFR subject_type = dominion }
 	
 	##Scandinavia
     dependency = { first = SWE second = FIN subject_type = fiefdom }
