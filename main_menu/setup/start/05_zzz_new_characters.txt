@@ -1,0 +1,1246 @@
+#Remember to write sons and daughters ALWAYS after their parents to avoid crashes
+
+character_db={
+
+###British
+	#ENG and SCO
+	eng_james_i_stuart = {
+		first_name = { name = name_james }
+		culture = scottish
+		religion = catholic
+		estate = nobles_estate
+		adm = 65 dip = 75 mil = 25
+		birth_date = 1566.6.19
+		birth = edinburgh
+		death_date = 1625.3.27
+		dynasty = stuart_dynasty
+		tag = SCO
+	}
+	
+	eng_charles_i_stuart = {
+		first_name = { name = name_charles }
+		culture = scottish
+		religion = catholic
+		estate = nobles_estate
+		adm = 45 dip = 60 mil = 35
+		father = eng_james_i_stuart
+		birth_date = 1600.11.19
+		birth = edinburgh
+		dynasty = stuart_dynasty
+		tag = SCO
+	}
+	
+	eng_charles_ii_stuart = {
+		first_name = { name = name_charles }
+		culture = english
+		religion = catholic # 生前は国教会だが死の床で改宗。MOD上は明示的に catholic とする方が扱いやすい
+		estate = nobles_estate
+		adm = 55 # 統治: 行政再建はほどほど。財政・官僚制改革は限定的
+		dip = 80 # 外交: 熟練。バランス外交と交渉力に優れた評価が一般的
+		mil = 40 # 軍事: 戦争指導の実績は弱い。軍事的才能は低め
+		father = eng_charles_i_stuart
+		birth_date = 1630.5.29
+		birth = london
+		dynasty = stuart_dynasty
+		tag = ENG
+	}
+	
+	eng_james_ii_stuart = {
+		first_name = { name = name_james }
+		culture = english
+		religion = catholic
+		estate = nobles_estate
+		adm = 50 # 行政: 海軍拡張や官僚制整備に一定の実績
+		dip = 45 # 外交: 対仏接近で国内外の反発を招き評価は低い
+		mil = 70 # 軍事: 海軍・軍事知識は高水準。現場指揮経験も豊富
+		father = eng_charles_i_stuart
+		birth_date = 1633.10.14
+		birth = london
+		dynasty = stuart_dynasty
+		tag = ENG
+	}
+	
+	eng_robert_devereux = {
+		first_name = { name = name_robert }
+		culture = english
+		religion = anglican
+		estate = nobles_estate
+		adm = 60 dip = 55 mil = 50
+		birth_date = 1591.1.29
+		birth = london
+		dynasty = devereux_dynasty
+		tag = ENG
+	}
+	
+	#Ireland
+	ire_felim_oneill = {
+		first_name = { name = name_felim }
+		culture = irish
+		religion = catholic
+		estate = nobles_estate
+		adm = 50 dip = 45 mil = 55
+		birth_date = 1604.12.1
+		birth = dungannon
+		dynasty = oneill_dynasty
+		tag = IRE
+	}
+
+###Iberia
+	#Spain
+	spa_philip_i_habsburg = {
+		first_name = { name = name_philip }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 35
+		dip = 60
+		mil = 45
+		birth_date = 1478.7.22
+		birth = bruges
+		death_date = 1506.9.25
+		dynasty = spanish_habsburg_dynasty
+		tag = SPA
+	}
+	
+	spa_charles_i_habsburg = {
+		first_name = { name = name_charles }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 70 # 広域統治と制度改革の実績は高評価
+		dip = 65 # 欧州全域での複合外交は強み
+		mil = 75 # パヴィアなど軍事実績は明確
+		birth_date = 1500.2.24
+		birth = ghent
+		father = spa_philip_i_habsburg
+		death_date = 1558.9.21
+		dynasty = spanish_habsburg_dynasty
+		tag = SPA
+	}
+	
+	spa_philip_ii_habsburg = {
+		first_name = { name = name_philip }
+		culture = castilian
+		religion = catholic
+		estate = nobles_estate
+		adm = 85 # 中央集権化と行政能力は極めて高い評価
+		dip = 55 # 対外政策は硬直的で評価は割れる
+		mil = 50 # 戦略判断は平均的。指揮経験は無い
+		birth_date = 1527.5.21
+		birth = valladolid
+		father = spa_charles_i_habsburg
+		death_date = 1598.9.13
+		dynasty = spanish_habsburg_dynasty
+		tag = SPA
+	}
+	
+	spa_philip_iii_habsburg = {
+		first_name = { name = name_philip }
+		culture = castilian
+		religion = catholic
+		estate = nobles_estate
+		adm = 45	# 有能な側近に依存。統治手腕は低評価
+		dip = 60	# 外交姿勢は穏健で協調的。三十年戦争前期の調整も可
+		mil = 30	# 軍事的関与は乏しい
+		birth_date = 1578.4.14
+		birth = madrid
+		father = spa_philip_ii_habsburg
+		death_date = 1621.3.31
+		dynasty = spanish_habsburg_dynasty
+		tag = SPA
+	}
+
+	spa_philip_iv_habsburg = {
+		first_name = { name = name_philip }
+		culture = castilian
+		religion = catholic
+		estate = nobles_estate
+		adm = 55	# 対応力に限界はあるが行政は前代より安定
+		dip = 50	# 対外硬直で戦争長期化。評価は中程度
+		mil = 40	# 戦略判断は弱いが軍事知識は一定
+		birth_date = 1605.4.8
+		birth = valladolid
+		father = spa_philip_iii_habsburg
+		dynasty = spanish_habsburg_dynasty
+		tag = SPA
+	}
+
+	#Portugal
+	por_john_iv_braganza = {
+		first_name = { name = name_john }
+		culture = portuguese
+		religion = catholic
+		estate = nobles_estate
+		adm = 60	# 統治: 独立戦争期の行政手腕は一定評価
+		dip = 65	# 外交: オランダ・スペインとの独立交渉に成功
+		mil = 55	# 軍事: ポルトガル独立戦争で指導力を発揮
+		birth_date = 1604.3.19
+		birth = lisbon
+		dynasty = braganza_dynasty
+		tag = POR
+	}
+
+	por_afonso_vi_braganza = {
+		first_name = { name = name_afonso }
+		culture = portuguese
+		religion = catholic
+		estate = nobles_estate
+		adm = 40	# 統治: 幼少期から統治能力は低評価
+		dip = 35	# 外交: ほとんど政治判断能力なし
+		mil = 30	# 軍事: 指導力は限定的、摂政に依存
+		birth_date = 1643.8.21
+		birth = lisbon
+		father = por_john_iv_braganza
+		dynasty = braganza_dynasty
+		tag = POR
+	}
+
+###France
+	fra_henry_iv_bourbon = {
+		first_name = { name = name_henry }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		adm = 80
+		dip = 75
+		mil = 70
+		birth_date = 1553.12.13
+		birth = pau
+		death_date = 1610.5.14
+		dynasty = bourbon_dynasty
+		tag = FRA
+	}
+	
+	fra_louis_xiii_bourbon = {
+		first_name = { name = name_louis }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		adm = 65	# 行政: 中央集権化の基盤を確立
+		dip = 55	# 外交: 実務はリシュリュー主導
+		mil = 60	# 軍事: 三十年戦争期の軍事基盤を整備
+		birth_date = 1601.9.27
+		birth = fontainebleau
+		father = fra_henry_iv_bourbon
+		death_date = 1643.5.14
+		dynasty = bourbon_dynasty
+		tag = FRA
+	}
+	
+	fra_gaston_orleans_bourbon = {
+		first_name = { name = name_gaston }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		adm = 50	# 統治: 自身の領地統治は普通だが国政への影響力は限定的
+		dip = 55	# 外交: 王弟として交渉に関与するが成果は限定的
+		mil = 45	# 軍事: 軍事行動に関与するも指揮力は平均的
+		birth_date = 1608.4.24
+		birth = paris
+		father = fra_henry_iv_bourbon
+		dynasty = bourbon_dynasty
+		tag = FRA
+	}
+
+	fra_louis_xiv_bourbon = {
+		first_name = { name = name_louis }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		adm = 85	# 行政集中と制度整備で高評価
+		dip = 70	# 欧州外交主導。ただし硬直も目立つ
+		mil = 80	# 戦争政策と軍制改革で評価高い
+		birth_date = 1638.9.5
+		birth = saint_germain_en_laye
+		father = fra_louis_xiii_bourbon
+		dynasty = bourbon_dynasty
+		tag = FRA
+	}
+
+###Scandinavia
+	#DAN-NOR
+	dan_christian_iv_oldenburg = {
+		first_name = { name = name_christian }
+		culture = danish
+		religion = lutheran
+		estate = nobles_estate
+		adm = 70	# 統治: 経済振興と都市開発で高評価
+		dip = 60	# 外交: 北欧・神聖ローマ帝国での均衡外交を実施
+		mil = 65	# 軍事: 直接指揮経験あり、軍事行動で活躍
+		birth_date = 1577.4.12
+		birth = helsingor
+		dynasty = oldenburg_dynasty
+		tag = DAN
+	}
+
+	
+	#SWE
+	swe_gustav_ii_vasa = {
+		first_name = { name = name_gustav }
+		culture = swedish
+		religion = lutheran
+		estate = nobles_estate
+		adm = 70	# 統治: 内政改革で国家基盤を強化
+		dip = 60	# 外交: 北欧・ドイツでの戦略的交渉に優れる
+		mil = 90	# 軍事: 三十年戦争での戦術・指揮で極めて高評価
+		birth_date = 1594.12.9
+		birth = stockholm
+		death_date = 1632.11.6
+		dynasty = vasa_dynasty
+		tag = SWE
+	}
+	
+	swe_christina_vasa = {
+		first_name = { name = name_christina }
+		female = yes
+		culture = swedish
+		religion = lutheran
+		estate = nobles_estate
+		adm = 60	# 統治: 内政は安定させるも実務は側近に依存
+		dip = 55	# 外交: 対外調整は可能だが強力ではない
+		mil = 40	# 軍事: 戦争指導経験はほぼなし
+		birth_date = 1626.12.18
+		birth = stockholm
+		father = swe_gustav_ii_vasa
+		dynasty = vasa_dynasty
+		tag = SWE
+	}
+	
+###HRE
+hol_frederik_hendrik_van_oranje = {
+		first_name = { name = name_frederik }
+		culture = frisian
+		religion = calvinist
+		estate = nobles_estate
+		adm = 53 dip = 37 mil = 56
+		birth_date = 1580.1.1
+		birth = amsterdam
+		dynasty = van_oranje_dynasty
+		tag = HOL
+	}
+
+	fri_ulrich_cirksena = {
+		first_name = { name = name_frederik }
+		culture = frisian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 33 dip = 37 mil = 19
+		birth_date = 1605.1.1
+		birth = emden
+		dynasty = cirksena_dynasty
+		tag = FRI
+	}
+
+	fri_enno_laodewyk_cirksena = {
+		first_name = { name = name_enno_laodewyk }
+		culture = frisian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 35 dip = 38 mil = 29
+		birth_date = 1633.1.1
+		birth = emden
+		father = fri_ulrich_cirksena
+		dynasty = cirksena_dynasty
+		tag = FRI
+	}
+
+	cam_joseph_de_bergaigne = {
+		first_name = { name = name_enno_laodewyk }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 35 dip = 55 mil = 32
+		birth_date = 1588.1.1
+		birth = cambrai
+		dynasty = de_bergaigne_dynasty
+		tag = CAM
+	}
+
+	bll_frederic_maurice_de_la_tour = {
+		first_name = { name = name_frederic }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 35 dip = 36 mil = 32
+		birth_date = 1606.1.1
+		birth = bouillon
+		dynasty = de_la_tour_dynasty
+		tag = BLL
+	}
+
+	bll_godefroid_maurice_de_la_tour = {
+		first_name = { name = name_godefroid }
+		culture = low_franconian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 25 dip = 22 mil = 23
+		birth_date = 1636.1.1
+		birth = bouillon
+		father = bll_frederic_maurice_de_la_tour
+		dynasty = de_la_tour_dynasty
+		tag = BLL
+	}
+
+	bnt_philipp_konrad_von_gotterswick = {
+		first_name = { name = name_philipp }
+		culture = westphalian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 28 dip = 45 mil = 29
+		birth_date = 1622.1.1
+		birth = bentheim
+		dynasty = von_gotterswick_dynasty
+		tag = BNT
+	}
+
+	tck_moritz_von_gotterswick = {
+		first_name = { name = name_moritz }
+		culture = westphalian
+		religion = catholic
+		estate = nobles_estate
+		adm = 28 dip = 25 mil = 33
+		birth_date = 1615.1.1
+		birth = tecklenburg
+		dynasty = von_gotterswick_dynasty
+		tag = TCK
+	}
+
+	tck_johann_adolf_von_gotterswick = {
+		first_name = { name = name_johan}
+		culture = westphalian
+		religion = catholic
+		estate = nobles_estate
+		adm = 8 dip = 15 mil = 7
+		birth_date = 1638.1.1
+		birth = tecklenburg
+		father = tck_moritz_von_gotterswick
+		dynasty = von_gotterswick_dynasty
+		tag = TCK
+	}
+
+	osn_franz_wilhelm_von_wittelsbach = {
+		first_name = { name = name_franz }
+		culture = westphalian
+		religion = catholic
+		estate = nobles_estate
+		adm = 78 dip = 65 mil = 67
+		birth_date = 1593.1.1
+		birth = osnabruck
+		dynasty = wittelsbach_dynasty
+		tag = OSN
+	}
+
+	bra_friedrich_wilhelm_von_hohenzollern = {
+		first_name = { name = name_friedrich }
+		culture = brandenburgish
+		religion = lutheran
+		estate = nobles_estate
+		adm = 65 dip = 77 mil = 75
+		birth_date = 1620.1.1
+		birth = berlin
+		father = tck_moritz_von_gotterswick
+		dynasty = hohenzollern_dynasty
+		tag = BRA
+	}
+
+	upa_wolfgang_wilhelm_von_wittelsbach = {
+		first_name = { name = name_wolfgang }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 38 dip = 25 mil = 27
+		birth_date = 1579.1.1
+		birth = amberg
+		dynasty = wittelsbach_dynasty
+		tag = UPA
+	}
+
+	upa_philipp_wilhelm_von_wittelsbach = {
+		first_name = { name = name_philipp }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 8 dip = 45 mil = 57
+		birth_date = 1616.1.1
+		birth = amberg
+		father = upa_wolfgang_wilhelm_von_wittelsbach
+		dynasty = wittelsbach_dynasty
+		tag = UPA
+	}
+
+	kol_ferdinand_von_wittelsbach = {
+		first_name = { name = name_ferdinand }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 68 dip = 45 mil = 27
+		birth_date = 1578.1.1
+		birth = cologne
+		dynasty = wittelsbach_dynasty
+		tag = KOL
+	}
+
+	aac_karl_lugwig_ansembourg = {
+		first_name = { name = name_karl }
+		culture = ripuarian_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 68 dip = 15 mil = 58
+		birth_date = 1610.1.1
+		birth = Aachen
+		tag = AAC
+	}
+	
+	tri_philipp_von_sottern = {
+		first_name = { name = name_philipp }
+		culture = ripuarian_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 28 dip = 35 mil = 28
+		birth_date = 1568.1.1
+		birth = Trier
+		tag = TRI
+	}
+
+	spo_georg_wilhelm_von_wittelsbach = {
+		first_name = { name = name_ferdinand }
+		culture = rhine_franconian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 38 dip = 42 mil = 47
+		birth_date = 1592.1.1
+		birth = kreuznach
+		dynasty = wittelsbach_dynasty
+		tag = SPO
+	}
+
+	spo_karl_von_wittelsbach = {
+		first_name = { name = name_ferdinand }
+		culture = rhine_franconian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 32 dip = 58 mil = 40
+		birth_date = 1624.1.1
+		birth = kreuznach
+		father = spo_georg_wilhelm_von_wittelsbach
+		dynasty = wittelsbach_dynasty
+		tag = SPO
+	}
+
+	saa_gustav_von_nassau = {
+		first_name = { name = name_gustav }
+		culture = rhine_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 32 dip = 28 mil = 50
+		birth_date = 1632.1.1
+		birth = saarbrucken
+		dynasty = nassau_dynasty
+		tag = SAA
+	}
+	dtm_benno_haase = {
+		first_name = { name = name_benno }
+		culture = westphalian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 15 dip = 55 mil = 72
+		birth_date = 1604.1.1
+		birth = dortmund
+		tag = DTM
+	}
+	ess_hugo_preutaeus = {
+		first_name = { name = name_hugo }
+		culture = westphalian
+		religion =  catholic
+		estate = nobles_estate
+		adm = 45 dip = 17 mil = 29
+		birth_date = 1584.1.1
+		birth = essen
+		tag = ESS
+	}
+
+	mtb_leopold_frederic_von_wurttemberg = {
+
+		first_name = { name = name_leopold }
+		culture = franc_comtois
+		religion =  catholic
+		estate = nobles_estate
+		adm = 35 dip = 27 mil = 32
+		birth_date = 1625.1.1
+		birth = montbeliard
+		tag = MTB
+		dynasty = wurttemberg_dynasty
+	}
+
+	neu_henri_de_dunois = {
+		first_name = { name = name_henri }
+		culture = high_alemannic
+		religion = calvinist
+		estate = nobles_estate
+		adm = 32 dip = 29 mil = 31
+		birth_date = 1595.1.1
+		birth = neuchatel
+		dynasty = dunois_dynasty
+		tag = NEU
+	}
+
+	sav_carlo_emanuele_di_savoy = {
+		first_name = { name = name_emanuele }
+		culture = piedmontese
+		religion = catholic
+		estate = nobles_estate
+		adm = 44 dip = 31 mil = 45
+		birth_date = 1635.1.1
+		birth = turin
+		dynasty = dunois_dynasty
+		tag = SAV
+	}
+
+	lor_charles_de_vaudemont = {
+		first_name = { name = name_charles }
+		culture = lorrain
+		religion = catholic
+		estate = nobles_estate
+		adm = 24 dip = 12 mil = 11
+		birth_date = 1604.1.1
+		birth = Nancy
+		dynasty = vaudemont_dynasty
+		tag = LOR
+	}
+
+	slm_ludwig_ii_salm = {
+		first_name = { name = name_ludwig }
+		culture = lorrain
+		religion = catholic
+		estate = nobles_estate
+		adm = 35 dip = 32 mil = 29
+		birth_date = 1620.1.1
+		birth = salm
+		dynasty = salm_dynasty
+		tag = SLM
+	}
+	gry_berchtold_von_kyburg = {
+		first_name = { name = name_berchtold }
+		culture = high_alemannic
+		religion = catholic
+		estate = nobles_estate
+		adm = 25 dip = 12 mil = 19
+		birth_date = 1617.1.1
+		birth = gruyere
+		dynasty = kyburg_dynasty
+		tag = SLM
+	}
+	zwe_friedich_von_wittelsbach = {
+		first_name = { name = name_ferdinand }
+		culture = danube_bavarian
+		religion = calvinist
+		estate = nobles_estate
+		adm = 38 dip = 45 mil = 37
+		birth_date = 1616.1.1
+		birth = zweibrucken
+		dynasty = wittelsbach_dynasty
+		tag = ZWE
+	}
+	lnn_emicho_von_saarbrucken = {
+		first_name = { name = name_emicho }
+		culture = danube_bavarian
+		religion = luther
+		estate = nobles_estate
+		adm = 37 dip = 42 mil = 41
+		birth_date = 1613.1.1
+		birth = leiningen
+		dynasty = saarbrucken_dynasty
+		tag = LNN
+	}
+	syn_ernestine_von_sponheim = {
+		first_name = { name = name_ernestine }
+		culture = rhine_franconian
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		adm = 36 dip = 44 mil = 32
+		birth_date = 1626.1.1
+		birth = altenkirchen
+		dynasty = sponheim_dynasty
+		tag = SYN
+	}
+	bas_jean_henri_von_ostein = {
+		first_name = { name = name_ernestine }
+		culture = rhine_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 37 dip = 34 mil = 42
+		birth_date = 1583.1.1
+		birth = basel
+		dynasty = ostein_dynasty
+		tag = BAS
+	}
+	tir_ferdinand_karl_von_habsburg = {
+		first_name = { name = name_ferdinand }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 57 dip = 39 mil = 46
+		birth_date = 1628.1.1
+		birth = vienna
+		dynasty = habsburg_dynasty
+		tag = TIR
+	}
+	tnt_carlo_emanuele_madruzzo = {
+		first_name = { name = name_carl }
+		culture = venetian
+		religion = catholic
+		estate = nobles_estate
+		adm = 26 dip = 8 mil = 42
+		birth_date = 1600.1.1
+		birth = trento
+		tag = TNT
+	}
+ 	slz_paris_von_lodron = {
+		first_name = { name = name_carl }
+		culture = venetian
+		religion = catholic
+		estate = nobles_estate
+		adm = 12 dip = 18 mil = 22
+		birth_date = 1586.1.1
+		birth = salzburg
+		dynasty = lodron_dynasty
+		tag = SLZ
+	}
+	hab_ferdinand_iii_von_habsburg  = {
+		first_name = { name = name_ferdinand }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 73 dip = 20 mil = 86
+		birth_date = 1608.1.1
+		birth = vienna
+		dynasty = habsburg_dynasty
+		tag = HAB
+	}
+	hab_leopold_von_habsburg  = {
+		first_name = { name = name_ferdinand }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 33 dip = 40 mil = 46
+		birth_date = 1640.1.1
+		birth = vienna
+		father = hab_leopold_von_habsburg
+		dynasty = habsburg_dynasty
+		tag = HAB
+	}
+	bam_melchior_otto_voit  = {
+		first_name = { name = name_otto }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 72 dip = 30 mil = 11
+		birth_date = 1603.1.1
+		birth = bamberg
+		tag = BAM
+	}
+	mei_johann_georg_i_von_wettin = {
+		first_name = { name = name_johann }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 52 dip = 60 mil = 61
+		birth_date = 1585.1.1
+		birth = dresden
+		dynasty = wettin_dynasty
+		tag = MEI
+	}
+	mei_johann_georg_von_wettin = {
+		first_name = { name = name_johann }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 42 dip = 50 mil = 39
+		birth_date = 1613.1.1
+		birth = dresden
+		father = johann_georg_i_von_wettin 
+		dynasty = wettin_dynasty
+		tag = MEI
+	}
+	bay_christian_von_hohenzollern = {
+		first_name = { name = name_christian }
+		culture = east_franconian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 56 dip = 22 mil = 39
+		birth_date = 1585.1.1
+		birth = bayreuth
+		dynasty = hohenzollern_dynasty
+		tag = BAY
+	}
+	pss_leopold_wilhelm_von_habsburg = {
+		first_name = { name = name_leopold }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 37 dip = 39 mil = 66
+		birth_date = 1614.1.1
+		birth = passau
+		dynasty = habsburg_dynasty
+		tag = PSS
+	}
+	lgc_jerzy_rudolf_piast = {
+		first_name = { name = name_rudolf }
+		culture = german_silesian
+		religion = catholic
+		estate = nobles_estate
+		adm = 37 dip = 49 mil = 46
+		birth_date = 1614.1.1
+		birth = legnica
+		dynasty = piast_dynasty
+		tag = LGC
+	}
+	tes_elzbieta_lukrecja_piast = {
+		first_name = { name = name_elizabeth }
+		culture = german_silesian
+		religion = catholic
+		estate = nobles_estate
+		adm = 37 dip = 29 mil = 36
+		female = yes
+		birth_date = 1600.1.1
+		birth = tesin
+		dynasty = piast_dynasty
+		tag = TES
+	}
+	gsw_gustav_adolf_von_mecklenburg = {
+		first_name = { name = name_gustav }
+		culture = western_pomeranian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 32 dip = 33 mil = 16
+		birth_date = 1633.1.1
+		birth = waren
+		dynasty = mecklenburg_dynasty
+		tag = GSW
+	}
+	mkl_adolf_friedrich_mecklenburg = {
+		first_name = { name = name_friedrich }
+		culture = western_pomeranian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 36 dip = 63 mil = 56
+		birth_date = 1589.1.1
+		birth = wismar
+		dynasty = mecklenburg_dynasty
+		tag = MKL
+	}
+	hpl_friedrich_von_oldenburg = {
+		first_name = { name = name_friedrich }
+		culture = holsatian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 36 dip = 33 mil = 37
+		birth_date = 1598.1.1
+		birth = kiel
+		dynasty = oldenburg_dynasty
+		tag = HPL
+	}
+	lbb_johann_x_von_oldenburg = {
+		first_name = { name = name_johann }
+		culture = holsatian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 36 dip = 63 mil = 15
+		birth_date = 1606.1.1
+		birth = eutin
+		dynasty = oldenburg_dynasty
+		tag = LBB
+	}
+	slv_ernst_gunther_von_oldernburg = {
+		first_name = { name = name_ernst }
+		culture = holsatian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 66 dip = 33 mil = 35
+		birth_date = 1610.1.1
+		birth = slesvig
+		dynasty = oldenburg_dynasty
+		tag = SLV
+	}
+	leu_maximilian_adam_von_leuchtenberg = {
+		first_name = { name = name_maximilian }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 36 dip = 13 mil = 31
+		birth_date = 1612.1.1
+		birth = leuchtenberg
+		dynasty = leuchtenberg_dynasty
+		tag = LEU
+	}
+	ubv_maximilian_von_wittelsbach = {
+		first_name = { name = name_maximilian }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 36 dip = 63 mil = 8
+		birth_date = 1573.1.1
+		birth = munich
+		dynasty = wittelsbach_dynasty
+		tag = UBV
+	}
+	ubv_ferdinand_maria_von_wittelsbach = {
+		first_name = { name = name_ferdinand }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 56 dip = 33 mil = 48
+		birth_date = 1637.1.1
+		birth = munich
+		father = ubv_maximilian_von_wittelsbach
+		dynasty = wittelsbach_dynasty
+		tag = UBV
+	}
+	brc_adolf_i = {
+		first_name = { name = name_adolf }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 56 dip = 63 mil = 65
+		birth_date = 1599.1.1
+		birth = berchtesgaden
+		tag = BRC
+	}
+	eic_marquard_zu_castell = {
+		first_name = { name = name_marquard }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 36 dip = 33 mil = 28
+		birth_date = 1606.1.1
+		birth = eichstatt
+		tag = EIC
+	}
+	ans_albrecht_von_hohenzollern = {
+		first_name = { name = name_albrecht }
+		culture = east_franconian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 36 dip = 22 mil = 34
+		birth_date = 1621.1.1
+		birth = ansbach
+		dynasty = hohenzollern_dynasty
+		tag = ANS
+	}
+	oet_ernst_i_von_oettingen = {
+		first_name = { name = name_ernst }
+		culture = swabian
+		religion = catholic
+		estate = nobles_estate
+		adm = 26 dip = 27 mil = 32
+		birth_date = 1594.1.1
+		birth = ansbach
+		dynasty = oettingen_dynasty
+		tag = OET
+	}
+	wur_everard_vii_wurttemberg = {
+		first_name = { name = name_everard }
+		culture = swabian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 46 dip = 37 mil = 35
+		birth_date = 1615.1.1
+		birth = stuttgart
+		dynasty = wurttemberg_dynasty
+		tag = WUR
+	}
+	hoh_friedrich_v_von_hohenzollern = {
+		first_name = { name = name_friedrich }
+		culture = swabian
+		religion = catholic
+		estate = nobles_estate
+		adm = 16 dip = 27 mil = 15
+		birth_date = 1601.1.1
+		birth = balingen
+		dynasty = hohenzollern_dynasty
+		tag = HOH
+	}
+	lic_feiedrich_casimir_von_lichtenberg = {
+		first_name = { name = name_everard }
+		culture = rhine_alemannic
+		religion = lutheran
+		estate = nobles_estate
+		adm = 26 dip = 67 mil = 35
+		birth_date = 1625.1.1
+		birth = lichtenberg
+		dynasty = lichtenberg_dynasty
+		tag = LIC
+	}
+	bde_wilhelm_i_von_zahringen = {
+		first_name = { name = name_wilhelm }
+		culture = rhine_alemannic
+		religion = catholic
+		estate = nobles_estate
+		adm = 46 dip = 17 mil = 45
+		birth_date = 1594.1.1
+		birth = baden
+		dynasty = zahringen_dynasty
+		tag = BDE
+	}
+	mai_anselm_kasimir_von_umstadt = {
+		first_name = { name = name_anselm }
+		culture = rhine_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 66 dip = 47 mil = 49
+		birth_date = 1580.1.1
+		birth = mainz
+		tag = MAI
+	}
+	nsw_ernst_casimir_von_nassau = {
+		first_name = { name = name_ernst }
+		culture = rhine_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 16 dip = 27 mil = 19
+		birth_date = 1608.1.1
+		birth = katzenelnbogen
+		tag = NSW
+	}
+	erb_georg_friedrich_erbach = {
+		first_name = { name = name_george }
+		culture = rhine_franconian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 26 dip = 27 mil = 29
+		birth_date = 1607.1.1
+		birth = erbach
+		tag = ERB
+	}
+	teu_leopold_wilhelm_von_habsburg = {
+		first_name = { name = name_leopold }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 17 dip = 39 mil = 56
+		birth_date = 1614.1.1
+		birth = vienna
+		dynasty = habsburg_dynasty
+		tag = TEU
+	}
+	ktz_landgrave_georg_von_hessen = {
+		first_name = { name = name_george }
+		culture = rhine_franconian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 29 dip = 31 mil = 28
+		birth_date = 1605.1.1
+		birth = darmstadt
+		tag = KTZ
+	}
+	hna_friedrich_casimir_hanau = {
+		first_name = { name = name_friedrich }
+		culture = rhine_franconian
+		religion = calvinist
+		estate = nobles_estate
+		adm = 46 dip = 47 mil = 33
+		birth_date = 1624.1.1
+		birth = hanau
+		dynasty = hanau_dynasty
+		tag = HNA
+	}
+	bud_ernst_isenburg = {
+		first_name = { name = name_ernst }
+		culture = rhine_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 16 dip = 17 mil = 33
+		birth_date = 1599.1.1
+		birth = budingen
+		dynasty = isenburg_dynasty
+		tag = BUD
+	}
+	wbg_johann_philipp_von_schonborn = {
+		first_name = { name = name_john }
+		culture = east	_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 46 dip = 37 mil = 33
+		birth_date = 1606.1.1
+		birth = wurzburg
+		tag = WBG
+	}
+	fld_joachim_von_gravenegg = {
+		first_name = { name = name_joachim }
+		culture = east	_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 26 dip = 27 mil = 25
+		birth_date = 1603.1.1
+		birth = fulda
+		tag = FLD
+	}
+	hes_willhelm_iv_hessen = {
+		first_name = { name = name_willhelm }
+		culture = east	_franconian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 10 dip = 20 mil = 45
+		birth_date = 1629.1.1
+		birth = kassel
+		tag = HES
+	}
+	wde_philipp_dietrich_von_waldeck = {
+		first_name = { name = name_philipp }
+		culture = westphalian
+		religion = lutheran
+		estate = nobles_estate
+		adm = 38 dip = 41 mil = 36
+		birth_date = 1615.1.1
+		birth = korbach
+		dynasty = waldeck_dynasty
+		tag = WDE
+	}
+	ens_friedrich_wilhelm_von_wettin = {
+		first_name = { name = name_friedrich }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 32 dip = 62 mil = 39
+		birth_date = 1603.1.1
+		birth = dresden
+		dynasty = wettin_dynasty
+		tag = ENS
+	}
+	tur_wilhelm_von_wettin = {
+		first_name = { name = name_wilhelm }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 32 dip = 47 mil = 45
+		birth_date = 1598.1.1
+		birth = dresden
+		dynasty = wettin_dynasty
+		tag = TUR
+	}
+	mag_august_von_wettin = {
+		first_name = { name = name_august }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 12 dip = 17 mil = 8
+		birth_date = 1615.1.1
+		birth = dresden
+		dynasty = wettin_dynasty
+		tag = MAG
+	}
+	anh_johann_kasimir_askanier = {
+		first_name = { name = name_john }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 65 dip = 37 mil = 38
+		birth_date = 1597.1.1
+		birth = zerbst
+		dynasty = askanier_dynasty
+		tag = ANH
+	}
+	mfe_bruno_von_querfurt = {
+		first_name = { name = name_bruno }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 35 dip = 77 mil = 82
+		birth_date = 1577.1.1
+		birth = eisleben
+		dynasty = querfurt_dynasty
+		tag = MFE
+	}
+	mfe_franz_maximilian_von_querfurt = {
+		first_name = { name = name_maximilian }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 45 dip = 27 mil = 22
+		birth_date = 1640.1.1
+		birth = eisleben
+		father = bnb_bruno_von_querfurt
+		dynasty = querfurt_dynasty
+		tag = MFE
+	}
+	lun_friedrich_von_welf = {
+		first_name = { name = name_friedrich }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 35 dip = 27 mil = 32
+		birth_date = 1575.1.1
+		birth = luneburg
+		dynasty = welfen_dynasty
+		tag = LUN
+	}
+	lun_christian_ludwig_von_welf = {
+		first_name = { name = name_christian }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 15 dip = 27 mil = 62
+		birth_date = 1622.1.1
+		birth = luneburg
+		father = lun_friedrich_von_welf 
+		dynasty = welfen_dynasty
+		tag = LUN
+	}
+	bbg_rudolf_august_von_welf = {
+		first_name = { name = name_august }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 35 dip = 27 mil = 32
+		birth_date = 1627.1.1
+		birth = luneburg
+		dynasty = welfen_dynasty
+		tag = BBG
+	}
+
+	lpp_simon_philipp_lippe = {
+		first_name = { name = name_christian }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 15 dip = 27 mil = 22
+		birth_date = 1632.1.1
+		birth = lippstadt
+		dynasty = lippe_dynasty
+		tag = LPP
+	}
+	bre_friedrich_von_oldenburg = {
+		first_name = { name = name_friedrich }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 15 dip = 17 mil = 46
+		birth_date = 1609.1.1
+		birth = verden
+		dynasty = oldenburg _dynasty
+		tag = BRE
+	}
+	old_anton_gunther_oldenburg = {
+		first_name = { name = name_anton }
+		culture = saxon
+		religion = lutheran
+		estate = nobles_estate
+		adm = 65 dip = 47 mil = 32
+		birth_date = 1584.1.1
+		birth = oldenburg
+		dynasty = oldenburg _dynasty
+		tag = OLD
+	}
+	lau_julius_heinrich_askanier = {
+		first_name = { name = name_heinrich }
+		culture = saxon
+		religion = catholic
+		estate = nobles_estate
+		adm = 15 dip = 27 mil = 9
+		birth_date = 1586.1.1
+		birth = lauenburg
+		dynasty = askanier_dynasty
+		tag = LAU
+	}
+}

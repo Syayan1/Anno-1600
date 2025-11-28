@@ -1,0 +1,7217 @@
+#------------------------ Regions done by Shiu ----------------------------
+
+# 以下是省份控制和核心类型的简要注释：
+# own_control_core        # 本国完全控制的核心省份
+# own_control_integrated  # 本国已整合省份
+# own_control_conquered   # 本国占领的非核心省份
+# own_control_colony      # 本国控制的殖民地省份
+# own_core                # 本国拥有的核心省份集合
+# own_conquered           # 本国征服省份集合
+# own_integrated          # 本国已整合省份集合
+# own_colony              # 本国殖民地省份集合
+# control_core            # 控制但非本国的核心省份
+# control                 # 控制的省份（总称）
+# our_cores_conquered_by_others # 我方核心被他国占领
+
+current_age = age_4_reformation
+countries = {
+	countries = {
+###Japan
+	JAP = { #Shogunate
+		own_control_core = {
+			inaka hanawa hiraka_aomori shimokita kamikita
+			nukanobu kazuno kuji iwate shimohei
+			kitahei kamihei shiwa hienuki esashi
+			waga isawa iwai kesen motoyoshi
+			oshika tome kurihara kami kurokawa
+			miyagi natori hiyama hinai akita
+			toshima yamamoto yuri kamiura yuza
+			murayama tagawa kitamogami minamimogami nishiokitama
+			higashiokitama uda_mutsu katta namekata shineha
+			naraha iwaki kikuta takano shirakawa
+			tamura shinobu adachi yama_jap
+			kawanuma oonuma kitaaizu minamiaizu iwase
+			asaka iwafune nutari nishikanbara higashikanbara
+			koshi kariwa minamiuonuma kitauonuma higashikubiki
+			nishikubiki kamo sawata niikawa nei
+			tonami imizu noto_jap fugeshi suzu
+			kaga nomi sakai_echizen nakaoono imadate
+			nyuu tsuruga onyuu nasu shioya
+			kawachi haga tsuga tone
+			seta nitta gunma usui kanra
+			agatsuma saku takai minochi sarashina
+			azumi chiisagata suwa tsukama kiso
+			kamiina shimoina yoshiki kamioono mashita
+			ena minokamo gujou mugi toki
+			katagata ikeda fuwa_mino azai echi
+			gamou kouka kurita takashima taga
+			kuji_kanto naka ibaraki kashima niihari
+			tsukuba katori chiba katsushika souma
+			musa isumi awa makuda ichihara
+			saitama adachi_kanto toshima_kanto tachibana tama
+			chichibu hiki hanzawa kamakura ashigara
+			aikou tsuru yamanashi yatsushiro koma_kai
+			tagata kamo_izu suntou fuji ihara
+			abe shida kitou shuuchi toyoda
+			fuchi hoi shitara kamo_mikawa hekikai
+			aichi niwa nakajima mie suzuka
+			ichishi watarai taki shima kitamuro
+			iga yoshino takaichi nara kuse
+			kyoto izumi osaka kawabe muko
+			kuwada funai ikaruga hikami kasa
+			yosa keta_tajima yabu futakata houmi
+			takakusa kume_houki aimi hino ou
+			oki izumo iishi nita nima
+			oochi naka_iwami mino kanoashi akashi
+			taka shikama akou shisou wake
+			joutou tsudaka kume mashima tomata
+			aita asakuchi katou_bicchuu kaya aka
+			ashida sera miyoshi eso nuka
+			kameshi toyota saeki yamagata takata
+			aki kuga kumage tsuno saba
+			yoshiki_suou asa toyoura ootsu abu
+			higashimuro minamimuro nishimuro hidaka kaisou
+			naga mitoyo aya miki awaji
+			nakata awa_shikoku naka_shikoku kaifu mima
+			miyoshi_shikoku nii ochi iyo ukena
+			kita_shikoku uwa aki_shikoku kami_shikoku nagaoka
+			tosa agawa takaoka hata kamiagata
+			shimoagata onga mikasa asakura hakata
+			saga higashimatsuura kishima takaki nishisonogi
+			higashisonogi nishimatsuura minamimatsuura mii kamitsuma
+			nakatsu mike usa kunisaki hayami
+			ooita amabe oono_bungo naoiri kusu
+			hita aso koushi tamana akita_kumamoto
+			mashiki yatsushiro_higo amakusa kuma ashikita
+			higashiusuki nishiusuki koyu naka_hyuuga nishimorokata
+			kitamorokata miyazaki minamimorokata soo kimotsuki
+			oosumi kuwabara hishikari gomu kumage_oosumi
+			satsuma kagoshima ibusuki izumi_satsuma	
+		}
+		include = "japanese_clan"
+		government = {
+			reforms = {
+				shogunate
+			}
+			laws = {
+				censorship = limited_censorship
+				maritime_law = protect_trade_routes
+				piracy_law = anti_piracy_policy
+			}
+		}
+		accepted_cultures = {
+			tougoku_culture
+			touhoku_culture
+			kyushu_culture
+		}
+		country_rank = rank_empire
+		capital = toshima_kanto
+		starting_technology_level = 4
+	}
+	
+	##Touhoku
+	ANU = {
+		type = pop
+
+		add_pops_from_locations = {
+			fukushima kamiiso kameda hiyama_hokkaido kayabe nishi
+			yamakoshi futoro setana shimamaki suttsu isoya iwanai furubira yoichi
+			abuta shiraoi chitose yuufutsu
+			sapporo ishikari yuubari sorachi atsuta uryuu nakakamikawa
+			saru niikappu shizunai urakawa samani
+			hiroo toubui kasai tokachi minamikamikawa katou minaminakagawa
+			shiranuka kushiro akan_loc akkeshi kawakami_hokkaido minamiabashiri ashoro
+			nemuro notsuke shibetsu hanasaki
+			shari abashiri tokoro monbetsu esashi_hokkaido souya rishiri
+			teshio kitanakagawa kitakamikawa tomamae rumoi
+			kunashiri etorofu furubetsu shana shibetoro uruppu shimushiru onnekotan paramushiru shumushu
+			guohuo boluohe kushunkotan nayoro
+		}
+
+		discovered_regions = {
+			japan_region
+		}
+
+
+		starting_technology_level = 1
+		include = "asia_tribe"
+		government = {
+			ruler = random
+		}
+	}
+	
+	MTU = { #Matsumae
+		own_control_core = {
+			fukushima
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = fukushima
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	HRO = { #Hirosaki
+		own_control_core = {
+			inaka hanawa hiraka_aomori
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = hanawa
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	MRO = { #Morioka
+		own_control_core = {
+			shimokita kamikita nukanobu kazuno
+			iwate kuji shimohei kitahei kamihei shiwa hienuki esashi waga isawa
+			kesen
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = iwate
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	AKA = { #Akita
+		own_control_core = {
+			kamiura hiyama hinai akita toshima yamamoto
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = akita
+		country_rank = rank_duchy
+		starting_technology_level = 4
+	}
+	
+	KMD = { #Kameda
+		own_control_core = {
+			yuri
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = yuri
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	HNJ = { #Honjo
+		own_control_core = {
+			yuza
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = yuza
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	SHI = { #Shinjo
+		own_control_core = {
+			murayama
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = murayama
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	SDA = { #Sendai
+		own_control_core = {
+			miyagi motoyoshi oshika tome kurihara kami kurokawa natori
+			uda_mutsu katta iwai
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = miyagi
+		country_rank = rank_kingdom
+		starting_technology_level = 4
+	}
+	
+	KMI = { #Kaminoyama
+		own_control_core = {
+			minamimogami
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = minamimogami
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	YON = { #Yonezawa
+		own_control_core = {
+			nishiokitama higashiokitama shinobu date_loc
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = higashiokitama
+		country_rank = rank_duchy
+		starting_technology_level = 4
+	}
+	
+	AIZ = { #Aizu
+		own_control_core = {
+			yama_jap kawanuma oonuma kitaaizu minamiaizu
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = higashiokitama
+		country_rank = rank_duchy
+		starting_technology_level = 4
+	}
+	
+	NIH = { #Nihonmatsu
+		own_control_core = {
+			iwase adachi asaka
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = adachi
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	SMN = { #Souma-Nakamura
+		own_control_core = {
+			namekata shineha
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = namekata
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	KMI = { #Kaminoyama
+		own_control_core = {
+			minamimogami
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = minamimogami
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	YON = { #Yonezawa
+		own_control_core = {
+			nishiokitama higashiokitama shinobu date_loc
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = higashiokitama
+		country_rank = rank_duchy
+		starting_technology_level = 4
+	}
+	
+	AIZ = { #Aizu
+		own_control_core = {
+			yama_jap kawanuma oonuma kitaaizu minamiaizu
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = higashiokitama
+		country_rank = rank_duchy
+		starting_technology_level = 4
+	}
+	
+	NIH = { #Nihonmatsu
+		own_control_core = {
+			iwase adachi asaka
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = adachi
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	SMN = { #Souma-Nakamura
+		own_control_core = {
+			namekata shineha
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = namekata
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	HAR = { #Miharu
+		own_control_core = {
+			tamura
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = tamura
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	SRK = { #Shirakawa
+		own_control_core = {
+			shirakawa
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = shirakawa
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	TAG = { #Tanagura
+		own_control_core = {
+			takano
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = takano
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+
+	##Kinkiku
+	JIC = { #Kuge
+		own_control_core = {
+			kyoto
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kyoto  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_empire
+		}
+
+	UMY = { #Udamatsuyama
+		own_control_core = {
+			takaichi
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = takaichi  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	TOB = { #Toba
+		own_control_core = {
+			shima
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = shima  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	KSU = { #Kishū
+		own_control_core = {
+			kaisou naga hidaka nishimuro higashimuro minamimuro kitamuro taki watarai
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kaisou  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_kingdom
+		}
+
+	KBE = { #Kōbe
+		own_control_core = {
+			suzuka
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = suzuka  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	ATU = { #Anotsu
+		own_control_core = {
+			ichishi iga nara
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = ichishi  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}
+
+	NSJ = { #Nishōji
+		own_control_core = {
+			gamou
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = gamou  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	AKO = { #Asō
+		own_control_core = {
+			akou
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = akou  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	HYS = { #Hayashida
+		own_control_core = {
+			shikama
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = shikama  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	SIS = { #Shisō
+		own_control_core = {
+			shisou
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = shisou  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	AOK = { #Asada
+		own_control_core = {
+			muko
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = muko  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	TYK = { #Toyooka
+		own_control_core = {
+			keta_tajima __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = keta_tajima  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	IZS = { #Izushi
+		own_control_core = {
+			yabu __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = yabu  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	TNB = { #Tangotanabe
+		own_control_core = {
+			kasa __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kasa  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	MDU = { #Miyadu
+		own_control_core = {
+			yosa __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = yosa  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	FKY = { #Fukuchiyama
+		own_control_core = {
+			ikaruga __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = ikaruga  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+
+	NKB = { #Tanbakaibara
+		own_control_core = {
+			hikami __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = hikami  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	YME = { #Yamake
+		own_control_core = {
+			funai __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = funai  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	SNB = { #Sonobe
+		own_control_core = {
+			kuwada __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kuwada  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	##Shikoku
+	HCU = { #Tokushima
+		own_control_core = {
+			nakata awa_shikoku naka_shikoku kaifu mima miyoshi_shikoku awaji __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = nakata  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy
+		}
+
+	YUC = { #Tosa
+		own_control_core = {
+			tosa agawa takaoka hata kami_shikoku aki_shikoku nagaoka __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = tosa  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy
+		}
+
+	UWJ = { #Uwajima
+		own_control_core = {
+			uwa __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = uwa  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	ODZ = { #Ōdu
+		own_control_core = {
+			kita_shikoku ukena __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kita_shikoku  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	##Chuubu
+	MEK = { #Kaga
+		own_control_core = {
+			kaga nomi noto_jap fugeshi suzu tonami imizu nei niikawa takashima __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kaga  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_kingdom
+		}
+	
+	KNR = { #Hidatakayama
+		own_control_core = {
+			kamioono mashita yoshiki __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kamioono  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	GJO = { #Gujō
+		own_control_core = {
+			gujou __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = gujou  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	OWR = { #Owari
+		own_control_core = {
+			aichi niwa nakajima mugi minokamo toki ena   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = aichi  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_kingdom
+		}
+
+	SNX = { #Matsushiro
+		own_control_core = {
+			sarashina minochi   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = sarashina  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	SGV = { #Ueda
+		own_control_core = {
+			chiisagata   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = chiisagata  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	SZA = { #Suzaka
+		own_control_core = {
+			takai   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = takai  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	ZOG = { #Shibata
+		own_control_core = {
+			nutari   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = nutari  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	##Kanto
+	MTV = { #Mito
+		own_control_core = {
+			ibaraki niihari haga naka kuji_kanto taga   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = ibaraki  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_kingdom
+		}
+
+	KRY = { #Karasuyama
+		own_control_core = {
+			shioya   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = shioya  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	KRB = { #Kurobane
+		own_control_core = {
+			nasu   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = nasu  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+
+	OBX = { #Obata
+		own_control_core = {
+			kanra usui   __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kanra  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county
+		}
+	
+	##Chuugoku
+	CYY = { #Chōshū
+		own_control_core = {
+			abu ootsu toyoura asa yoshiki_suou saba tsuno kumage kuga    __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = abu  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_kingdom
+		}
+
+	TUW = { #Tsuwano
+		own_control_core = {
+			kanoashi    __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kanoashi  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+
+	HMW = { #Hamada
+		own_control_core = {
+			mino    __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = mino  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+
+	HLS = { #Hiroshima
+		own_control_core = {
+			saeki aki takata yamagata toyota sera miyoshi eso nuka     __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = saeki  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}
+
+	NWE = { #Niwase
+		own_control_core = {
+			asakuchi     __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = asakuchi  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+
+	AMV = { #Ashimori
+		own_control_core = {
+			kaya     __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kaya  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+
+	VYM = { #Okayama
+		own_control_core = {
+			joutou tsudaka wake     __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = joutou  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}
+
+	XTY = { #Tsuyama
+		own_control_core = {
+			mashima aita kume tomata     __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = mashima  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}
+
+	TTI = { #Tottori
+		own_control_core = {
+			houmi takakusa kume_houki aimi hino     __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = houmi  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}
+	
+	##Kyushu
+	STM = { #Satsuma
+		own_control_core = {
+			kagoshima izumi_satsuma satsuma ibusuki hishikari kuwabara soo kimotsuki oosumi gomu kumage_oosumi nishimorokata minamimorokata 				kitamorokata naka_hyuuga     __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kagoshima  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_kingdom 
+		}
+	
+	STM = { #Satsuma
+		own_control_core = {
+			kagoshima izumi_satsuma satsuma ibusuki hishikari kuwabara soo kimotsuki oosumi gomu kumage_oosumi nishimorokata minamimorokata 				kitamorokata naka_hyuuga     __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kagoshima  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_kingdom 
+		}
+	
+	OBI = { #Obi
+		own_control_core = {
+			    miyazaki __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = miyazaki  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	TKB = { #Takanabe
+		own_control_core = {
+			    koyu __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = koyu  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+	
+	HIY = { #Hitoyoshi
+		own_control_core = {
+			    kuma __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kuma  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+	
+	NBK = { #Nobeoka
+		own_control_core = {
+			    higashiusuki __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = higashiusuki  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+
+	QMM = { #Kumamoto
+		own_control_core = {
+			    akita_kumamoto tamana koushi aso mashiki yatsushiro_higo ashikita  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = akita_kumamoto  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}	
+
+	SGQ = { #Saga
+		own_control_core = {
+			    saga kishima takaki  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = saga  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}
+
+	OOR = { #Ōmura
+		own_control_core = {
+			higashisonogi nishisonogi  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = higashisonogi  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+
+	FQE = { #Fukue
+		own_control_core = {
+			minamimatsuura  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = minamimatsuura  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+
+	QRT = { #Karatsu
+		own_control_core = {
+			higashimatsuura amakusa  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = higashimatsuura  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+
+	HRV = { #Hirado
+		own_control_core = {
+			nishimatsuura  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = nishimatsuura  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}
+		
+	ZSM = { #Tsushima
+		own_control_core = {
+			shimoagata kamiagata  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = shimoagata  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	FOK = { #Fukuoka
+		own_control_core = {
+			hakata mikasa onga asakura  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = hakata  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}	
+
+	YGW = { #Yanagawa
+		own_control_core = {
+			mii  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = mii  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	QRM = { #Yanagawa
+		own_control_core = {
+			kamitsuma  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kamitsuma  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_duchy 
+		}	
+
+	QMR = { #Mori
+		own_control_core = {
+			kusu  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = kusu  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	FNA = { #Funai
+		own_control_core = {
+			naoiri  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = naoiri  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	OQA = { #Oka
+		own_control_core = {
+			oono_bungo  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = oono_bungo  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	VSQ = { #Usuki
+		own_control_core = {
+			ooita  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = ooita  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	SYQ = { #Saiki
+		own_control_core = {
+			amabe  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = amabe  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	HYJ = { #Hiji
+		own_control_core = {
+			hayami  __
+		}
+		include = "japanese_clan"
+		government = {
+			type = monarchy
+		}
+		capital = hayami  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_county 
+		}	
+
+	##Ryukyu
+	RYY = { #Ryūkyū
+		own_control_core = {
+			oozato urasoe nakijin tokunoshima amami_ooshima iriomote ishigaki miyakojima     __
+		}
+		government = {
+			type = monarchy
+		}
+		capital = oozato  # Capital
+		starting_technology_level = 4  
+		country_rank = rank_kingdom 
+		}
+
+#------------------------ Regions done by Syayan ----------------------------
+###British Isles
+	ENG = { #England
+		own_control_core = {
+			berwick appleby hythe alnwick barnstaple bedford dunstable birmingham boston bosworth shoreham lewes buckingham bury glossop cambridge canterbury carlisle rochester cheltenham chelmsford chesterfield chichester chippenham cockermouth colchester kettering coventry cirencester derby dorchester dover exeter grimsby guildford reigate harrow hastings hedingham hexham hull huntingdon ipswich kendal grantham penrith kidderminster leeds leicester lincoln london loughborough lowestoft lynn daventry newark newcastle northampton norwich nottingham oxford ely bideford bampton okehampton poole portsmouth amesbury lymington retford rutland salisbury southampton prittlewell kingston stafford stoke stratford trowbridge taunton wells barking weymouth shaftesbury wight winchester windsor worcester yarmouth york scarborough tamworth bedale richmond whitby bridlington selby pontefract skipton wakefield louth thetford fakenham reading tonbridge minehead portishead bath henley royston aylesbury wycombe lavenham abingdon banbury walden spalding woking morpeth billingham norton ripon doncaster egremont basingstoke
+			# cornwall
+			launceston truro bodmin
+			# English towns on the Welsh March
+			hereford
+			#from DHM
+			durham darlington stockton
+			#from CET
+			chester macclesfield nantwich
+			#from LAN
+			lancaster blackburn liverpool preston manchester
+			#below from Wales
+			aberystwyth anglesey cardigan carnarvon harlech conwy penllyn radnor
+			#from LAN
+			monmouth kidwelly
+			#from CHE
+			flint
+			#from GWR
+			swansea
+			#from GMG
+			cardiff caerphilly neath
+			#from MAC
+			adnor builth newport wigmore ludlow
+			#from AUD
+			llangollen oswestry
+			#from BRO
+			brecknock
+			#from POS
+			machynlleth montgomery
+			#from EWY
+			ewyas
+			#from CMS
+			fishguard
+			#from PMB
+			pembroke
+			#from DEN
+			denbigh
+			carmarthen shrewsbury gloucester bristol hertford st_albans plymouth
+		}
+		own_control_integrated = {
+			#channel
+			jersey
+		}
+
+		starting_technology_level = 5
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = eng_james_i_stuart
+			heir = eng_charles_i_stuart
+			
+			ruler_term = { character = eng_james_i_stuart start_date = 1603.3.24 end_date = 1625.3.27 regnal_number = 1 }
+			
+			regnal_numbers = {
+				name_james = 1
+				names_charles = 1
+				names_mary = 2
+				name_william = 3
+			}
+
+			reforms = {
+				magna_carta_reform
+			}
+			privilege = {
+				#nobles
+				auxilium_et_consilium
+				nobles_land_rights
+				noble_marriage_rights
+				noble_fortification_licenses
+				manorial_courts
+
+				#burghers
+				formal_guilds
+				market_fairs
+
+				#clergy
+				clergy_literacy_rights
+				clergy_enforced_unity
+
+				#peasants
+				peasants_yeomanry
+				access_to_royal_and_ecclesiastical_courts
+			}
+			laws = {
+				distribution_of_power_law = dop_law_english_parliament
+				language_of_pleading = language_of_pleading_court
+				legal_code_law = common_law_policy
+				medieval_levy_law = longbow_competitions
+				feudal_de_jure_law = by_tradition
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+			}
+
+			centralization_vs_decentralization = 30
+			aristocracy_vs_plutocracy = -60
+			serfdom_vs_free_subjects = -10
+			traditionalist_vs_innovative = -40
+			spiritualist_vs_humanist = -50
+			mercantilism_vs_free_trade = -25
+			offensive_vs_defensive = 0
+			land_vs_naval = 0
+			quality_vs_quantity = -20
+			belligerent_vs_conciliatory = -25
+
+			capital_economy_vs_traditional_economy = 30
+			individualism_vs_communalism = -25
+			outward_vs_inward = -60
+
+
+		}
+
+		accepted_cultures = {
+			northumbrian
+		}
+		tolerated_cultures = { cornish welsh }
+
+		court_language = norman_dialect
+		country_rank = rank_kingdom
+		capital = london
+
+		include = "expl_western_europe"
+
+		ai_advance_preference_tags = {
+			exploration = 5
+		}
+	}
+
+	SCO = { # Scotland
+		own_control_core = {
+			thurso glasgow paisley dumbarton aberdeen dunbar banff dunfermline st_andrews dundee buchan mar inverurie stonehaven clackmannan aberfeldy irvine
+			oban inverary cowal forfar arbroath arran selkirk scone
+			dornoch durness tongue
+			#from ROS
+			dingwall gairloch ullapool urquhart
+			#from MOY
+			inverness elgin badenoch lochaber
+			#from LOI
+			uist lewis mull islay harris ardtornish kintyre skye
+			#from SBL
+			kirkcudbright kenmure stranraer ayr perth edinburgh stirling roxburgh linlithgow duns dumfries lanark strathearn cupar
+		}
+		own_control_conquered = {
+			orkney shetland
+		}
+		
+		include = "expl_northern_europe"
+		starting_technology_level = 5
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = eng_james_i_stuart
+			heir = eng_charles_i_stuart
+			
+			ruler_term = { character = eng_james_i_stuart start_date = 1603.3.24 end_date = 1625.3.27 regnal_number = 1 }
+			
+			regnal_numbers = {
+				name_james = 7
+				names_charles = 1
+				names_mary = 2
+				name_william = 3
+			}
+			privilege = {
+				#nobles
+				scottish_clans
+				banal_lordship
+				nobility_council
+				primacy_of_nobility
+				#burghers
+				formal_guilds
+				burghers_royal_burgh_commissioners
+				#peasants
+				access_to_royal_and_ecclesiastical_courts
+				#tribes
+				tribes_creach
+				tribes_fosterage
+				tribes_manrent
+				tribes_scotland_gaelic_heritage
+			}
+			laws = {
+				language_of_pleading = language_of_pleading_court
+				legal_code_law = common_law_policy
+				royal_court_customs_law = itinerant_court_policy
+				sco_clan_holdings = inherited_clan_holdings
+			}
+			#Societal Values
+			centralization_vs_decentralization = 60
+			traditionalist_vs_innovative = -50
+			spiritualist_vs_humanist = -50
+			aristocracy_vs_plutocracy = -50
+			serfdom_vs_free_subjects = 0
+			mercantilism_vs_free_trade = -10
+			belligerent_vs_conciliatory = 10
+			quality_vs_quantity = -30
+			offensive_vs_defensive = -20
+			capital_economy_vs_traditional_economy = 90
+			individualism_vs_communalism = -10
+			outward_vs_inward = -20
+
+			reforms = {
+				scottish_shires_reform
+			}
+		}
+		court_language = norman_dialect
+		country_rank = rank_kingdom
+		capital = dunfermline
+		accepted_cultures = { highland }
+		tolerated_cultures = { norse_gael }
+
+		currency_data = {
+			gold = 200
+			stability = 30 # Starting Turnmoil with Balliol
+			prestige = 25
+			government_power = 80
+			war_exhaustion = 1.5 # Starting Turnmoil with Balliol
+			army_tradition = 15
+		}
+	}
+	
+	MNN = { # Isle of Man
+		own_control_core = {
+			mann
+		}
+		include = "catholic_monarchy_english_lordship"
+		include = "expl_northern_europe"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = eng_james_i_stuart
+			heir = eng_charles_i_stuart
+			
+			ruler_term = { character = eng_james_i_stuart start_date = 1603.3.24 end_date = 1625.3.27 regnal_number = 1 }
+			
+			regnal_numbers = {
+				name_james = 1
+				names_charles = 1
+				names_mary = 2
+				name_william = 3
+			}
+		}
+		country_rank = rank_county
+		capital = mann
+
+		tolerated_cultures = { english }
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	PLE = { # The Pale
+		own_control_core = {
+			cork fermoy kinsale youghal dublin fingal wicklow glendalough carrickmacross armagh oriel dundalk drogheda downpatrick iveagh newtownards carrickfergus belfast ballymena ballycastle dunluce lough_neagh derry coleraine magherafelt donegal kilmacrennan inishowen raphoe kildare naas athy dunamase daingean dungannon navan
+		}
+		
+		our_cores_conquered_by_others = {
+			trim kells mullingar longford ardagh ballymore tullamore wexford new_ross ferns carlow kilkenny cullahill strabane clogher enniskillen belcoo lough_erne monaghan galway clifden athenry tuam kilconnell lough_corrib lough_derg roscommon castlereagh sligo athlone skreen lough_ree dromahair leitrim killeshandra cavan killycolly castlebar burrishoole erris ballaghaderreen lough_mask lough_conn killarney carbery kilbrittain muskerry dunhallow tralee dingle limerick killmallock adare castleconnell ennis bunratty moyarta tipperary nenagh clonmel cashel roscrea moycarn waterford dungarvan carrickbeg
+		}
+
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = eng_james_i_stuart
+			heir = eng_charles_i_stuart
+			
+			ruler_term = { character = eng_james_i_stuart start_date = 1603.3.24 end_date = 1625.3.27 regnal_number = 1 }
+			
+			regnal_numbers = {
+				name_james = 1
+				names_charles = 1
+				names_mary = 2
+				name_william = 3
+			}
+
+			quality_vs_quantity = 25
+			offensive_vs_defensive = 75
+
+			parliament = {
+				parliament_type = estate_parliament
+			}
+
+			privilege = {
+				noble_fortification_licenses
+			}
+			laws = {
+				distribution_of_power_law = dop_law_english_parliament
+				language_of_pleading = language_of_pleading_court
+				medieval_levy_law = longbow_competitions
+				feudal_de_jure_law = by_tradition
+			}
+			reforms = {
+				magna_carta_reform
+			}
+		}
+		include = "catholic_monarchy_english_lordship"
+		capital = dublin
+		accepted_cultures = { anglo_irish }
+		tolerated_cultures = { irish }
+		starting_technology_level = 4
+	}
+	
+	IRE = { # Irish Confederate
+		own_control_core = {
+		trim kells mullingar longford ardagh ballymore tullamore wexford new_ross ferns carlow kilkenny cullahill strabane clogher enniskillen belcoo lough_erne monaghan galway clifden athenry tuam kilconnell lough_corrib lough_derg roscommon castlereagh sligo athlone skreen lough_ree dromahair leitrim killeshandra cavan killycolly castlebar burrishoole erris ballaghaderreen lough_mask lough_conn killarney carbery kilbrittain muskerry dunhallow tralee dingle limerick killmallock adare castleconnell ennis bunratty moyarta tipperary nenagh clonmel cashel roscrea moycarn waterford dungarvan carrickbeg
+		}
+		
+		our_cores_conquered_by_others = {
+		cork fermoy kinsale youghal dublin fingal wicklow glendalough carrickmacross armagh oriel dundalk drogheda downpatrick iveagh newtownards carrickfergus belfast ballymena ballycastle dunluce lough_neagh derry coleraine magherafelt donegal kilmacrennan inishowen raphoe kildare naas athy dunamase daingean dungannon navan
+		}
+
+		government = {
+			type = monarchy
+			ruler = ire_felim_oneill
+			heir_selection = cognatic_primogeniture
+
+			quality_vs_quantity = 25
+			offensive_vs_defensive = 75
+
+			parliament = {
+				parliament_type = estate_parliament
+			}
+
+			privilege = {
+				noble_fortification_licenses
+			}
+			laws = {
+				distribution_of_power_law = dop_law_english_parliament
+				language_of_pleading = language_of_pleading_court
+				medieval_levy_law = longbow_competitions
+				feudal_de_jure_law = by_tradition
+			}
+			reforms = {
+				magna_carta_reform
+			}
+		}
+		include = "catholic_monarchy_english_lordship"
+		capital = dublin
+		accepted_cultures = { anglo_irish }
+		tolerated_cultures = { irish }
+		starting_technology_level = 4
+	}
+	
+###Iberia
+	SPA = {
+		own_control_core = {
+			avila adrada arevalo las_navas oropesa villatoro
+			burgos aranda_de_duero briviesca castrojeriz lerma logrono miranda_de_ebro najera sto_domingo_silos villadiego villarcayo
+			palencia aguilar_de_campoo carrion_de_los_condes monzon_campos palenzuela saldana reinosa
+			segovia cuellar fuentiduena pedraza sepulveda
+			soria agreda almazan berlanga burgo_de_osma calahorra calatanazor medinaceli arnedo
+			santander laredo potes san_vicente_barquera
+			valladolid medina_de_rioseco medina_del_campo penafiel tordesillas
+			cuenca alarcon belmonte beteta canete huete iniesta jorquera molina_de_aragon moya pareja san_clemente requena torralba
+			madrid alcala_de_henares brihuega buitrago_de_lozoya cobeta colmenar el_escorial guadalajara maqueda siguenza zorita
+			ciudad_real alcaraz almaden almodovar_del_campo calatrava lezuza malagon manzanares puertollano alhambra_location montiel villapalacios villarobledo
+			toledo alcazar_de_san_juan chinchon consuegra guadalupe illescas los_yebenes navalucillos ocana puebla_de_montalban puente_arzobispo talavera_de_la_reina tomelloso ucles
+			badajoz albuquerque azuaga barcarrota jerez_de_los_caballeros llerena merida monesterio villanueva_del_fresno zafra
+			caceres alcantara arroyo brozas galisteo granadilla montanchez valencia_de_alcantara
+			plasencia belalcazar escurial herrera jaraicejo medellin puebla_de_alcocer trujillo valverde villanueva_de_la_serena zalamea
+			coruna betanzos ferrol mondonedo vivero
+			lugo monforte_de_lemos navia_de_suarna sarria villalba
+			ourense barco_de_valdeorras ginzo_de_limia monterrey ribadavia viana_bolo
+			santiago_compostela finisterre lalin mellid noya pontevedra tuy
+			oviedo aviles cangas castropol llanes mieres tineo villaviciosa
+			leon astorga castrocalbon mansilla ponferrada riano sahagun villablino villafranca_bierzo
+			salamanca alba_de_tormes bejar ciudad_rodrigo coria ledesma matilla_de_canos piedrahita san_felices yecla_de_yeltes
+			zamora alba_de_aliste alcanices benavente fermoselle puebla_de_sanabria toro villalpando
+			cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia
+			jaen andujar baeza cazorla jodar martos ubeda
+			murcia albacete caravaca cartagena chinchilla cieza hellin lorca mula segura_de_la_sierra villena
+			sevilla arcos_de_la_frontera cadiz carmona constantina ecija jerez_de_la_frontera medina_sidonia moron olvera osuna sanlucar tarifa
+			huelva almonaster_la_real aracena aroche ayamonte coria_del_rio niebla puebla_de_guzman sanlucar_la_mayor
+			bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
+			#from ARA
+			jumilla
+		}
+		
+		own_control_integrated = {
+			asilah ceuta melilla teguise maxorata tamaraceite hipalan tedote aguere
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "iberian_monarchy_no_auxilium"
+
+		government = {
+			type = monarchy
+			ruler = spa_philip_iv_habsburg
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = spa_philip_i_habsburg start_date = 1506.4.25 end_date = 1506.9.25 regnal_number = 1 }
+			ruler_term = { character = spa_charles_i_habsburg start_date = 1516.1.23 end_date = 1556.1.16 regnal_number = 1 }
+			ruler_term = { character = spa_philip_ii_habsburg start_date = 1556.1.16 end_date = 1598.9.13 regnal_number = 2 }
+			ruler_term = { character = spa_philip_iii_habsburg start_date = 1598.9.13 end_date = 1621.3.31 regnal_number = 3 }
+			ruler_term = { character = spa_philip_iv_habsburg start_date = 1621.3.31 end_date = 1665.9.17 regnal_number = 4 }
+			
+			regnal_numbers = {
+				name_philip = 4
+				names_charles = 2
+			}
+			
+			reforms = {
+				crown_castile_reform
+				feudal_nobility
+			}
+
+			privilege = {
+				#Noblity
+				monetary_fiefs
+				#Clergy
+				clergy_military_orders
+				#Commoners
+				ayuntamientos
+				cas_caballeros_villanos
+			}
+
+			laws = {
+				administrative_system = adelantamiento_system
+				distribution_of_power_law = dop_law_castilian_courts
+				legal_code_law = siete_partidas_law
+				medieval_levy_law = alarde
+				mesta_council_law = quadrillas_organization
+				royal_court_customs_law = itinerant_court_policy
+			}
+
+			aristocracy_vs_plutocracy = -40
+			serfdom_vs_free_subjects = -15
+			mercantilism_vs_free_trade = -40
+			belligerent_vs_conciliatory = -15
+			outward_vs_inward = -30
+		}
+
+		country_rank = rank_kingdom
+		capital = valladolid
+
+		ai_advance_preference_tags = {
+			exploration = 5
+		}
+
+		accepted_cultures = {
+			leonese
+			galician			
+			basque
+		}
+		tolerated_cultures = { 
+			sephardi
+		}
+		starting_technology_level = 5
+		
+	}
+
+	POR = {
+		own_control_core = {
+			lagos faro silves tavira
+			evora alvalade alvito avis beja crato elvas estremoz mertola montemor mora_portugal moura odemira ourique ponte_sor portalegre portel salvaterra serpa sines vila_vicosa
+			coimbra besteiros castelo_branco covilha esgueira feira guarda idanha lamego meda pinhel proenca_nova sabugal seia trancoso viseu
+			lisbon alcacer_do_sal alcobaca chao_de_couce figueira leiria santarem setubal tomar torres_novas torres_vedras
+			porto aguiar barcelos braga guimaraes montalegre valenca viana_do_castelo
+			braganca chaves macedo miranda_de_i_douro mirandela moncorvo vila_real
+		}
+		
+		own_control_integrated = {
+			tangier ponta_delgada santa_maria angra horta santa_cruz_flores funchal
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "iberian_monarchy"
+
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = por_john_iv_braganza
+			heir = por_afonso_vi_braganza
+
+			reforms = {
+				portuguese_monarchy_reform
+				feudal_nobility
+			}
+			privilege = {
+
+				#burghers
+				land_of_commerce
+			}
+			laws = {
+				administrative_system = central_councils
+				censorship = limited_censorship
+				cultural_traditions_law = civil_society
+				distribution_of_power_law = dop_traditional_distribution_of_power
+				education_masses_law = basic_religious_education
+				feudal_de_jure_law = by_blood
+				heir_religion_law = heir_same_religion
+				maritime_law = protect_trade_routes
+				medieval_levy_law = noble_levies
+				piracy_law = anti_piracy_policy
+				royal_court_customs_law = itinerant_court_policy
+			}
+
+			centralization_vs_decentralization = 15
+			mercantilism_vs_free_trade = -20
+			land_vs_naval = -10
+			quality_vs_quantity = -10
+			capital_economy_vs_traditional_economy = 80
+		}
+
+		tolerated_cultures = {
+			leonese
+			andalusi
+			sephardi
+		}
+
+		country_rank = rank_kingdom
+		capital = lisbon
+		ai_advance_preference_tags = {
+			exploration = 5
+		}
+		starting_technology_level = 5
+	}
+	
+	ARA = {
+		own_control_core = {
+			barcelona berga besalu ripoll castellon_ampurias girona manresa sant_feliu sitges terrassa vic
+			cervera balaguer flix lleida montblanc tarragona tarrega tortosa villafranca_del_penedes
+			seu_durgell agramunt cardona talarn vielha
+			huesca ainsa almudevar anso barbastro benabarre ejea_de_los_caballeros fraga jaca monzon sarinena sos
+			teruel albarracin alcaniz alfambra cantavieja montalban mora_de_rubielos valderrobres
+			zaragoza ariza belchite carinena caspe calatayud daroca pina_de_ebro tarazona zuera
+			castellon_de_la_plana ares_del_maestre llucena morella peniscola
+			jativa alcoy alicante denia elche orihuela
+			valencia gandia ayora bunol chelva lliria
+			#Catalonia
+			perpignan prades puigcerda lagoon_of_salses
+			#Balearic
+			palma ciudadela_de_menorca ibiza manacor pollensa
+		}
+
+		our_cores_conquered_by_others = {
+			barcelona sitges terrassa villafranca_del_penedes girona besalu castellon_ampurias ripoll sant_feliu tarragona flix lleida montblanc tarrega tortosa vic berga cardona cervera manresa perpignan prades puigcerda lagoon_of_salses seu_durgell agramunt balaguer talarn vielha
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "iberian_monarchy"
+
+		government = {
+			type = monarchy
+			ruler = spa_philip_iv_habsburg
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = spa_philip_i_habsburg start_date = 1506.4.25 end_date = 1506.9.25 regnal_number = 1 }
+			ruler_term = { character = spa_charles_i_habsburg start_date = 1516.1.23 end_date = 1556.1.16 regnal_number = 1 }
+			ruler_term = { character = spa_philip_ii_habsburg start_date = 1556.1.16 end_date = 1598.9.13 regnal_number = 2 }
+			ruler_term = { character = spa_philip_iii_habsburg start_date = 1598.9.13 end_date = 1621.3.31 regnal_number = 3 }
+			ruler_term = { character = spa_philip_iv_habsburg start_date = 1621.3.31 end_date = 1665.9.17 regnal_number = 4 }
+			
+			regnal_numbers = {
+				name_philip = 4
+				names_charles = 2
+			}
+
+			reforms = {
+				crown_aragon_reform
+				pyrenean_fueros_reform
+			}
+
+			centralization_vs_decentralization = 50
+			traditionalist_vs_innovative = -20
+			spiritualist_vs_humanist = -50
+			aristocracy_vs_plutocracy = -20
+			mercantilism_vs_free_trade = 0
+			land_vs_naval = 10
+
+			privilege = {
+				#Noble Privileges
+				general_privilege
+			}
+			laws = {
+				royal_court_customs_law = itinerant_court_policy
+			}
+
+		}
+
+		court_language = catalan_dialect
+		country_rank = rank_kingdom
+		capital = valencia
+		accepted_cultures = { aragonese }
+		tolerated_cultures = {
+			andalusi
+			sephardi
+			gascon
+			castilian
+		}
+		starting_technology_level = 5
+	}
+	
+	GRA = {
+		own_control_core = {
+			almeria almanzora baza gergal mojacar velez_rubio
+			granada adra almunecar guadix huescar illora loja pinar orgiva
+			malaga antequera velez_malaga
+			#from MOR
+			ronda algeciras gibraltar marbella
+		}
+
+		starting_technology_level = 3
+		include = "expl_muslim_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "muslim_monarchy_no_abrahamic_dhimmi"
+
+		government = {
+			type = monarchy
+			ruler = spa_philip_iv_habsburg
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = spa_philip_i_habsburg start_date = 1506.4.25 end_date = 1506.9.25 regnal_number = 1 }
+			ruler_term = { character = spa_charles_i_habsburg start_date = 1516.1.23 end_date = 1556.1.16 regnal_number = 1 }
+			ruler_term = { character = spa_philip_ii_habsburg start_date = 1556.1.16 end_date = 1598.9.13 regnal_number = 2 }
+			ruler_term = { character = spa_philip_iii_habsburg start_date = 1598.9.13 end_date = 1621.3.31 regnal_number = 3 }
+			ruler_term = { character = spa_philip_iv_habsburg start_date = 1621.3.31 end_date = 1665.9.17 regnal_number = 4 }
+			
+			regnal_numbers = {
+				name_philip = 4
+				names_charles = 2
+			}
+
+			reforms = {
+				the_jewel_of_alandalus_reform
+			}
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+		court_language = maghrebi_dialect
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+
+		country_rank = rank_duchy
+
+		tolerated_cultures = {
+			sephardi
+		}
+		capital = granada
+		starting_technology_level = 4
+	}
+
+	NAV = {
+		own_control_core = {
+			pamplona elizondo estella olite roncesvalles sanguesa tudela viana laguardia
+		}
+
+		our_cores_conquered_by_others = {
+			bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
+		}
+
+		starting_technology_level = 3
+
+		include = "iberian_monarchy_no_coast"
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+
+		government = {
+			type = monarchy
+			ruler = spa_philip_iv_habsburg
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = spa_philip_i_habsburg start_date = 1506.4.25 end_date = 1506.9.25 regnal_number = 1 }
+			ruler_term = { character = spa_charles_i_habsburg start_date = 1516.1.23 end_date = 1556.1.16 regnal_number = 1 }
+			ruler_term = { character = spa_philip_ii_habsburg start_date = 1556.1.16 end_date = 1598.9.13 regnal_number = 2 }
+			ruler_term = { character = spa_philip_iii_habsburg start_date = 1598.9.13 end_date = 1621.3.31 regnal_number = 3 }
+			ruler_term = { character = spa_philip_iv_habsburg start_date = 1621.3.31 end_date = 1665.9.17 regnal_number = 4 }
+			
+			regnal_numbers = {
+				name_philip = 4
+				names_charles = 2
+			}
+
+			reforms = {
+				pyrenean_fueros_reform
+				sons_of_the_oak_reform
+			}
+
+
+			laws = {
+				administrative_system = merindad_policy
+				legal_code_law = pyrenean_law_policy
+				distribution_of_power_law = dop_law_navarrese_courts
+			}
+
+			centralization_vs_decentralization = 40
+			serfdom_vs_free_subjects = -50
+			mercantilism_vs_free_trade = -30
+			quality_vs_quantity = -20
+			capital_economy_vs_traditional_economy = 80
+		}
+
+		accepted_cultures = {
+			aragonese
+		}
+		
+		tolerated_cultures = {
+			gascon
+			sephardi
+			andalusi
+		}
+
+		court_language = aragonese_dialect
+		country_rank = rank_kingdom
+		capital = pamplona
+		dynasty = de_evreux_dynasty
+		starting_technology_level = 4
+	}
+	
+	CAT = {
+		own_control_core = {
+			barcelona sitges terrassa villafranca_del_penedes girona besalu castellon_ampurias ripoll sant_feliu tarragona flix lleida montblanc tarrega tortosa vic berga cardona cervera manresa perpignan prades puigcerda lagoon_of_salses seu_durgell agramunt balaguer talarn vielha
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "catholic_bishopric_no_coast"
+
+		government = {
+			type = monarchy
+		}
+		capital = barcelona
+		country_rank = rank_county
+		starting_technology_level = 4
+	}
+	
+	ANR = {
+		own_control_core = {
+			andorra_la_vella
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "catholic_bishopric_no_coast"
+
+		government = {
+			type = theocracy
+		}
+		capital = andorra_la_vella
+		country_rank = rank_duchy
+		starting_technology_level = 4
+	}
+	
+###Spanish Italy
+	NAP = {
+		own_control_core = {
+			naples caserta gaeta nola piedimonte sora venafro salerno campagna salacon vallo avellino ariano benevento santangelo
+			chieti lanciano vasto aquila atri celano cittaducale csantangelo sulmona teramo lake_fucine bojano isernia larino trivento
+			bari altamura andria barletta monopoli foggia bovino lucera manfredonia rotondo sansevero lake_varano lecce brindisi francavilla gallipoliita martinafr taranto
+			potenza acerenza lagonegro matera melfi montepeloso santarcangelo catanzaro cotrone gerace monteleone nicastro palmi reggiocal cosenza cassano castrovillari scalea paola rossano
+		}
+		government = {
+			type = monarchy
+			ruler = spa_philip_iv_habsburg
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = spa_philip_i_habsburg start_date = 1506.4.25 end_date = 1506.9.25 regnal_number = 1 }
+			ruler_term = { character = spa_charles_i_habsburg start_date = 1516.1.23 end_date = 1556.1.16 regnal_number = 1 }
+			ruler_term = { character = spa_philip_ii_habsburg start_date = 1556.1.16 end_date = 1598.9.13 regnal_number = 2 }
+			ruler_term = { character = spa_philip_iii_habsburg start_date = 1598.9.13 end_date = 1621.3.31 regnal_number = 3 }
+			ruler_term = { character = spa_philip_iv_habsburg start_date = 1621.3.31 end_date = 1665.9.17 regnal_number = 4 }
+			
+			regnal_numbers = {
+				name_philip = 4
+				names_charles = 2
+			}
+		}
+		capital = naples
+		country_rank = rank_kingdom
+		starting_technology_level = 4
+	}
+	
+	SIC = {
+		own_control_core = {
+			messina catania mistretta nicosiasic patti piazza mount_etna mount_stromboli girgenti bivona caltanisetta cefalu sciacca termini palermo corleone mazara salemi trapani pantelleria lampedusa syracuse caltagirone malta modica noto terranovasic
+		}
+		government = {
+			type = monarchy
+			ruler = spa_philip_iv_habsburg
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = spa_philip_i_habsburg start_date = 1506.4.25 end_date = 1506.9.25 regnal_number = 1 }
+			ruler_term = { character = spa_charles_i_habsburg start_date = 1516.1.23 end_date = 1556.1.16 regnal_number = 1 }
+			ruler_term = { character = spa_philip_ii_habsburg start_date = 1556.1.16 end_date = 1598.9.13 regnal_number = 2 }
+			ruler_term = { character = spa_philip_iii_habsburg start_date = 1598.9.13 end_date = 1621.3.31 regnal_number = 3 }
+			ruler_term = { character = spa_philip_iv_habsburg start_date = 1621.3.31 end_date = 1665.9.17 regnal_number = 4 }
+			
+			regnal_numbers = {
+				name_philip = 4
+				names_charles = 2
+			}
+		}
+		capital = palermo
+		country_rank = rank_kingdom
+		starting_technology_level = 4
+	}
+	
+	SAR = {
+		own_control_core = {
+			oristano ales sorgono terralba cagliari tratalias villa_di_chiesa isili muravera seddori tortoli terranova_pausania orosei posada tempiopausania sassari alghero bosa castelsardo macomer bitti ozieri thiesi
+		}
+		government = {
+			type = monarchy
+			ruler = spa_philip_iv_habsburg
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = spa_philip_i_habsburg start_date = 1506.4.25 end_date = 1506.9.25 regnal_number = 1 }
+			ruler_term = { character = spa_charles_i_habsburg start_date = 1516.1.23 end_date = 1556.1.16 regnal_number = 1 }
+			ruler_term = { character = spa_philip_ii_habsburg start_date = 1556.1.16 end_date = 1598.9.13 regnal_number = 2 }
+			ruler_term = { character = spa_philip_iii_habsburg start_date = 1598.9.13 end_date = 1621.3.31 regnal_number = 3 }
+			ruler_term = { character = spa_philip_iv_habsburg start_date = 1621.3.31 end_date = 1665.9.17 regnal_number = 4 }
+			
+			regnal_numbers = {
+				name_philip = 4
+				names_charles = 2
+			}
+		}
+		capital = cagliari
+		country_rank = rank_kingdom
+		starting_technology_level = 4
+	}
+	
+###French Region
+	FRA = {
+		own_control_core = {
+			angers bauge beaupreau chateau_gontier le_lude loudun passavant saumur
+			mayenne laval sainte_suzanne villaines
+			le_mans beaumont_au_maine chateau_du_loir sable st_calais
+			mortagne alluyes belleme senonches
+
+			clermont allegre brioude riom thiers vic_le_comte vodable
+			bourbon huriel jaligny molins montlucon st_gerand vichy
+			chambon herment montaigut tour_auvergne
+			aurillac mauriac saint_flour
+
+			chaumont choiseul grancey la_mothe_en_bassigny langres vaucouleurs
+			meaux broyes chateau_thierry nogent_sur_seine provins
+			troyes brienne villemaur
+			vitry_en_pertois joinville bar_sur_aube rosnay
+			reims chalons_champagne epernay menehould vertus
+			rethel chateau_porcien grandpre mouzon
+			sens bar_sur_seine joigny saint_florentin tonnerre
+
+			auch lectoure lisle_jourdain mirande nogaro
+			pau oloron orthez tarbes
+			muret aspet saint_lizier saint_gaudens
+			dax aire labrit mimizan mont_de_marsan tartas tosse lagoon_of_sanguinet
+			bayonne mauleon saint_jean_pied_de_port
+
+			agen marmande montflanquin
+			bazas belin condom nerac sauveterre_de_guyenne
+			bordeaux benauges castelnau_de_medoc la_teste_de_buch lesparre_medoc libourne
+			perigueux bergerac limeuil riberac sarlat
+			cahors figeac gourdon montauban
+			rodez entraigues millau peyrusse st_affrique villefranche
+
+			beauvais chaumont_vexin clermont_en_beauvaisis crepy senlis
+			nemours brie_comte_robert melun
+			paris corbeil mantes monfort_lamaury montmorency
+			soissons braine coucy laon noyon roucy
+
+			castres albi lautrec
+			foix pamiers mirepoix
+			chateauneuf_de_randon florac mende peyre
+			narbonne agde beziers lodeve saint_pons lagoon_of_bages_sigean
+			nimes french_ales melgueil montpellier st_ambroix uzes
+			carcassonne fenouillet limoux
+			toulouse castelnaudary lavaur verdun_sur_garonne villemur
+			viviers chalancon le_puy montlaur privas tournon
+
+			limoges aixe nontron segur st_leonard thiviers
+			gueret aubusson bellac bourganeuf brosse charroux rochechouart
+			turenne tulle ussel ventadour
+
+			bourg_en_bresse belley gex bage thoire
+			beaujeu perreux trevoux villars
+			lyon feurs montbrison riverie roanne saint_etienne
+
+			caen bayeux domfront falaise pont_douilly vire
+			fecamp arques aumale longueville tancarville
+			coutances cherbourg avranches jersey mortain st_sauveur
+			evreux alencon argentan bernay harcourt laigle
+			rouen gisors lisieux louviers pont_audemer
+
+			chateauroux boussac issoudun lignieres
+			blois chateaudun romorantin st_aignan vendome
+			chartres auneau dreux etampes
+			bourges gien sancerre sancoins vierzon
+			orleans beaugency montargis sully vitry_aux_loges
+			tours amboise chatillon_sur_indre chinon loches
+
+			amiens breteuil corbie
+			abbeville calais boulogne_sur_mer montreuil
+			guise hirson marle ribemont
+			saint_quentin nesle peronne
+
+			angouleme cognac chabanais
+			thouars beauvoir fontenay la_roche_sur_yon mauleon_poitou montaigu parthenay talmont
+			poitiers aulnay chatellerault lusignan montmorillon niort
+			saintes montendre la_rochelle oleron royan st_jean_dangely rochefort jonzac
+			
+			valence condorcet die vienne
+			metz fresnes verdun clermont_en_argonne toul vic_sur_seille
+		}
+		
+		own_colony = {
+			cayenne carucairi iguanacaera hewanorra
+			marien iguamuco guahaba tortuga baynoa
+			jaragua guanabo cahay guacayakima haniguayagua yaquimo yaguana
+		}
+		
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			
+			laws = {
+				feudal_de_jure_law = by_tradition
+				legal_code_law = civil_law_policy
+			}
+		}
+		capital = paris
+		country_rank = rank_kingdom
+		starting_technology_level = 5
+		discovered_regions = {
+			france_region 
+		}
+	}
+	
+	PRO = {
+		own_control_core = {
+			aix_en_provence arles brignoles marseille toulon tarascon
+			apt barcelonnette forcalquier sisteron
+			barjols castellane digne draguignan frejus grasse
+			cuneo
+		}
+		our_cores_conquered_by_others = {
+			avignon
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+		}
+
+		tolerated_cultures = {
+			vivaro_alpine
+		}
+
+		capital = marseille
+		country_rank = rank_county
+		starting_technology_level = 5
+	}
+	
+	DAU = {
+		own_control_core = {
+			grenoble gap briancon pragelato
+			romans la_mure saint_marceilin 
+			mevouillon villars 
+			la_tour_du_pin 
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+		}
+
+		tolerated_cultures = {
+			vivaro_alpine
+			auvergnat
+		}
+
+		country_rank = rank_county
+		capital = grenoble
+		starting_technology_level = 5
+	}
+	
+	ORL = {
+		own_control_core = {
+			orleans chartres blois beaugency chateaudun romorantin st_aignan
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			#Gaston Duke of Orleans
+			ruler = fra_gaston_orleans_bourbon
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			
+			reforms = {
+				french_ducal_vassal_reform
+			}
+		}
+
+		accepted_cultures = {
+			french
+		}
+		country_rank = rank_duchy
+		capital = orleans
+		starting_technology_level = 5
+	}
+	
+	BRI = {
+		own_control_core = {
+			brest carhaix chateaulin chatelaudren le_faou quimper quimperle saint_brieuc st_pol_de_leon treguier
+			nantes blain chateaubriant guerande machecoul
+			rennes dol fougeres monfort_sur_meu saint_malo vitre
+			vannes hennebont josselin ploermel redon rohan
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		government = {
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			
+			centralization_vs_decentralization = 30
+			aristocracy_vs_plutocracy = -35
+			serfdom_vs_free_subjects = -35
+			traditionalist_vs_innovative = 10
+			spiritualist_vs_humanist = -50
+			mercantilism_vs_free_trade = 45
+			offensive_vs_defensive = 30
+			land_vs_naval = 30
+			quality_vs_quantity = 20
+			belligerent_vs_conciliatory = 10
+			capital_economy_vs_traditional_economy = 75
+			individualism_vs_communalism = -50
+			outward_vs_inward = -10
+			reforms = {
+				french_ducal_vassal_reform
+			}
+
+		}
+		court_language = angevin_dialect
+		capital = vannes
+		country_rank = rank_duchy
+
+		tolerated_cultures = {
+			breton
+			poitevin
+		}
+		starting_technology_level = 5
+	}
+	
+	AUV = {
+		own_control_core = {
+			vic_le_comte
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast_no_censor"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			reforms = {
+				french_appanage_reform
+			}
+		}
+		capital = vic_le_comte
+		starting_technology_level = 5
+	}
+	
+	BOU = {
+		own_control_core = {
+			bourbon molins huriel montlucon vichy
+			jaligny st_gerand
+			# own_control_integrated, but culture accepted
+			clermont_en_beauvaisis #C. Clermont-en-Beauvaisis
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			reforms = {
+				french_appanage_reform
+			}
+		}
+
+		tolerated_cultures = {
+			limousin
+			picard
+		}
+
+		country_rank = rank_duchy
+		capital = bourbon
+		starting_technology_level = 5
+	}
+	
+	BRR = {
+		own_control_core = {
+			oloron orthez pau #Vic. of Béarn
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+
+			reforms = {
+				french_ducal_vassal_reform
+			}
+		}
+
+		capital = pau
+		starting_technology_level = 5
+	}
+	
+	FOI = {
+		own_control_core = {
+			foix pamiers
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			reforms = {
+				french_ducal_vassal_reform
+			}
+		}
+
+		tolerated_cultures = {
+			gascon
+		}
+
+		capital = foix
+		starting_technology_level = 5
+	}
+	
+	POI = {
+		own_control_core = {
+			parthenay
+		}
+		include = "catholic_monarchy_english_lordship"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			laws = {
+				feudal_de_jure_law = by_tradition
+				legal_code_law = civil_law_policy
+			}
+		}
+		capital = parthenay
+		country_rank = rank_county
+		starting_technology_level = 5
+	}
+	
+	BUR = {
+		own_control_core = {
+			auxerre aignay arnay avallon chatillon_sur_seine semur_en_auxois
+			autun macon montcenis semur_en_brionnais
+			dijon auxonne beaune chalon_sur_saone louhans
+			nevers cercy chateau_chinon donzy montreuillon st_pierre_de_moutier
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			centralization_vs_decentralization = 30
+			aristocracy_vs_plutocracy = -35
+			serfdom_vs_free_subjects = 35
+			traditionalist_vs_innovative = 25
+			spiritualist_vs_humanist = -50
+			mercantilism_vs_free_trade = 45
+			offensive_vs_defensive = -90
+			land_vs_naval = -60
+			quality_vs_quantity = -30
+			belligerent_vs_conciliatory = -20
+			capital_economy_vs_traditional_economy = 70
+			individualism_vs_communalism = -20
+			outward_vs_inward = -20
+
+			reforms = {
+				french_appanage_reform
+			}
+		}
+
+		tolerated_cultures = {
+			arpitan
+		}
+
+		capital = dijon
+		country_rank = rank_duchy
+		starting_technology_level = 5
+	}
+	
+	DOC = {
+		own_control_core = {
+			castres albi lautrec mirepoix narbonne agde beziers lodeve saint_pons lagoon_of_bages_sigean nimes french_ales melgueil montpellier st_ambroix uzes carcassonne fenouillet limoux toulouse castelnaudary lavaur verdun_sur_garonne villemur
+		}
+		include = "catholic_monarchy_english_lordship"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			laws = {
+				feudal_de_jure_law = by_tradition
+				legal_code_law = civil_law_policy
+			}
+		}
+		capital = narbonne
+		country_rank = rank_duchy
+		starting_technology_level = 5
+	}
+	
+	BNV = {
+		own_control_core = {
+			mauleon saint_jean_pied_de_port
+		}
+		include = "catholic_monarchy_english_lordship"
+		government = {
+			type = monarchy
+			ruler = fra_louis_xiv_bourbon
+			heir_selection = cognatic_primogeniture
+			
+			ruler_term = { character = fra_henry_iv_bourbon start_date = 1589.8.2 end_date = 1610.5.14 regnal_number = 4 }
+			ruler_term = { character = fra_louis_xiii_bourbon start_date = 1610.5.14 end_date = 1643.5.14 regnal_number = 13 }
+			
+			regnal_numbers = {
+				name_henry = 5
+				names_louis = 14
+			}
+			laws = {
+				feudal_de_jure_law = by_tradition
+				legal_code_law = civil_law_policy
+			}
+		}
+		capital = saint_jean_pied_de_port
+		country_rank = rank_kingdom
+		starting_technology_level = 5
+	}
+	
+###Scandinavia
+	SWE = {
+		own_control_core = {
+			linkoping soderkoping norrkoping alvastra vadstena vattern kalmar tjust sevede handbord kinda jonkoping oland skara hjo tiveden vartofta utlandet lodose ekholm falkoping allingsas bogesund lidkoping skene vaxjo vallsjo vetlanda albo konga uppvidinge ljungby trollaborg waestbo slite visby hoborg dalaborg amal vedbo
+			stockholm norrtalje enkoping uppsala kastelholm tierp heby nykoping kolmarden strangnas oppunda sodertalje malaren arboga vasteras nora sala skinskatteberg linde grythyttan orebro riseberga goksholm varnum tingvalla nas nordmark gillberg farnebo fryksdal josse vanern avesta falun leksand grange malung mora hedemora orsa soderbarke stora_tuna floda siljan gefle hedesunda hamrange ockelbo
+			hudiksvall alfta soderala hogdal havero selanger
+			harnosand solatunum ramsele sjalevad anundsjo grundsunda
+			asele lycksele arvidsjaur volgsjo stensele tarna ortrask
+			umea vindeln skelleftea tornea bygdea pitea lulea ranea gratesk hienatiemi branna byske bodebyn alvsby pajala
+			akkajaur arjeplog silbojock sorsele
+			storavan uddjaur socksjock jokkmokk kvikkjock porjus gellivaara sarek
+			nikkaluokta torne_trask vastenjaure akkajaure abisko raunala 
+			korpilombo juckasjarvi
+			#Baltic Territories
+			korela kurkijoki konevets joensuu sordavala vartsila ilomantsi lieksa juuka salmi loimola mohko suojarvi yanis_jarvi lake_orivesi lake_suoyarvi lake_otradnoye hoytiainen pielinen viinijarvi koitere nurmes
+			oreshek lisino markovo martyshkino neva toksovo 
+			koporye ivangorod khotchino moloskovitsa soikino yama
+			valjala kuressaare tallinn narva padise paide rakvere rapla toolse vasknarva cesis aluksne gulbene rauna valmiera parnu karksi poltsamaa saarde suure_jaani viljandi lake_vorts hapsal kaina lihula st_martin riga koknese limbazi salaspils sigulda straupe tartu valka vastseliina vonnu
+		}
+		
+		own_control_conquered = {
+			minguannan tappahanna shackamaxon tetamekanch
+		}
+
+		government = {
+			type = monarchy
+			ruler = swe_christina_vasa
+		}
+		capital = stockholm
+		country_rank = rank_kingdom
+		starting_technology_level = 5
+	}
+	
+	FIN = {
+		own_control_core = {
+			korsholm koppo pedersore storkyro karleby kaustby lappo vora abo nystad poytis sauvo helsinge ekenas sjundea porvoo liljendal ikalis raumo bjorneborg hvittis sastmola birkala sastamala orivesi nasisalki hollola lohja tavastehus janakkala forssa itis jyvaskyla jamsa saarijarvi viitasaari laukas sysma paijanne jaasjarvi mikkeli olofsborg heinola kangasniemi ristiina joroinen kuopio idensalmi rautavaara savonranta pihlajavesi haukivesi puula kyyvesi kymi_fi vyborg villmanstrand veckelax elimaki vederlax valkeasaari kyyrola beryozovskoye heinjoki jaskis pyhajarvi puruvesi saima
+			paltamo kajana sotkamo kuhmo suomussalmi kuusamo
+			salla kemijarvi korvala oulujarvi yli_kitka muojarvi
+			enare sodankyla savukoski ivalo utsjoki enare_trask
+			simo uleaborg brahestad utajarvi siikalatva taivalkoski kuivaniemi ranua pudasjarvi posio
+			mourionska kiemi rovaniemi kittila nunnanen enontakis kasivarren
+		}
+		government = {
+			type = monarchy
+			ruler = swe_christina_vasa
+		}
+		capital = abo
+		country_rank = rank_duchy
+		starting_technology_level = 5
+	}
+	
+	NOR = {
+		own_control_core = {
+			idre konghalla uddevalla stromstad hornborg borg halden moss trogstad tonsberg skien sande grenland stavanger ryfylke suledal haugalandet jaeren flekkefjord sirudal otredal lindesnes oddernes oyestad sondeled amli kongsberg ringerike hallingdal numedal sigdal bragernes bergen fana kvinnherad ullensvang moster eidfjord nordhordland voss eid stryn sunnfjord sogndal aurland vik laerdal oslo ski eidsvoll vardal lillehammer valdres otta imsdalen hedmarksvidda hamar kongsvinger elverum glommadal trysil amot tynset mjosa
+			nidaros roros stjordal oppdal orkdal skaun storen holtalen meraker alvdal levanger namdal orland snasa lierne steinkjer molde fosna sunndal rauma sunnmore borgund stordal tofte troms trondenes senja bardodalen raisa hammerdal offerdal berg froso ragunda sveg hede oviken storsjon bodo birndal hattfjelldal rana alstahaug gildeskal steigen langenes lofotr hamaroy ofoti kautokeino varanger vardo deatnu porsanger karasjok hammerfest alta kirkenes lebesby flesberg
+		}
+		own_control_conquered = {
+			holar husavik akureyri blonduos torshofn vopnafjordur egilsstadir seydisfjordur reydarfjordur holmur kirkjubaejar borgarnes olavsvik isafjordur hvamstangi skalholt selfoss keflavik reikjavik thingvellir hvolsvollur vattnajokull icelandic_highlands eyjafjallajokull
+			torshavn
+		}
+		government = {
+			type = monarchy
+			ruler = dan_christian_iv_oldenburg
+		}
+		capital = oslo
+		country_rank = rank_kingdom
+		starting_technology_level = 5
+	}
+	
+	DAN = {
+		own_control_core = {
+			ribe randers viborg aalborg ars limfjorden bolling ringkobing holstebro_lundenes varde kolding aarhus grindsted silkeborg kalo thisted skagen hjorring roskilde ringsted kalundborg helsingor hammershus kobenhavn slagelse vordingborg odense navskov falster assens svendborg
+			helsingborg lund malmo gladsax osby asbo varberg laholm halmstad kungsbacka ronneby bregne solvesborg
+		}
+		government = {
+			type = monarchy
+			ruler = dan_christian_iv_oldenburg
+		}
+		capital = kobenhavn
+		country_rank = rank_kingdom
+		starting_technology_level = 5
+	}
+	
+###Northwest Africa
+MOR = { #Morocco
+		own_control_core = {
+			tetouan basra_al_hamra larache taunat
+			badis tizgane amergo al_mazamma
+			ras_kebdana ghassasa temsamane tabarida
+			ksar_el_kebir tazroute ouezzane
+			fez meknes la_mamora sale azrou volubilis tefelfelt baht
+			anfa azemmour bejaad thagia rabat settat mrirah
+			asfi mazaghan tit boulaouane miatbir aguz
+			tednest ait_daoud tafedna mogador
+			marrakesh aghmat tinmel naffis hanimmei tamdegost
+			taroudant tidsi tiout tiznit massa_MOR tafraout ifni noul_lamta agadir
+			bzou demnate azilal
+			tadla khenifra chichaoua
+			guercif ameskour terrest tezerghe namalata taza sefrou
+			jarawah_abu_al_aysh oujda
+			jerada taourirt debdou echemmaia sidi_bennour
+			nedroma tegeget kalaat_sraghna midelt
+			aouint_yghomane afso ifrane
+			#additions
+			tamdoult assa beni_sabih foum_zguid igiliz taghjijt tata_MOR tiout tissint tizounine
+			ouarzazate agdez ait_benhaddou skoura tagmadert taznakht
+			ijilmasa boumalne_dades er_rich ksar_es_souk tazzarine todgha
+			tabelbala
+			laayoune smara tantan tindouf
+			idjil dakhla al_kuwayra aousserd bojador
+			sijilmasa taghaza taoudenni araouane
+		}
+
+		country_rank = rank_kingdom
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			masmuda
+			zenati
+			sanhaja
+			andalusi
+			mustaarabi
+		}
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+
+		capital = fez
+		
+		discovered_regions = {
+			maghreb_region sahel_region guinea_region
+			iberia_region egypt_region
+		}
+	}
+
+###European Colonial Nations
+	NEN = { #New England
+		own_control_core = {
+			weyanock kiskiack wicocomico werowocomoco rappahannock nentego patuxent wicomico chicamacomico matapeake accomac
+			quinnipiac rippowam saukiog siccanemos nehantuck
+			patuxet assonet nauset nantucket seekonk sagadahoc casco kennebunk squamscott naumkeag shawmut
+			#Newfoundland
+			cape_race cape_spear bacalhieu placentia mollyhuajeck mekwiskajk
+		}
+		government = {
+			type = republic
+			ruler = random
+		}
+		capital = weyanock
+		country_rank = rank_duchy
+		starting_technology_level = 5
+	}
+	
+	NFR = { #New France
+		own_control_core = {
+			eimastukwek epwikek kutapuskuj upsukdaskooch belle_isle wipetikil naskwotchu mekapisk
+			ekwentondie wolinak andawaohie wachilmezi kikonteku stadacona etchemin ahwendoe ondaonnentakwi menahkwesk nmejuaqnek
+		}
+		government = {
+			type = republic
+			ruler = random
+		}
+		capital = ahwendoe
+		country_rank = rank_duchy
+		starting_technology_level = 5
+	}
+	
+	NSP = { #New Spain
+		own_control_core = {
+			#Mesoamerica
+			xaltocan tehotihuacan culhuacan tetzcoco apan tenochtitlan tlacopan azcapotzalco chalco 
+			xochimilco axochiapan cuauhnahuac 
+			quauhquechollan huaxtepec itzocan amaticoztitlan tlapan ometepec oapan jicayan zacatepec 
+			yohualtepec huajuapan silacayoapam chiautla cuauhteopan tlazcozauhtitlan yopitzinco tixtla 
+			chilapa tecoanapa cihuatlan tecpan ixtapan zacatollan teotepec tlapacoya pachyohcan atocpan 
+			zempoala tollantzinco axocopan zimapan ixmiquilpan cadereyta tecozautla tututepec coatlan 
+			cuauhtolco tonameca manialtepec comitlan juchatengo nube_flan tehuantepec zanatepec chimalapan 
+			guiigu_yudxi huamelula juxtlahuaca tlachquiauhco poctlan tillantonco amoltepec teozacualco 
+			jaltepec yucucui coixtlahuacan yucundaa yucundeq yodzocahi nochixtlan sosola ixtlan zaachila 
+			miahuatlan totolapan mictlan yautepec tlacolula teotitlan ixcatlan oxitlan xicaltepec cuicatlan 
+			tochtepec mixtlan tozlan tlacotlalpan cosamaloapan iztachacalapan ozumacin 
+			atepec cuauhcuetzpaltepec chinantlan tesechoacan cuetlaxtlan xamapan nopiloa teutila puctlan 
+			otatitlan coatlicamac suchilapan atitlan choapan xochiapa coatzacoalco atzaccan acayucan 
+			texistepec tonala_coatzacoalco cuauhtochco ahuilizapan otlaquiquixtla zongolica cempoala 
+			itzcalpan xicochimalco quiahuiztlan tizatlan tepeticpac ocotelolco quiahuixtlan huexotzinco 
+			cholollan xicotepec zacatlan tetela ixtacamaxtitlan tepeyahualco tepeyacac 
+			tecalco tecamachalco tehuacan tepexi tlatlauquitepec nauhtlan tuzapan 
+			papantla tlapacoyan cuyuxquihui xalapa xalacinco mizantla teziutlan tuxpan teayotlan pantepec 
+			taximaroa tzitacuaro zinapecuaro guayangareo tiripetio tacambaro tzintzuntzan cuitzeo 
+			churumekua tuzantla caracuaro puruaran huandacareo acambaro maravatio yuririapundaro zacapu 
+			xacona zula_michoacan tlazazalca angamacutiro xilotlan erongaricuaro patzcuaro 
+			aguacana uruapan tinguindin tancitaro coliman tlacalahuastla caxitlan coahuayana chucutitlan 
+			apatzingan teloloapan ajuchitlan cutzamala tepecoacuilco tetellan zompanco 
+			oztoman tlachco temascaltepec zacazonapan malinalco tlalpujahua tollohcan ixtlahuaca ninil 
+			teotenanco mixquiahuala tollan cuauhtitlan xilotepec ixtachichimecapan 
+			kerhiretarhu tetzapotitlan huayacocotla tutotepec metztitlan jalpan tziuhcoac oxtlipan copuz 
+			cocomacan mo_o_ti pechichitane xiriquitzio nat_tha_hi penlamu uza pame otomi 
+			tanchaycha tangamanga hnahnu huaxcama ozuluama panuco tamtoc quechula ocosingo lakam_tun 
+			tenamitl zinacantan pochutla tila tonala_chiapas napinaica jaltenango huehuetan 
+			chimalapa_jungle baak cupilco zahuatan tatahuitalpan mayapan mani hocabail sotuta maxcanu 
+			hunucma tho motul dzilam titsimin chichen_itza tases kalotmul zaci kaan_peech calkini edzna 
+			hochob dzibilnocac chakan_putum tixchel xicallanco itzamkanac nadzcaan chactemal 
+			colha nohmul chakanbakan xpuhil dzibanche bakhalal chacchoben tixmul xpaicheil telantunich ekab 
+			labcah zama coba chakan_yucatan jootsuuk tlayolan tochpan tlamazolan sayula cuzallapa amollan 
+			cocollan cutzalan tomatlan xihutla zihuatlan melahuacan revillagigedo_islands cuauhchinanco 
+			tlalpan amaxacotlan cuautla autlan tenamaxtlan ameca huitzquilic etzatlan tala_mx ahuacatlan 
+			tzapotzingo hostoticpac hostotipaquillo xalisco magdalenas aztatlan sentispac tonala tlaxomulco 
+			chapallan acatic ixtlahuacan coinan mextiacan mitic metzquititlan xalostotitlan 
+			tepactitlan yahualican cuzalapa
+			
+			#Central America
+			noh_peten namaan yax_mutal pachan wak_kabnal
+			ceibal ixtutz pusilha campin tzoite paliac
+			tzunuun altun_ha lamanai xunantunich uxwitza
+			acasaguastlan chiquimula cuauhtemallan guazacapan itzalku
+			
+			xelahuh kakol_kiej itzcuintlan atitlan_guatemala
+			
+			jolom_konob zapaluta tzunun_kaab otzoya chinabajul pismachi
+			
+			chama seacal kajyub nito toquegua
+			
+			talanga tecohtzincalpan comayagua maniani
+			tencoa ocotepec opoa cururu shalatenan
+			chinda naco yoro ticamaya
+			choluteca nacaome texiguat xoxonal
+			pech sico olanchito ollalko papayeca
+			usulutan chalchuapa metapan kuskatan cojutepeque nonualco
+			gotera queiquin
+			kukra tawahka prinzus boas bawika silam yuskus ku panamahkas
+			
+			matagalpa rama ulwas xiotenko ukutal xalapan danli
+			
+			nagarando nequecheri diria cuauhcapolca tezoatega guaxenicos sutiapan
+			
+			karawala awastara ahuya_yari
+			orosi bocto nekokiaw garabito uxarraci
+			coctu boruca quepos pacaca
+			burica chiriqui huista
+			veragua caribaro terbi dererri tariaca kabeka
+			
+			#Aridoamerica
+			yenecamu guaycura monqui cadegomo mti_pa
+			guadalupe_island cochimi nakipa koleeu akwaala kumeyaay salada_lagoon
+			kwapa north_hia_ced_oodham south_hia_ced_oodham huhuhla xiica_hai_iic_coii koklolodi tohono_oodham himuris
+			tahejoc comcaac cucurpe xiica_xnaai_iic_coii pitic ures aconchi aritpa
+			yoreme huatabampo chinipas makurawe cosihuiriachi
+			matape guaimas soyopa sahuaripa batuco oposura papigochic babicora corodehuachi
+			sinaloa baborigame badiraguato ahome cerocahui gonogochi
+			culiacan quetzalla piaxtla mazatlan tamazula otaez topia tayoltita
+			chiametlan maloya guarisamey acaponeta nayarit mezquital nilapohuana odam canatlan
+			atanagunypacam tamaulipeco maratine coospacam magueyes hualahuises galeana pilon
+			pantlan tula mante ypoa
+			ma_tehua_llan guanchenis mazatlpilli mazatepec guachichil miopacoas
+			coneto papanton cuencame alamamas irritila
+			tepehuan inde guanacevi papasquiaro
+			tlacuitlapan yamanquex zain tepecan yuac nochistlan xochipillan teulinchan xochitepec huaxtla sauzas guaxaban xiconaque cuxtaque
+			
+			#Florida
+			mayaca utina itaraholata
+			jororo acuera surruque ho_bay
+			mayaimi ais guacata tequesta guarungube
+			tequemapo okeechobee caloosahatchee uriparacoxi lake_okeechobee
+			potano vicela uqueten
+			tocaste guazoco mocozo ozita
+			anhayca azile
+
+			#Caribbean
+			yateras bayaquitiri mayari guantanamo baracoa sagua barajagua
+			bayamo macaca jiguani cueiba maguanes bani_cuba lora cayaguayo
+			south_camaguey camaguey mabuya guaimaro
+			cubanacan east_cubanacan magon ornofay guamuhaya east_sabaneque central_sabaneque sabana
+			habana batanabo guanimar marien_cuba siguanea guaniguanico guanamacabibes macoriges west_sabaneneque hanabana jagua
+			maynoa yaguabo aguacadiba guaygata anaya oristan kaiman
+			cayguani baoruco
+			bavaro yuma mona_island hicayagua cayacoa yamasa boya
+			maguana jarabacoa cibao azua bani banique cordrilla_central
+			yaqui magorix bohio moca samana cubao ciguayo cotui
+			guaynabo guaraca guaynia guama arasibo ayamaco
+		}
+		
+		own_control_conquered = {
+			east_hanos west_hanos manso hue_hue_ri_gi_ta tehua suma namiquipa xicahua
+			julime tu_e_dine_de baopapas babonoyaba guajoquilla mesquite guiaquitas nonoava cocoyome coyame sainapuchi yoli jae_aaya
+			mapimi sisimbles osatayogliglas cacalotito
+			alazapa cuanales masacuajulam gualeguas tilijais guazapayogliglas huajuco
+			chisos espopolames gueiquesales muruam chichitames cauitaome yeme
+		}
+		
+		government = {
+			type = republic
+			ruler = random
+		}
+		capital = Tenochtitlan
+		country_rank = rank_kingdom
+		starting_technology_level = 5
+	}
+	
+	VOP = { #Viceroyalty of Peru
+		own_control_core = {
+			#Panama
+			tauraba parita nata escoria chiru esquegua panama careta pocorosa comogre chochama cubiga chepo chuchures
+			
+			#Colombia
+			chayrama teyuna yaharo upar sicarate ariguani curumanao
+			mompoj norosi tamalameque mahates calamari mocana kamach zarate
+			necocli upper_sinu zenues sinu sincel one
+			iscuande narino tumaco tapaje hatunllacta inga patia
+			caly buga caloto micay timbiqui yauto munchique
+			vijes sonso gorrones tahamies cauroma umbra otun tulua
+			baudo choco quibdo gioro tatama noanama tado_colombia novita
+			acanti curiche kuna murri catios bojaya amaga xundabe ebejico
+			ichitki suchiimma marakaaya perija catatumbo jauregui
+			chitagaes kukuta babichas yukpa
+			coro paraguana tucanca chama_venezuela arapuey mukas cabimas capatarida
+			mayaba noris sotachiro yolombo nechi pantagoras cocorna guarzo aburra
+			simiti macaregua tora camacota hacaritamas duitama boiaca
+			aragua tirgua cura caracas batey onoto
+			
+			#Andes
+			hatunqulla ichuna chucuito contornasa pomata
+			guancavilca manta guayaquil daule yaguachi puna chacayacu machala yazne
+			caran baba jama atacames pailon babahuyu
+			quito waranka panzaleo imbaguarbak tsachila mindu otavalo kayambi tacunga hambatus liribamba
+			alausi hatun_kanar shabalula cangochamba malacatos calvas pukamuru
+			kofan quijos siona napo kichwa puyu sangay macas yaguarzongo
+			tumbes chira nariguala nunura xllang ayahuacas guayacundo apurlec huancapampa
+			pakatnamu sana farfan chan_chan chao huacatambo manchan huarmey ocro paramonga guamanmayo
+			chancay chiprac collique cantamarca rimaq huarochiri ishma chilca huarco naupahuasi incahuasi
+			chuqlluqucha chinchay puka_tampu ica cahuachi acari incawasi chullac pukiupukio
+			yauca atico caraveli ucuna camana quilca yanque aruni
+			arequipa churajon tampo puquina chaucalana tacna kileqollo
+			arica tarapaca huantajaya iki_iki tocopilla ckara_ama
+			tulor antofagasta paposo tatal chanaral cobija atacama_salt_pan punta_negra_salt_pan
+			oma_sacopo angastaco tastil salta jujuy tilcara paya
+			watungasta pipanaco aconquija shincal yukkuman kilmes tolombon lule pipanaco_salt_pan
+			guandacol talampaya polco cuyo tamberias fiambalao pissis ischigualasto jachal pivn_man_antu angualasto rio_salado_salt_marsh colorado_salt_marsh
+			chepes ulapes michilingue saleta nogolma uco uspallata huanacache guentota jaurua millcayac ullum sankancete zonda quines
+			qupayapu kellollampu huasco elki limari millapel liwen
+			inka_llaqta ayopaya paititi yungas guanay kallawaya caupolican sarkajpa yurakar
+			pomabamba huacareta tomina takopaya yamparaez samaipata chuwi mizque sachchaa_mukku arque incarraqay
+			aqush yaino huari rapayan chavin japallan huacrachuco manchac
+			garu wanuco_marka chiquia kotosh atash ichugan pumpu gochacalla
+			andaymarca pashas tumshukaiko waricoto choquerecuay kasha_tampu quillahuaca willcahuain
+			ingapirca llampqui tarmatambo tunanmarca hatun_xauxa pumaruri
+			wari_willka willka_ulo tampu_machay churkampa tayaccasa llacsapallanca
+			allpas wari_peru pariahuanca pampahuaylla choccalpata paqwayranra
+			sondor auccapana challwanqa millcca tukri_apu_apu willkawaman soras huaman_karpa caniche seqse_qaqa
+			yanahuara cotapampa antabamba tucssa sara_sara
+			raqchi sausaya kanamarca achachiwa uyo_uyo pampa
+			oruro ayaviri pukara macaya pumanota puncune wankani titimani iskanwaya
+			machaqa axawiri achacachi viacha tiwanaku calamarca chuqiyapu
+			kori_bara_karaa_ancas callapa ayo_ayo sicasica curahuara matarjawira sura
+			aullagas karanka uru carangas isluga llica uyuni loa lipi hatun_killaka coipasa_salt_pan uyuni_salt_pan
+			charka colquechaca ccantumarcani thumilki oronckota chake tupiza payacullo camataqui
+			toara cochinoca omaguacas puma susques lickanantay antofalla kolla pedernales_salt_pan
+			chumbivilcas maukallaqta waqrapukara pikillaqta qusqu pisaq paucartambo urupampa quillarumiyoc
+			yanatile yunca ullantaytampu picchu willka_pampa
+			ilucan chetilla huambos chumuch congona kuelap huamanpata olan
+			illapa kaxa_marca tantaricuy chimu llucho markahuamachuco pirca_pirca huallumarca
+			awajun bagua utkhupampa namballe ingatambo karajia huancachaca
+			moyobamba lamas yurimagua chatuza cocamas kachi rupharupha
+			may_ushin kakataibo ashaninka panatahuas yanesha chanchacc nomatsigenga
+			isabela_island santiago_islands santa_cruz_islands
+			aconca_hue qillu_uta waykuche meli_pillan rangkawe kolchawwe kuruko mawlen cauquen pikumche uthan_uthatun chillan perquilauquen puchacay biobio
+			lafkenmapu lelbunmapu wenteche inapiremapu pebuenmapu
+			pikunwijimapu caurakawin ancud quiquilhue quellon piren
+			juan_fernandez_islands
+		}
+		
+		own_control_conquered = {
+			#Chaco
+			kabishi kuruminaka paikoneka saraveka otuke koraveka
+			bia_mbya mbia guarayo cayuvava yuracare
+			nemby kyyindy akaray kaarendy canindeyu takuru_puku ycuamandiyu ayvu_pora
+			pai_tavytera kuarepoti curuguaty kaaguy_jehasapa yguazu tsiripa ygana
+			enlhet enxet guana nenlhet enenlhet tefeyak aseptiketiheylhets ipholhhelhlhup
+			eexiwa uechamitogosode eampepaigosode tunupegosode yshyr
+			totobiegosode gaaigosode amomegosode ijnapuigosode
+			chishamnee yita tavashay lumnanas tapiete yalve_sanga
+			sheulec dapiguemlec lanagashec tacshic pitlaxa wichi wiznay
+			niyaj eben_ezer shichaam alpu
+			qom_caia nonot_daxinic aim_mocoylek lalek_cotaa qar_ka_la
+			quisquisacate kata_kuna chipion karendo
+			raxalaa ongamira qompi qollaxalec rukahe yaaucaniga nakaigetergehe
+			moqoit tilala romang
+			ichukanai gualamba ashca kuska ayllu_yacuchiri auqajikuna patay
+			matara ocol chinipi sinipi qom_toba atoj_wasin ashca_caycu
+			macaclita noguinet auleta siton naure sumampa asingasta gualas chine
+			caminigas mogas chupilta
+			mepenes taragui agaes avaes payubre yapeyu itapua uruguay
+			cuareim pairindi mandisobi
+			saipuru muyupampa tarija weenhayek mrubicha
+			evuevi sucuriu piquiri camapua ytykyra
+			mebengokre aquidauana
+			kadiweu piripucu terena nioac
+			dawande balotipone parecis haliti ikuiapa guato otuques
+			paranaiba porekry opaye ofaie taquarucu anhandui
+			kaiowa kaiwa chiripa maracaju
+		}
+		
+		government = {
+			type = republic
+			ruler = random
+		}
+		capital = rimaq
+		country_rank = rank_duchy
+		starting_technology_level = 5
+	}
+	
+	VOB = { #Viceroyalty of Brazil
+		own_control_core = {
+			marapanim tupinamba samauma mairi kaapor kururupu tapuitapera
+			jiribatuba tupiniquim hahahae 
+			pataxo nac_nanuk tapuy jucuru caravelas vicosa
+			aimore kiri_kere malalis coutins
+			guaitaca jose_calcado itapemirim guarapiri itaparica nandu
+			tamoio cunhambebe
+			iguape cananeia marataiama gohayo sao_sebastiao
+			kapiwary ararayu_aba nheteroia mage y_uasu goana_para ita_kua_y
+			itaperuna guaitaka sao_fidelis cantagalo mokaie nova_friburgo
+			coropo praiba_sul tampruns piray ita_atiaia
+			aruja mogi_das_cruzes sao_roque jerubatuba parnaiba piratininga
+			sorocaba
+			lapa ponta_grossa curitiba bocaiuva_do_sul palmeira_brasil sao_jose_pinhais parnanguara
+			karai_yo xokleng itapocu itajai mafra
+			kariio apytere tubarao sambaqui iaguarauna
+			curitibanos lages sao_joaquim urubici
+			cruz_alta palmeira nandeva lagoa_vermelha passo_fundo vacaria
+			jeguakava ibicui ibirapuita cacequi ibaje inhandui
+			carijo piratinin piratini jaguarao cangucu chuy
+			icabaqua tupancireta umbu cacapava vacacai
+			tapes patos jacui sao_leopoldo san_antonio_patrulha arroio
+			harrua araicuahita yi hum arachan guenoa ita_cuara ybiti yacegua
+			apiai
+			sao_luis_do_paraitinga lorena guaratingueta taubate paraibuna jacarei
+			charrua ombu yaros
+		}
+		
+		own_conquered = {
+			upaon_acu miritiba tapuios igaracu jenipaboacu tremembe anace tapeba pitaguari payaku
+			monxoro kaaysara potiguara paraiba caxanga yapuata karapoto kariri arakaiu sauipe
+		}
+		government = {
+			type = republic
+			ruler = random
+		}
+		capital = gohayo
+		country_rank = rank_duchy
+		starting_technology_level = 5
+	}
+
+###Iroquoi Tribes
+	#Mohawk/Kanien'kehaka
+	KKA = {
+
+		own_control_core = {
+			canajoharie teionontatatie oneonta schenectady saratoga ticonderoga kawenote oronia tsiietsenhtha oskennonton itekiatonhniarikon
+		}
+
+		starting_technology_level = 1
+		include = "haudenosaunee_tribe"
+		include = "expl_amerindian_east_coast"
+		government = {
+			ruler = random
+		}
+		capital = canajoharie
+
+		currency_data = {
+			gold = 100
+			stability = 33
+			tribal_cohesion = 90
+		}
+	}
+
+	#Oneida/Onyotaaka
+	ONY = {
+
+		own_control_core = {
+			onenioteke oneniote teiehonwahkhkwatha niiohehsane oswegatchie nikahionhwakowa
+		}
+
+		starting_technology_level = 1
+		include = "haudenosaunee_tribe"
+		include = "expl_amerindian_east_coast"
+		government = {
+			ruler = random
+		}
+		capital = onenioteke
+
+		currency_data = {
+			gold = 100
+			stability = 33
+			tribal_cohesion = 90
+		}
+	}
+	#Onondaga/Onondagega
+	ONO = {
+
+		own_control_core = {
+		tsikahiotsisto otsiningo oswego
+		}
+
+		starting_technology_level = 1
+		include = "expl_amerindian_east_coast"
+		include = "haudenosaunee_tribe"
+		government = {
+			ruler = random
+		}
+		capital = tsikahiotsisto
+
+		currency_data = {
+			gold = 100
+			stability = 33
+			tribal_cohesion = 90
+		}
+	}
+	#Cayuga/Gayogohono
+	GYO = {
+
+		own_control_core = {
+		skaniatares assorodus gahato
+		}
+
+		starting_technology_level = 1
+		include = "expl_amerindian_east_coast"
+		include = "haudenosaunee_tribe"
+		government = {
+			ruler = random
+		}
+		capital = skaniatares
+
+		currency_data = {
+			gold = 100
+			stability = 33
+			tribal_cohesion = 90
+		}
+	}
+	#Seneca/Onondowaga
+	ONN = {
+
+		own_control_core = {
+		canadaigua geneseo tsonentsiio irondequoit
+		}
+
+		starting_technology_level = 1
+		include = "haudenosaunee_tribe"
+		include = "expl_amerindian_east_coast"
+		government = {
+			ruler = random
+		}
+		capital = canadaigua
+
+		currency_data = {
+			gold = 100
+			stability = 33
+			tribal_cohesion = 90
+		}
+	}
+
+###noboy expects random India
+	MUG = {
+		own_control_core = {
+			awadh akbarpur kishi sultanpur_uttar_pradesh
+			bahraich balrampur gonda shravasti tulsipur
+			khairabad bhurwara biswan firuzabad_bahraich kherigarh
+			lucknow bilgram hardoi ibrahimabad pali_uttar_pradesh
+			manikpur bhadohi mungra raebareli unnao
+			amber_loc
+			
+			arrah ballia buxar jaund rohtas sasaram
+			azamgarh andar chillupar rudrapur sonepur_bihar thawe
+			bettiah makwanpur mehsi ramnagar_bihar sheohar simraungadh
+			gorakhpur bansi basti binayakpur kushinagar lumbini
+			varanasi chunar ghazipur jaunpur mau_jaunpur kantit
+
+			bareilly nahil pilibhit shahjahanpur
+			budaun gunnaur sambhal shahabad_uttar_pradesh
+			shishgarh chandpur_uttar_pradesh nagina seohara
+
+			alwar narnaul bharatpur
+			prayag kara asni korra shankargah
+			etawah kanauj sargadwari makanpur
+			agra mathura jalesar_doab kol dholpur chandwar
+			mirat hapur jansath baran saharanpur piran_i_kaliyar
+			delhi gurgaon rohtak panipat jind
+			sirhind sadhaura samana_india thanesar kaithal karnal
+
+			hajner sunam raikot faridkot bathinda firozpur muktsar
+			hisar sarsuti dadri hansi
+			jalandhar rahon bajwara milwat kapurthala
+			lahore sultanwind fatehabad batala kalanaur gugera kasur virkgarh sialkot eminabad pasrur
+			chiniot kamalia talwandi jaranwala jhang pindi_bhattian shorkot dijkot
+			multan mailsi chichawatni dipalpur pakpattan karur_punjab jalalpur_pirwala tulamba
+			nawakot bijnot derawar channan_pir kot_marot uch mir_garh_qila dunga_bunga chishtian khairpur aror
+			dajal dera_ghazi_khan dera_ismail_khan kot_addu sitpur karor bhakkar mankera harrand mithankot omerkot
+			jammu udamphur kathua kishtwar pangi paddar chamba_india barmaur keylong koksar bhimber kohtali
+			gujrat busal bhera lalian shahpur sillanwali
+			dinkot isakhel bannu akora hangu khost tank thal_daman
+			peshawar lalpur mardan kohat attock
+			chakwal dina khewra khushab pindi_gheb rawalpindi sangni
+			zhob duki rakni lorelai kahan daraban wana urgun
+
+			chitral mulkhow mastuj yarkhun urtsun
+			parun asadabad_kunar hajiabad
+			kalam_swat dir timergara bajaur malakand
+			agror sherwan behali dasu kandia jijial tangir baligram
+			gilgit astore bunji chilas punial ishkoman phander yasin
+			altit nagar misgar passu hindu_kush8
+			srinagar pulawama baramulla ganderbal kupwara banihal rasyal rajouri poonch rawalakot udabhanda marwah sharda
+
+			bishnupur bankura barabhum chandrakona hijli madaran raipur_bengal tamluk
+			bogra birampur goraghat rangpur_bengal shahjadpur
+			devkot barbakaabad pandua_adina siliguri tajpur
+			gaur godagari naogaon pabna rampur_boalla
+			khalifatabad barguna chandrawip fathabad kotalipara qasba shahbazpur
+			khulna east_sundarban husaynabad jaynagar kulpi west_sundarban
+			mymensingh atiya belabo kapasia muktagacha tarakanda
+			nadia chandrabad jessore jhenaidah maheshpur pipli sreepur
+			pandua baragram bardhaman dubrajpur ilambazar satgaon
+			sonargaon bikrampur chandpur kobirhat kumilla savar
+			sylhet khaliajuri khaspur patharkandi rajnagar shaharpara
+			agartala baniachang chandrapur kailashahar laskarpur pilak rangamati
+
+			hazaribagh chai gobindpur katrasgarh shergarh urda
+			palamau chatra tarhasi untari
+			ranchi ichagarh kharsawan khukhragarh porahat
+
+			bhagalpur gidhaur hajipur khagaria monghyr samastipur
+			darbhanga janakpur_nepal jhanjharpur madhubani siraha sitamarhi
+			dumka deoghar jangipur mandar_parvat rajmahal teliagarhi
+			patna bihar_sharif deo gaya narhat rajgir roh
+			purnia alamganj bihariganj katihar kosi saharsa
+
+			puri kataka harishpur jajnagar bhadrak balasore jalesar ratnagiri kanthi
+			ganjam asika kalingapattanam parlakimidi kalinganagara brahmapur kulada
+			nilagiri baripada chaibasa ghatsila rairangpur
+			nandapur rayagada kotagad jajjaldeypur kalahandinagara kotpad raighar khariar patna_garjat gunupur balangir saintala belkhandi bissam_cuttack kasipur nowrangapur
+			dhenkanal baud khurda narsinghpur bhuban udayagiri_kotagad athmallik angul pal_lahara nayagarh kunjabangarh phulbani
+			keonjhar khiching ghasipura jyotipur ghatgaon
+			sambalpur samasingha sonepur redhakhol basna paikmal bargarh debagarh kuchinda
+			rabkob sundergarh raigadh bonaigarh birugarh jashpur_nagar sitapur badamgarh upar_ghat mainpat
+
+			ambikapur ramkola ramgiri garhwa sonhat janakpur
+
+			ujjain mandsaur rampura bhanpura agar indore dhar ratlam jabhua
+			sironj bhilsa bhopal sehore sarangpur maksi raisin chanderi guna
+			mandu maheshwar khategaon handia khandwa mandleshwar bijagarh alirajpur
+			thalner burhanpur asirgarh gawilgarh illichpur nandurbar sultanpur laling dharangaon pachora
+
+			dongartal bandhugara chhaparagarh balaghat wairagarh katol devgarh
+			basim kalam kelapur panar amravati akola mehkar sindkedh
+			ballarpur aheri bhadrachalam gadchiroli bramhapuri
+			bastar barasuru kondagaon paralkot kanker dantewada jagdalpur
+			kherla hoshangabad chauragarh bhojpur tendukheda
+			garha mandla ghansor nainpur ramgad amarkantak
+			ratnapura sarangarh kashigarh sakti chaiturgarh tummana kenda kawardha nawagarh pendra
+			tilda raipur durg dhamtari rajim sripura khairagarh nandgram ambagarh bemetara deori
+			bandogarh sohagpur beohari ramnagar rewa nagod mauganj madwas sidhi agori vijaygarh
+			deogarh sugaur ujargarh singorgarh murwara damoh lalitpur
+			orchha kundar tehri irij chhatarpur panna rahatgarh khajuraho mahoba bhatta
+			konch kalpi rath banda chitrakuta jhansi kalinjar
+
+			nagahrada chavand salumbar amet chittor bhilwara phulia mandalgarh
+			dungarpur banswara kanthal
+			sirohi jalor chandravati siwana nadol
+			gwalior bhind datia narwar sipri sheopur sabalgarh khaniadhana
+			kota bundi mangrol gagraun aklera shahabad
+			sambhar dausa bayana karauli malpura ranthambore ajmer
+			bhatnir anupgarh suratgarh rawatsar sidhmukh taranagar churu sui pugal udasar sardarshahar
+			jaisalmer ludrava ramgar pokhran
+			mandore osian phalvardhika khed pali bahadamer kiradu gudamalani kurki
+			sikar manoharpur jhunjhunu kolasar
+			merta nagaur makrana kolayat
+
+			dhrangadhra limbdi ranpur
+			sihor palitana lathi
+			nagnes dwarka bhanvad gondal morvi
+			chhaya junagarh somnath diu amreli
+			lakhpat kapilkot lakhiyarvira kantha
+
+			rander broach baroda nandod
+			danduka dholka ashaval khambat modasa
+			patan deodar radhanpur palanpur idar
+			baria champaner mohan astamba_dongar
+
+			kashmore shadodkot shikarpur jhatpat sukkur paat
+			vingur nagarparkar chor umarkot wanga_bazar agham_kot islamkot
+			thatta sonda manora muhammad_tur laribandar ahmad_khan kotri naserpur hala ranikot
+			rohri dubbi ghotki kot_lalu kandiaro islamgarh rajabar moro_sindh sehwan mansura
+			siwi dhadar gandava lahri bab_kot jhal dera_bugti mithri sui_pakistan
+			
+			dhubri kokrajhar bijni barpeta hajo guwahati goalpara dura
+			
+			kabul alishang chak gandamak jalalabad logar kohi_safi
+			ghazni gardez muqur nawah wazakhwa zarghun_shahr karor_2
+			
+			surat dang mayuragiri salagiri chandor udgir bir dahrur qandhar ahmednagar daulatabad jalna nander pathri
+			sirpur manikdrug mahur nirmal chennur adilabad asifabad yegaladapa kaulas balkonda sukhma malkangiri mahagaon
+		}
+
+		government = {
+			type = monarchy
+			ruler = random
+		}
+		capital = delhi
+		country_rank = empire
+		starting_technology_level = 5
+	}
+
+#------------------------ Regions done by Lvtoumao ----------------------------
+###HRE
+	#Lowland
+	HOL = { #Holland #aka Netherland
+		own_control_core = {
+			the_hague leiden rotterdam amsterdam alkmaar dordrecht geertruidenberg hoorn
+			utrecht amersfoort oldenzaal zwolle deventer kampen assen coevorden meppel
+			leeuwarden sloten harlingen stavoren groningen appingedam wedde
+			zutphen doetinchem
+			middelburg
+			cuijk maastricht
+			arnhem nijmegen tiel harderwijk apeldoorn
+			bergen_zoom breda hertogenbosch helmond weert
+			wolvega
+			lingen
+			bruges
+			orange
+		}
+		
+		own_control_colony = {
+			#New Netherlands
+			manhattan tappan nochpeem massapequa poughkeepsie ponkhockie kitchawanc
+			#Brazil
+			upaon_acu miritiba tapuios igaracu jenipaboacu tremembe anace tapeba pitaguari payaku
+			monxoro kaaysara potiguara paraiba caxanga yapuata karapoto kariri arakaiu sauipe
+			#Guyana
+			essequibo demerara berbice
+		}
+		
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = hol_frederik_hendrik_van_oranje
+
+			ruler_term = { character = frederik_hendrik_van_oranje start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+
+			}
+
+			aristocracy_vs_plutocracy = 20
+			serfdom_vs_free_subjects = 20
+			mercantilism_vs_free_trade = 30
+			land_vs_naval = 20
+			capital_economy_vs_traditional_economy = -10
+			individualism_vs_communalism = -20
+			outward_vs_inward = 0
+
+			reforms = {
+				feudal_nobility
+			}
+		}
+		country_rank = rank_duchy
+		capital = amsterdam
+
+		tolerated_cultures = {
+			frisian
+		}
+	}
+
+	PUL = { #Spain Lowland
+		own_control_core = {
+			geldern roermond venlo brussels nivelles leuven mechelen antwerp turnhout eindhoven
+			cassel dunkirk oudenaarde ypres veurne lille douai tournai
+			arras bapaume bethune hesdin lens saint_omer saint_pol
+			ostend 
+			#bruges 
+			hulst 
+			ghent sint_niklaas aalst kortriik
+			valenciennes namur
+			ath chimay enghien maubeuge mons
+			limbourg
+			luxembourg arlon bastogne bitburg la_roche orchimont neufchateau_luxembourg st_vith thionville vianden
+			montmedy
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		government = {
+
+		}
+		capital = mons
+		country_rank = rank_duchy
+
+		tolerated_cultures = {
+			 low_franconian
+		}
+	}
+
+	CAM = { #Cambr  sis
+		own_control_core = {
+			cambrai
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		capital = cambrai
+		government = {
+			ruler = cam_joseph_de_bergaigne
+
+			ruler_term = { character = cam_joseph_de_bergaigne start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+
+			}
+
+			reforms = {
+				prince_bishopric_reform
+			}
+
+			spiritualist_vs_humanist = -70
+			aristocracy_vs_plutocracy = -20
+			land_vs_naval = -20
+
+			laws = {
+				mining_law = nobles_mining_law
+			}
+		}
+		country_rank = rank_county
+	}
+
+	LIE = { #Liege #PU with Cologne
+		own_control_core = {
+			liege dinant walcourt hasselt bree borgloon stavelot
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_bishopric_no_coast"
+		government = {
+
+			ruler = kol_ferdinand_von_wittelsbach
+
+			reforms = {
+				prince_bishopric_reform
+			}
+
+			spiritualist_vs_humanist = -70
+			aristocracy_vs_plutocracy = -20
+			land_vs_naval = -20
+		}
+
+		tolerated_cultures = {
+			champenais
+		}
+
+		country_rank = rank_duchy
+		capital = liege
+	}
+
+	BLL = { #Bouillon
+		own_control_core = {
+			bouillon
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+			ruler = bll_frederic_maurice_de_la_tour
+
+			ruler_term = { character = bll_frederic_maurice_de_la_tour start_date = 1644.1.1 regnal_number = 1 }
+
+		}
+
+		tolerated_cultures = {
+			champenais
+		}
+
+		country_rank = rank_county
+		capital = bouillon
+	}
+
+
+	#Germany
+	FRI = { #Frisia
+		own_control_core = {
+			leer emden aurich jever
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		capital = emden
+		government = {
+			ruler = fri_ulrich_cirksena
+
+			ruler_term = { character = fri_ulrich_cirksena start_date = 1644.1.1 regnal_number = 2 }
+
+
+			reforms = {
+				frisian_freedom_reform
+			}
+			aristocracy_vs_plutocracy = 20
+			serfdom_vs_free_subjects = 20
+			mercantilism_vs_free_trade = 30
+			land_vs_naval = 20
+			capital_economy_vs_traditional_economy = -10
+			individualism_vs_communalism = -20
+			outward_vs_inward = 0
+		}
+
+		tolerated_cultures = {
+			westphalian
+		}
+
+		country_rank = rank_county
+	}
+
+	BNT = {	#Bentheim
+		own_control_core = {
+			bentheim
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			ruler = bnt_philipp_konrad_von_gotterswick
+
+			ruler_term = {	 character = bnt_philipp_konrad_von_gotterswick start_date = 1644.1.1 regnal_number = 1	}
+
+
+			regnal_numbers = {
+
+			}
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = bentheim
+	}
+
+	FCB = { #Franche-Comt   Spainish Burgundy
+		own_control_core = {
+			gray vesoul dole
+			pontarlier poligny orgelet ornans baume montbozon
+			luxeuil salins_les_bains
+			charolles
+			saint_claude
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+
+			centralization_vs_decentralization = 30
+			aristocracy_vs_plutocracy = -35
+			serfdom_vs_free_subjects = 35
+			traditionalist_vs_innovative = 25
+			spiritualist_vs_humanist = -50
+			mercantilism_vs_free_trade = 45
+			offensive_vs_defensive = -90
+			land_vs_naval = -60
+			quality_vs_quantity = -30
+			belligerent_vs_conciliatory = -20
+			capital_economy_vs_traditional_economy = 70
+			individualism_vs_communalism = -20
+			outward_vs_inward = -20
+
+		}
+
+		tolerated_cultures = {
+			arpitan
+		}
+
+		capital = dole
+		country_rank = rank_county
+	}
+
+	BSC = { #Besancon (Free City)
+		own_control_core = {
+			besancon
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+
+			laws = {
+				mining_law = burghers_mining_law
+			}
+		}
+		country_rank = rank_county
+		capital = besancon
+	}
+
+	MTB = { #Montbeliard
+		own_control_core = {
+			montbeliard
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = mtb_leopold_frederic_von_wurttemberg
+
+			ruler_term = { character = mtb_leopold_frederic_von_wurttemberg start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+
+			}
+		}
+
+		country_rank = rank_county
+		capital = montbeliard
+		dynasty = ivree_dynasty
+	}
+
+
+	UPA = {	#Nordgau
+		own_control_core = {
+			heinsberg bergheim duren monchengladbach
+			dusseldorf remscheid siegburg solingen schleiden
+			amberg eschenbach neumarkt roding sulzbach #Oberpfalz
+			tirschenreuth cham
+			beilngries
+			dillingen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = upa_wolfgang_wilhelm_von_wittelsbach
+			ruler_term = {	 character = upa_wolfgang_wilhelm_von_wittelsbach start_date = 1644.1.1 regnal_number = 1 }
+
+		}
+		tolerated_cultures = {
+			ripuarian_franconian
+		}
+		country_rank = rank_duchy
+		capital = amberg
+	}
+
+	NEU = {	#Neuchatel
+		own_control_core = {
+			neuchatel
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		include = "swiss_monarchy"
+		government = {
+			ruler = neu_henri_de_dunois
+
+			ruler_term = { character = neu_henri_de_dunois start_date = 1644.1.1 regnal_number = 2 }
+
+			laws = {
+				mining_law = nobles_mining_law
+			}
+		}
+
+		tolerated_cultures = {
+			high_alemannic
+		}
+
+		country_rank = rank_county
+		capital = neuchatel
+	}
+
+	GNV = { #Geneve
+		own_control_core = {
+			geneve 
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "catholic_german_republic_no_coast"
+		government = {
+			ruler = random
+
+			laws = {
+				mining_law = burghers_mining_law
+			}
+		}
+
+		country_rank = rank_county
+		capital = geneve
+	}
+
+	SAV = { #Savoy - France own bourg_en_bresse belley gex vienne bage thoire and vercelli biella from Milan,Mantua own casale
+		own_control_core = {
+			chambery saint_jean_de_maurienne annecy la_roche_sur_foron
+			moutiers evian
+			pinerolo susa turin 
+			carmagnola saluzzo
+			cuneo faucigny sallanches
+			asti ceva mondovi alba chieri vercelli biella ivrea lanzo acqui
+			aosta chatillonaos morgex nice puget_theniers
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = sav_carlo_emanuele_di_savoy
+
+			ruler_term = { character = sav_carlo_emanuele_di_savoy start_date = 1644.1.1 regnal_number = 2 }
+
+			regnal_numbers = {
+
+			}
+		}
+
+		tolerated_cultures = {
+			piedmontese
+		}
+
+		country_rank = rank_duchy
+		capital = turin
+	}
+
+
+	KOL = {	#Cologne
+		own_control_core = {
+			cologne ahrweiler neuss attendorn brilon recklinghausen
+			bonn 
+			arnsberg meschede buren
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		country_rank = rank_duchy
+		capital = cologne
+		government = {
+			ruler = kol_ferdinand_von_wittelsbach
+
+			ruler_term = { character = kol_ferdinand_von_wittelsbach start_date = 1644.1.1 }
+
+		}
+	}
+
+	MUN = {	#M  nster PU with Cologne
+		own_control_core = {
+			munster ahaus warendorf horstmar meppen vechta aschendorf rheine dulmen
+			cloppenburg friesoythe
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+
+		government = {
+
+			ruler = kol_ferdinand_von_wittelsbach
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		tolerated_cultures = {
+			ripuarian_franconian
+		}
+
+		country_rank = rank_duchy
+		capital = munster
+	}
+
+	AAC = {	#Aachen
+		own_control_core = {
+			aachen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_free_city_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = aac_karl_lugwig_ansembourg
+		}
+
+		tolerated_cultures = {
+			low_franconian
+		}
+
+		country_rank = rank_county
+		capital = aachen
+	}
+
+	TRI = {	#Trier
+		own_control_core = {
+			trier wittlich
+			mayen coblenz saarburg
+			prum daun cochem
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		country_rank = rank_duchy
+		government = {
+			ruler = tri_philipp_von_sottern
+		}
+
+		tolerated_cultures = {
+			rhine_franconian
+			ripuarian_franconian
+		}
+
+		capital = trier
+	}
+
+	SPO = {	#Sponheim
+		own_control_core = {
+			kreuznach birkenfeld castellaun
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = spo_georg_wilhelm_von_wittelsbach
+			ruler_term = {	character = spo_georg_wilhelm_von_wittelsbach  start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+
+			}
+		}
+		tolerated_cultures = {
+			moselle_franconian
+		}
+		country_rank = rank_county
+		capital = kreuznach
+	}
+
+	SAA = { #Saarbr  cken
+		own_control_core = {
+			saarbrucken
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = saa_gustav_von_nassau
+
+			ruler_term = {	character = saa_gustav_von_nassau start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+
+			}
+		}
+
+		tolerated_cultures = {
+			moselle_franconian
+		}
+
+		country_rank = rank_county
+		capital = saarbrucken
+	}
+
+	DTM = { #Dortmund
+		own_control_core = {
+			dortmund
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = dtm_benno_haase
+		}
+		country_rank = rank_county
+		capital = dortmund
+	}
+
+	ESS = {	#Essen
+		own_control_core = {
+			essen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = ess_hugo_preutaeus
+			heir_selection = abbess_elective_female
+
+			reforms = {
+				abbey_reform
+			}
+			laws = {
+				heir_religion_law = heir_special_succession
+			}
+		}
+		country_rank = rank_county
+		capital = essen
+	}
+
+	TCK = {	#Tecklenburg
+		own_control_core = {
+			tecklenburg 
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = tck_moritz_von_gotterswick
+
+			ruler_term = {	 character = tck_moritz_von_gotterswick start_date = 1644.1.1 regnal_number = 1	}
+		}
+
+		tolerated_cultures = {
+
+		}
+		country_rank = rank_county
+		capital = tecklenburg
+	}
+
+	OSN = {	#Osnabrck
+		own_control_core = {
+			osnabruck bersenbruck
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+
+		government = {
+			ruler = osn_franz_wilhelm_von_wittelsbach
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+		country_rank = rank_county
+		capital = osnabruck
+	}
+
+	BRA = {	#Brandenburg Poland have "czaplinek walcz czlopa"
+		own_control_core = {
+			brandenburg berlin teltow potsdam freienwalde herzfelde templin
+			chojna soltyn
+			stendal osterburg salzwedel gardelegen
+			wittenberge pritzwalk treuenbrietzen
+			angermunde prenzlau
+			torzym swidwin choszczno drawsko santok gorzow
+			kleve wesel mors hamm altena bochum soest bielefeld
+			ruppin havelberg wittstock
+			lebus beeskow
+			cottbus
+			sulechow krosno_odrzanskie
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			ruler = bra_friedrich_wilhelm_von_hohenzollern
+
+			ruler_term = { character = bra_friedrich_wilhelm_von_hohenzollern start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+
+			}
+
+			reforms = {
+				margraviate
+			}
+
+			centralization_vs_decentralization = 60
+			spiritualist_vs_humanist = -20
+			aristocracy_vs_plutocracy = -60
+			land_vs_naval = -20
+			outward_vs_inward = 0
+		}
+
+		tolerated_cultures = {
+			markish
+			#brandenburgish
+			polabian
+			eastern_pomeranian
+		}
+
+		country_rank = rank_duchy
+		capital = berlin
+		dynasty = Hohenzollern_dynasty
+	}
+
+	LOR = { #Lorrain - vassal of France
+		own_control_core = {
+			neufchateau_des_vosges
+			mirecourt nancy saint_die
+			wallerfangen merzig
+			darney arches
+			luneville morhange sarreguemines
+			sarrebourg saarwerden bitche pirmasens epinal etain longwy saint_mihiel saint_avold
+			ligny bar_le_duc
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		country_rank = rank_duchy
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = lor_charles_de_vaudemont
+
+			ruler_term = { character = lor_charles_de_vaudemont start_date = 1644.1.1 regnal_number = 4 }
+
+			regnal_numbers = {
+
+			}
+		}
+
+		tolerated_cultures = {
+			rhine_franconian
+			moselle_franconian
+		}
+
+		capital = nancy
+	}
+
+	SLM = { #Salm
+		own_control_core = {
+			salm
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			regnal_numbers = {
+				name_henry = 6
+			}
+			ruler = slm_ludwig_ii_salm
+
+			laws = {
+				mining_law = nobles_mining_law
+			}
+		}
+
+		country_rank = rank_county
+		capital = salm
+		dynasty = salm_dynasty
+	}
+
+	BRN = {	#Bern
+		own_control_core = {
+			bern interlaken fribourg burgdorf_emmental thun
+			frutigen saanen yverdon_les_bains nyon montreux monthey
+			lausanne aarau 
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = bern
+	}
+
+	GRY = {  # Gruy  re (Actually is Fribourg)
+		own_control_core = {
+			gruyere
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "swiss_monarchy"
+		government = {
+			ruler = gry_berchtold_von_kyburg
+
+			ruler_term = { character = gry_berchtold_von_kyburg start_date = 1644.1.1 regnal_number = 3 }
+
+			regnal_numbers = {
+
+			}
+		}
+		tolerated_cultures = {
+			arpitan
+		}
+		country_rank = rank_county
+		capital = gruyere
+	}
+
+	ZWE = {	#Zweibrucken
+		own_control_core = {
+			zweibrucken simmern 
+			lichtenberg_veldenz
+			meisenheim
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = zwe_friedich_von_wittelsbach
+			ruler_term = {	character = zwe_friedich_von_wittelsbach start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+
+			}
+		}
+		country_rank = rank_county
+		capital = zweibrucken
+		dynasty = wittelsbach_dynasty
+	}
+
+	PAL = {	#The Palatinate PU with Bavaria
+		own_control_core = {
+			heidelberg sinsheim germersheim neustadt_an_der_haardt oppenheim kaiserslautern
+			landau_rhineland
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		capital = heidelberg
+		dynasty = wittelsbach_dynasty
+		government = {
+			ruler = ubv_maximilian_von_wittelsbach
+			heir = ubv_ferdinand_maria_von_wittelsbach			
+		}
+
+		accepted_cultures = {
+			upper_palatine
+			east_franconian
+		}
+
+		country_rank = rank_county
+
+	}
+
+	LNN = {	#Leiningen
+		own_control_core = {
+			leiningen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = lnn_emicho_von_saarbrucken
+			ruler_term = {	character = lnn_emicho_von_saarbrucken start_date = 1644.1.1 regnal_number = 11	}
+
+			regnal_numbers = {
+
+			}
+		}
+		tolerated_cultures = {
+
+		}
+		country_rank = rank_county
+		capital = leiningen
+		dynasty = saarbrucken_dynasty
+	}
+
+	SPY = {	#Speyer
+		own_control_core = {
+			speyer
+		}
+
+		starting_technology_level = 3
+		capital = speyer
+		include = "expl_western_europe"
+		include = "catholic_free_city_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		country_rank = rank_county
+	}
+
+	WRM = {	#Worms
+		own_control_core = {
+			worms
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = worms
+	}
+
+	WIE = {  # Wied
+		own_control_core = {
+			wied
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = { ruler = random }
+		tolerated_cultures = {
+			rhine_franconian
+		}
+		country_rank = rank_county
+		capital = wied
+	}
+
+	SYN = {	#Sayn
+		own_control_core = {
+			altenkirchen gummersbach
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = syn_ernestine_von_sponheim
+			ruler_term = {	character = syn_ernestine_von_sponheim start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+
+			}
+		}
+
+		tolerated_cultures = {
+			ripuarian_franconian
+		}
+
+		country_rank = rank_county
+		capital = altenkirchen
+	}
+
+	BAS = {	#Basel
+		own_control_core = {
+			basel bienne delemont
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		include = "swiss_theocracy"
+		country_rank = rank_county
+		capital = basel
+		government = {
+			ruler = bas_jean_henri_von_ostein
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		tolerated_cultures = {
+			franc_comtois
+		}
+
+	}
+
+	SLT = {	#Solothurn
+		own_control_core = {
+			solothurn
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = solothurn
+	}
+
+	TIR = {	#Tirol
+		own_control_core = {
+			schwaz innsbruck
+			imst reutte landeck
+			merano sterzing villandro bolzano silandro
+			lienz bruneck kufstein bregenz feldkirch bludenz wertingen hohenberg freiburg
+			belfort ferrette waldshut
+			kitzbuhel horb villingen stockach ensisheim
+			krumbach gunzburg erbach_swabia
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			ruler = tir_ferdinand_karl_von_habsburg
+			regnal_numbers = {
+
+			}
+			ruler_term = { character = tir_ferdinand_karl_von_habsburg start_date = 1644.1.1 regnal_number = 1 }
+		}
+
+		tolerated_cultures = {
+			danube_bavarian
+			romansh
+		}
+
+		country_rank = rank_county
+		capital = innsbruck
+	}
+
+	BXN = {	#Brixen
+		own_control_core = {
+			brixen  bled
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+
+			reforms = {
+				prince_bishopric_reform
+			}
+
+		}
+
+		tolerated_cultures = {
+			slovene
+		}
+
+		country_rank = rank_county
+		capital = brixen
+	}
+
+	MBZ = { #Bregenz Ruler Hugo IV von Werdenberg
+		own_control_core = {
+			immenstadt
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		capital = immenstadt
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			romansh
+		}
+
+		country_rank = rank_county
+	}
+
+	TNT = { #Trento
+		own_control_core = {
+			cavalese cles trento rovereto
+		}
+
+		own_control_integrated = {
+			riva 
+		}
+
+		government = {
+
+			ruler = tnt_carlo_emanuele_madruzzo
+
+			regnal_numbers = {
+
+			}
+		}
+
+		tolerated_cultures = {
+			ladin
+		}
+
+		include = "catholic_bishopric_no_coast"
+		capital = trento
+		include = "expl_mediterranean"
+	}
+
+	SLZ = {	#Salzburg
+		own_control_core = {
+			salzburg hallein st_johann saalfelden tamsweg friesach
+			bischofshofen zell_am_see mittersill laufen muhldorf
+			zell_am_ziller
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		country_rank = rank_duchy
+		capital = salzburg
+		government = {
+			ruler = slz_paris_von_lodron
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		tolerated_cultures = {
+			southern_bavarian
+			slovene
+		}
+
+	}
+
+	HAB = {	#Austria
+		own_control_core = {
+			vienna amstetten austria_baden bruck_leitha ganserndorf hollabrunn horn korneuburg krems lilienfeld scheibbs melk mistelbach pitten tulln waidhofen_an_der_thaya wiener_neustadt zwettl st_polten #Duchy of Lower Austria
+			klagenfurt st_veit steinfeld volkermarkt #Duchy of Carinthia
+			ljubljana kranj novo_mesto postojna #Duchy of Carniola
+			graz feldbach furstenfeld judenburg kapfenberg leoben liezen maribor murau murzzuschlag rottenmann schladming slovenj_gradec voitsberg weiz #Duchy of Styria
+			linz bad_ischl freistadt gmunden kirchdorf perg rohrbach st_georgen steyr wels ptuj leibnitz #Duchy of Upper Austria
+			feldkirchen winklern spittal hermagor 
+			celje lasko trieste gorizia tolmin aquileia ilirska_bistrica rijeka
+
+			#Bohemia
+			prague slany rakovnik zatec tepla loket cheb tachov domazlice
+			klatovy plzen jachymov most husinec usti_nad_labem decin
+			litomerice beroun turnov frydlant prachen krumlov pisek
+			budejovice j_hradec benesov mlada_boleslav kourim kutna_hora
+			bechyne jicin podebrady caslav nachod nemecky_brod
+			chrudim hradec_kralove klodzko litomysl trebon
+
+			#Moravia
+			olomouc prostejov zabreh sumperk
+			brno pernstejn hodonin vyskov
+			znojmo bitov dacice jihlava
+			hradiste vizovice prerov pribor
+
+			swidnica kamienna_gora rychbach ziebice #niemcza 
+			glogow szprotawa kozuchow zielona_gora jawor boleslawiec
+			olesnica milicz namyslow sycow trzebnica
+			grodkow nysa niemodlin sroda_slaska wroclaw #brzeg olawa
+			opole lubliniec olesno prudnik strzelce_opolskie #kluczbork 
+			bytom kozle pszczyna raciborz siewierz toszek #tesin bielsko
+			opava fryvaldov glubczyce hlucin krnov
+		}
+
+		own_control_integrated = {
+			#kyburg #County of Kyburg
+			#bonndorf villingen waldshut #Landgraviate of Breisgau
+			#krumbach gunzburg wertingen #Margraviate of Burgau
+			#ensisheim #Lordship of Upper Alsace
+			#waldsee saulgau #Lordship of Waldsee
+		}
+
+		own_control_conquered = {
+			#aarau baden_im_aargau #County of Lenzburg
+			#frauenfeld #Lordship of Thurgau
+			#wolhusen #Lordship of Wolhusen
+			#schaffhausen
+			#fribourg
+			#glarus
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+
+			ruler = hab_ferdinand_iii_von_habsburg
+			consort = frt_johanna_pfirt
+
+			ruler_term = { character = hab_ferdinand_iii_von_habsburg start_date = 1644.1.1 regnal_number = 3 }
+
+
+			regnal_numbers = {
+
+			}
+
+			#societal values
+			serfdom_vs_free_subjects = -60
+			offensive_vs_defensive = -30
+			land_vs_naval = -80
+			belligerent_vs_conciliatory = -40
+			outward_vs_inward = -50
+		}
+
+		tolerated_cultures = {
+			rhine_alemannic
+			southern_bavarian
+			slovene
+		}
+
+		country_rank = rank_duchy
+		dynasty = habsburg_dynasty
+		capital = vienna
+	}
+	BAM = {	#Bamberg
+		own_control_core = {
+			bamberg wolfsberg 
+			villach kronach lichtenfels schesslitz
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+
+		capital = bamberg
+		government = {
+			ruler = bam_melchior_otto_voit
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		tolerated_cultures = {
+			danube_bavarian
+			southern_bavarian
+		}
+
+		country_rank = rank_county
+	}
+
+	MEI = { #Saxony WIP
+		own_control_core = {
+			meissen sayda freiberg dresden
+			pirna annaburg
+			bautzen gorlitz hoyerswerda rothenburg_oberlausitz marienstern
+			plauen zittau guben lubben luckau calau zossen spremberg
+			zagan zary
+			wittenberg schweinitz bitterfeld torgau liebenwerda
+			weissenfels zwickau rochlitz grimma delitzsch
+			leipzig chemnitz #altenburg
+			freyburg merseburg beichlingen langensalza
+			glauchau naumburg wurzen
+			sangerhausen
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = mei_johann_georg_i_von_wettin
+
+			ruler_term = {	character = mei_johann_georg_i_von_wettin start_date = 1644.1.1 regnal_number = 1	}
+
+			reforms = {
+				margraviate
+			}
+
+			laws = {
+				feudal_de_jure_law = by_tradition
+			}
+
+			offensive_vs_defensive = 10
+			belligerent_vs_conciliatory = 0
+			outward_vs_inward = 0
+
+
+		}
+
+		country_rank = rank_duchy
+		capital = dresden
+		dynasty = wettin_dynasty
+		tolerated_cultures = {
+			sorbian
+		}
+	}
+
+	BAY = { #Bayreuth
+	 	own_control_core = {
+			wunsiedel bayreuth
+			kulmbach
+			forchheim pegnitz hof
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			ruler = bay_christian_von_hohenzollern
+
+			ruler_term = { character = bay_christian_von_hohenzollern start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_frederick = 4
+				name_conrad = 1
+				name_john = 2
+			}
+		}
+
+		tolerated_cultures = {
+			upper_palatine
+		}
+
+		country_rank = rank_county
+		capital = bayreuth
+		dynasty = hohenzollern_dynasty
+	}
+
+	FRE = {	#Freising
+		own_control_core = {
+			freising garmisch
+			waidhofen skofja_loka 
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		capital = freising
+		government = {
+			ruler = random
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		tolerated_cultures = {
+			southern_bavarian
+			slovene
+		}
+
+		country_rank = rank_county
+
+	}
+
+	PSS = {	#Passau
+		own_control_core = {
+			passau
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		capital = passau
+		government = {
+			ruler = pss_leopold_wilhelm_von_habsburg
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		country_rank = rank_county
+	}
+
+	LGC = { #Legnica
+		own_control_core = {
+			legnica zlotoryja #Duchy of Legnica
+			wolow
+			olawa brzeg niemcza kluczbork
+		}
+
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_coast"
+		include = "eastern_european_catholic"
+		country_rank = rank_duchy
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = lgc_jerzy_rudolf_piast
+			ruler_term = {	character = lgc_jerzy_rudolf_piast start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+				name_henry = 5
+				name_boleslav = 3
+			}
+		}
+
+		tolerated_cultures = {
+			german_silesian
+		}
+
+		capital = legnica
+		dynasty = piast_dynasty
+	}
+
+	TES = {	#Tesin
+		own_control_core = {
+			tesin bielsko #Duchy of Cieszyn
+		}
+		starting_technology_level = 3
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		country_rank = rank_duchy
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = tes_elzbieta_lukrecja_piast
+			ruler_term = {	character = tes_elzbieta_lukrecja_piast start_date = 1644.1.1 	}
+
+			regnal_numbers = {
+				Miszko = 1
+				Kazimir = 1
+			}
+		}
+
+		tolerated_cultures = {
+			german_silesian
+			moravian
+		}
+
+		capital = tesin
+		dynasty = piast_dynasty
+	}
+
+	STE = {	#Pomerania #PU with Sweden
+		own_control_core = {
+			stettin ueckermunde kamien nowogard goleniow
+			stralsund ribnitz grimmen rugen swinousjcie wolgast anklam demmin
+			koszalin bialogard gryfia_gora kolobrzeg swidwin resko bobolice nowoszczecin
+			slupsk lebork bytow miastko slawno lebsko_lake
+			pyrzyce szadzko gryfow
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		country_rank = rank_duchy
+		government = {
+
+			ruler = swe_christina_vasa
+
+			regnal_numbers = {
+				Barnim = 1
+			}
+		}
+
+		tolerated_cultures = {
+			eastern_pomeranian
+			polabian
+			western_pomeranian
+		}
+
+		capital = stettin
+		dynasty = gryf_dynasty
+	}
+
+	MKL = { #Mecklenburg
+		own_control_core = {
+			hagenow grevesmuhlen wismar doberan grabow butzow
+			parchim
+		}
+
+		starting_technology_level = 3
+		include = "catholic_monarchy"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = mkl_adolf_friedrich_mecklenburg
+
+			ruler_term = { character = mkl_adolf_friedrich_mecklenburg start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_pribislav = 2
+				name_nicholas = 3
+				name_henry.name_borwin = 3
+				name_john = 3
+				name_henry = 2
+				name_albert = 2
+			}
+		}
+
+		tolerated_cultures = {
+			polabian
+		}
+
+		country_rank = rank_county
+		capital = wismar
+		dynasty = mecklenburg_dynasty
+	}
+
+	SWR = { #Schwerin #PU with Mecklenburg
+		own_control_core = {
+			schwerin
+		}
+
+		starting_technology_level = 3
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = mkl_adolf_friedrich_mecklenburg
+
+			regnal_numbers = {
+				Helmold = 3
+				name_henry = 3
+			}
+		}
+
+		tolerated_cultures = {
+			polabian
+		}
+
+		capital = schwerin
+		dynasty = schwerin_dynasty
+	}
+
+	WRN = { #Waren
+		own_control_core = {
+			gustrow malchin waren neubrandenburg strelitz malchow
+			rostock
+			ratzeburg
+		}
+
+		starting_technology_level = 3
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+		
+			ruler = gsw_gustav_adolf_von_mecklenburg
+
+			regnal_numbers = {
+				name_nicholas = 2
+				name_bernard = 1
+				name_henry = 2
+				name_john = 2
+			}
+		}
+
+		tolerated_cultures = {
+			polabian
+		}
+
+		country_rank = rank_county
+		capital = waren
+		dynasty = mecklenburg_dynasty
+	}
+
+	LUB = {	#Lübeck
+		own_control_core = {
+			lubeck
+		}
+
+		starting_technology_level = 3
+
+		capital = lubeck
+		include = "catholic_free_city"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			polabian
+		}
+
+		country_rank = rank_county
+
+	}
+
+	HPL = { #Holstein-Plön
+		own_control_core = {
+			kiel heiligenhafen plon
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = hpl_friedrich_von_oldenburg
+
+			ruler_term = { character = hpl_friedrich_von_oldenburg start_date = 1314.6.7 regnal_number = 3 }
+
+			regnal_numbers = {
+				name_gerard = 4
+				name_john = 3
+				name_adolf = 6
+			}
+		}
+
+		tolerated_cultures = {
+			polabian
+		}
+
+		country_rank = rank_county
+		capital = kiel
+		dynasty = schauenburg_dynasty
+	}
+
+	LBB = {	#Lübeck Bishopry
+		own_control_core = {
+			eutin
+		}
+
+		starting_technology_level = 3
+		government = {
+			ruler = lbb_johann_x_von_oldenburg
+		}
+
+		capital = eutin
+		include = "catholic_bishopric"
+		include = "expl_northern_europe"
+
+		tolerated_cultures = {
+			polabian
+		}
+
+		country_rank = rank_county
+	}
+
+	HTR = { #Holstein #PU with Denmark
+		own_control_core = {
+			heide steinburg rendsburg stormarn segeberg pinneberg
+			haderslev flensburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = random
+
+			regnal_numbers = {
+				name_gerard = 3
+				name_henry = 1
+				name_adolf = 7
+			}
+		}
+
+		country_rank = rank_county
+		capital = heide
+		dynasty = schauenburg_dynasty
+	}
+
+	SLV = { #Slesvig #Puppet of Denmark
+		own_control_core = {
+			aabenraa tonder
+			slesvig eckernforde amrum_island_wasteland husum
+		}
+		own_control_integrated = {
+
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "expl_northern_europe"
+		government = {
+
+			ruler = slv_ernst_gunther_von_oldernburg
+
+			ruler_term = {	character = slv_ernst_gunther_von_oldernburg start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_olaf = 1
+				name_canute = 2
+				name_magnus = 1
+				name_valdemar = 5
+				name_boris = 1
+				name_christopher = 1
+				name_eric = 2
+				name_abel = 1
+				name_gerard = 1
+			}
+
+		}
+
+		tolerated_cultures = {
+			danish
+		}
+
+		country_rank = rank_duchy
+		capital = slesvig
+		dynasty = oldernburg_dynasty
+	}
+
+	LEU = {	#Leuchtenberg
+		own_control_core = {
+			leuchtenberg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			regnal_numbers = {
+				name_ulrick = 1
+			}
+			reforms = {
+				landgraviate
+			}
+			ruler = leu_maximilian_adam_von_leuchtenberg
+			ruler_term = {	 character = leu_maximilian_adam_von_leuchtenberg start_date = 1644.1.1 regnal_number = 1 }
+		}
+
+		tolerated_cultures = {
+			east_franconian
+		}
+
+		country_rank = rank_county
+		capital = leuchtenberg
+		dynasty = leuchtenberg_dynasty
+	}
+
+	REG = {	#Regensburg
+		own_control_core = {
+			regensburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_free_city_no_coast"
+		include = "expl_northern_europe"
+		capital = regensburg
+		government = {
+			ruler = random
+		}
+
+		country_rank = rank_county
+	}
+
+	AUG = {	#Augsburg
+		own_control_core = {
+			augsburg sonthofen
+		}
+
+		starting_technology_level = 3
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_free_city_no_coast"
+		include = "expl_northern_europe"
+		capital = augsburg
+		government = {
+			ruler = random
+		}
+
+		country_rank = rank_county
+
+		tolerated_cultures = {
+			high_alemannic
+		}
+
+		country_rank = rank_county
+	}
+
+	UBV = {	#Bavaria
+		own_control_core = {
+			munich ebersberg tolz andechs weilheim schongau landsberg indersdorf wasserburg parsberg
+			pfaffenhofen friedberg ingolstadt neuburg_an_der_donau burglengenfeld
+			landshut scharding ried braunau traunstein griesbach kelheim eggenfelden
+			landau straubing bavaria_regen burghausen
+			erding rosenheim mallersdorf rottenburg
+			grafenau miesbach
+			illereichen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		country_rank = rank_duchy
+		government = {
+			ruler = ubv_maximilian_von_wittelsbach
+			heir = ubv_ferdinand_maria_von_wittelsbach
+
+			ruler_term = { character = ubv_maximilian_von_wittelsbach start_date = 1597.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_stephen = 1
+				name_henry = 14
+				name_otto = 4
+				name_louis = 4
+				name_rudolf = 1
+				name_leopold = 1
+				name_welf = 2
+				name_conrad = 2
+				name_berthold = 1
+				name_everard = 1
+				name_arnulf = 1
+				name_leopold = 1
+			}
+
+			laws = {
+				royal_court_customs_law = itinerant_court_policy
+			}
+		}
+
+		tolerated_cultures = {
+			swabian
+			upper_palatine
+		}
+
+		capital = munich
+		dynasty = wittelsbach_dynasty
+	}
+
+	BRC = {	#Berchtesgaden
+		own_control_core = {
+			berchtesgaden
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			regnal_numbers = {
+				name_henry = 4
+				name_adolf = 1
+			}
+			reforms = {
+				prince_bishopric_reform
+			}
+			ruler = brc_adolf_i
+		}
+
+		country_rank = rank_county
+		capital = berchtesgaden
+	}
+
+	EIC = {	#Eichstaett
+		own_control_core = {
+			eichstatt
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = eic_marquard_zu_castell
+		}
+
+		tolerated_cultures = {
+			danube_bavarian
+		}
+
+		country_rank = rank_county
+		capital = eichstatt
+	}
+
+	WEI = {	#Weissenburg
+		own_control_core = {
+			weissenburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		tolerated_cultures = {
+			danube_bavarian
+		}
+
+		country_rank = rank_county
+		capital = weissenburg
+	}
+
+	NUR = {	#Nuremberg
+		own_control_core = {
+			nuremberg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		tolerated_cultures = {
+			danube_bavarian
+		}
+		country_rank = rank_county
+		capital = nuremberg
+	}
+
+	ANS = {	#Ansbach
+		own_control_core = {
+			ansbach neustadt schwabach crailsheim
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			ruler = ans_albrecht_von_hohenzollern
+
+			ruler_term = { character = ans_albrecht_von_hohenzollern start_date = 1644.1.1 regnal_number = 3 }
+
+			regnal_numbers = {
+				name_frederick = 4
+				name_conrad = 1
+				name_john = 2
+			}
+		}
+
+		tolerated_cultures = {
+			upper_palatine
+		}
+
+		country_rank = rank_county
+		capital = ansbach
+		dynasty = hohenzollern_dynasty
+	}
+
+	ROT = {	#Rothenburg
+		own_control_core = {
+			rothenburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = rothenburg
+	}
+
+	RVA = { #Ravensburg
+		own_control_core = {
+			ravensburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			swabian
+		}
+
+		country_rank = rank_county
+		capital = ravensburg
+	}
+
+	UBL = { #Überlingen
+		own_control_core = {
+			uberlingen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			swabian
+		}
+
+		country_rank = rank_county
+		capital = uberlingen
+	}
+
+	KNZ = {	#Konstanz
+		own_control_core = {
+			konstanz
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_free_city_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			swabian
+		}
+
+		country_rank = rank_county
+		capital = konstanz
+	}
+
+	WDB = { #Waldburg
+		own_control_core = {
+			waldburg saulgau
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			swabian
+		}
+
+		country_rank = rank_county
+		capital = waldburg
+	}
+
+	BIB = { #Biberach
+		own_control_core = {
+			biberach
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = biberach
+	}
+
+	MEM = {	#Memmingen
+		own_control_core = {
+			memmingen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_free_city_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = memmingen
+	}
+
+	KMP = {	#Kempten
+		own_control_core = {
+			kempten
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = kempten
+	}
+
+	OET = {	#Oettingen
+		own_control_core = {
+			oettingen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			regnal_numbers = {
+				name_louis = 4
+			}
+			ruler = oet_ernst_i_von_oettingen
+		}
+
+		tolerated_cultures = {
+			east_franconian
+			rhine_franconian
+		}
+
+		country_rank = rank_county
+		capital = oettingen
+		dynasty = oettingen_dynasty
+	}
+
+	WUR = {	#Württemberg
+		own_control_core = {
+			stuttgart goppingen sigmaringen welzheim backnang urach nagold riedlingen oberndorf calw
+			vaihingen heidenheim tubingen ohringen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			regnal_numbers = {
+				name_ulrick = 2
+				name_everard = 7
+			}
+			ruler = wur_everard_vii_wurttemberg
+		}
+
+		tolerated_cultures = {
+			rhine_franconian
+		}
+
+		country_rank = rank_duchy
+		capital = stuttgart
+		dynasty = wurttemberg_dynasty
+	}
+
+	BEU = {	#Beuren
+		own_control_core = {
+			oberdorf
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = oberdorf
+	}
+
+	ULM = {	#Ulm
+		own_control_core = {
+			ulm helfenstein
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_free_city_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = ulm
+	}
+
+	HOH = {  # Hohenzollern (South Germany)
+		own_control_core = {
+			balingen
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+
+			ruler = hoh_friedrich_v_von_hohenzollern
+
+			ruler_term = { character = hoh_friedrich_v_von_hohenzollern start_date = 1644.1.1 regnal_number = 5 }
+
+			regnal_numbers = {
+				name_burchard = 2
+				name_friedrich = 5
+				name_godfrey = 1
+			}
+		}
+
+		
+		country_rank = rank_county
+		capital = balingen
+	}
+
+	FUR = {  # Fürstenberg
+		own_control_core = {
+			furstenberg waldsee bonndorf
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = { ruler = random }
+		country_rank = rank_county
+		capital = furstenberg
+	}
+
+	ELL = {  # Ellwangen
+		own_control_core = {
+			ellwangen
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = { ruler = random }
+		country_rank = rank_county
+		capital = ellwangen
+	}
+
+	DNB = {	#Dinkelsbühl
+		own_control_core = {
+			dinkelsbuhl
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			swabian
+		}
+
+		country_rank = rank_county
+		capital = dinkelsbuhl
+	}
+
+	OFB = { #Offenburg
+		own_control_core = {
+			offenburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = offenburg
+	}
+
+	ALS = { #Strasbourg
+		own_control_core = {
+			zabern oberkirch benfeld strasbourg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = pss_leopold_wilhelm_von_habsburg
+
+			ruler_term = { character = pss_leopold_wilhelm_von_habsburg start_date = 1644.1.1 regnal_number = 1 }
+
+			reforms = {
+				prince_bishopric_reform
+			}
+
+			regnal_numbers = {
+				name_amando = 1
+				#Justinus = 1
+				#Maximinus = 1
+				name_valentine = 1
+				#Solarius = 1
+				#Arbogast = 1
+				name_ansoald = 1
+				#Biulfus = 1
+				name_magnus = 1
+				name_aldus = 1
+				#Garoinus = 1
+				#Landbertus = 1
+				#Rotharius = 1
+				#Rodobaldus = 1
+				#Magnebertus = 1
+				#Lobiolus = 1
+				#Gundoaldus = 1
+				#Udo = 4
+				#Widegern = 1
+				#Wandalfried = 1
+				#Heddo = 1
+				#Ailidulf = 1
+				#Remigius = 1
+				#Rachio = 1
+				#Erlehard = 1
+				#Adalog = 1
+				name_bernard = 1
+				#Rathold = 1
+				name_reginar = 1
+				name_waleram = 1
+				name_hubert = 1
+				name_godfrey = 1
+				#Richwin = 1
+				#Ruthard = 1
+				#Erkanbald = 1
+				#Wilderod = 1
+				#Alawich = 2
+				name_werner = 2
+				name_william = 1
+				#Wizelin = 1
+				name_theobald = 1
+				name_otto = 1
+				name_baldwin = 1
+				name_conon = 1
+				name_bruno = 2
+				name_everard = 1
+				#name_gebhard = 1
+				name_burchard = 1
+				name_rudolf = 1
+				name_conrad = 3
+				name_henry = 4
+				name_berthold = 2
+				name_walter = 1
+				name_frederick = 1
+				name_john = 1
+			}
+		}
+
+		tolerated_cultures = {
+			high_alemannic
+		}
+
+		country_rank = rank_county
+		capital = strasbourg
+	}
+
+	SCF = { #Schaffhausen
+		own_control_core = {
+			schaffhausen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			swabian
+		}
+
+		country_rank = rank_county
+		capital = schaffhausen
+	}
+
+	HAG = {  # Haguenau
+		own_control_core = {
+			haguenau
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_german_republic_no_coast"
+		government = { ruler = random }
+		country_rank = rank_county
+		capital = haguenau
+	}
+
+	LIC = {  # Lichtenberg (South Germany)
+		own_control_core = {
+			lichtenberg
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = lic_feiedrich_casimir_von_lichtenberg
+
+			ruler_term = { character = lic_feiedrich_casimir_von_lichtenberg start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_louis = 2
+				name_henry = 2
+				name_john = 2
+			}
+		}
+		country_rank = rank_county
+		capital = lichtenberg
+	}
+
+	CFC = {  # Colmar
+		own_control_core = {
+			colmar
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_german_republic_no_coast"
+		government = { ruler = random }
+		country_rank = rank_county
+		capital = colmar
+	}
+
+	MUR = {  # Murbach
+		own_control_core = {
+			murbach
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_german_bishopric_no_coast"
+		government = { ruler = random }
+		country_rank = rank_county
+		capital = murbach
+	}
+
+	MUL = {  # Mulhouse
+		own_control_core = {
+			mulhouse
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_german_republic_no_coast"
+		government = { ruler = random }
+		country_rank = rank_county
+		capital = mulhouse
+	}
+
+	BDE = {	#Baden
+		own_control_core = {
+			baden durlach hachberg mullheim bruchsal
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			regnal_numbers = {
+				name_herman = 9
+				name_frederick = 2
+			}
+			ruler = bde_wilhelm_i_von_zahringen
+			ruler_term = {	 character = bde_wilhelm_i_von_zahringen start_date = 1644.1.1 regnal_number = 1 }
+
+
+			reforms = {
+				margraviate
+			}
+		}
+
+		tolerated_cultures = {
+			rhine_alemannic
+		}
+
+		country_rank = rank_county
+		capital = baden
+		dynasty = zahringen_dynasty
+	}
+
+	HBR = {	#Heilbronn
+		own_control_core = {
+			heilbronn
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = heilbronn
+	}
+
+	MAI = {	#Mainz
+		own_control_core = {
+			mainz aschaffenburg miltenberg buchen tauberbischofsheim
+			hofgeismar bensheim offenbach
+			erfurt duderstadt
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_bishopric_no_coast"
+		include = "expl_northern_europe"
+		country_rank = rank_duchy
+		government = {
+			ruler = mai_anselm_kasimir_von_umstadt
+
+			regnal_numbers = {
+				name_conrad = 1
+				name_henry = 1
+			}
+		}
+
+		tolerated_cultures = {
+			east_franconian
+			saxon
+			angrian
+		}
+
+		capital = mainz
+	}
+
+	NSW = {  # Nassau
+		own_control_core = {
+			katzenelnbogen usingen diez wiesbaden hadamar siegen dillenburg
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+
+		government = {
+			ruler = nsw_ernst_casimir_von_nassau
+
+			ruler_term = {	character = nsw_ernst_casimir_von_nassau start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+				name_adolph = 1
+				name_gerlach = 1
+				name_waleram = 2
+			}
+		}
+
+		country_rank = rank_county
+		capital = katzenelnbogen
+	}
+
+	FRN = {	#Frankfurt
+		own_control_core = {
+			frankfurt
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = frankfurt
+	}
+
+	ERB = {	#Erbach
+		own_control_core = {
+			erbach
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = erb_georg_friedrich_erbach
+			ruler_term = {	character = erb_georg_friedrich_erbach start_date = 1644.1.1 regnal_number = 3	}
+
+			regnal_numbers = {
+				name_everard = 5
+				name_conrad = 3
+			}
+		}
+		tolerated_cultures = {
+		}
+		country_rank = rank_county
+		capital = erbach
+		dynasty = erbach_dynasty
+	}
+
+	MSB = {	#Mosbach
+		own_control_core = {
+			mosbach
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			rhine_franconian
+		}
+
+		country_rank = rank_county
+		capital = mosbach
+	}
+
+	SWH = {	#Schwäbisch Hall
+		own_control_core = {
+			hall
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			swabian
+		}
+
+		country_rank = rank_county
+		capital = hall
+	}
+
+	TEU = { #Teutonic Order
+		own_control_core = {
+			 mergentheim
+		}
+
+		include = "catholic_military_order"
+		include = "expl_northern_europe"
+		include = "eastern_european_catholic"
+
+		government = {
+			type = theocracy
+			ruler = teu_leopold_wilhelm_von_habsburg
+
+			ruler_term = { character = teu_leopold_wilhelm_von_habsburg start_date = 1644.1.1 regnal_number = 1	}
+			regnal_numbers = {
+				name_theodoric = 1
+				name_luther = 1
+				name_werner = 1
+			}
+
+			centralization_vs_decentralization = 20
+			aristocracy_vs_plutocracy = -95
+			serfdom_vs_free_subjects = -90
+			traditionalist_vs_innovative = -60
+			spiritualist_vs_humanist = -90
+			mercantilism_vs_free_trade = -30
+			offensive_vs_defensive = -40
+			land_vs_naval = -70
+			quality_vs_quantity = -60
+			belligerent_vs_conciliatory = -60
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = -20
+			outward_vs_inward = -70
+
+			privilege = {
+				kulm_law
+			}
+		}
+
+		tolerated_cultures = {
+			kashubian #pruthenian
+		}
+
+		country_rank = rank_duchy
+		capital = mergentheim
+	}
+
+	UFF = {	#Uffenheim
+		own_control_core = {
+			uffenheim
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			regnal_numbers = {
+				name_albert = 2
+				name_louis = 1
+			}
+				ruler = random #Georg Friedrich von Hohenlohe
+		}
+
+		tolerated_cultures = {
+			rhine_franconian
+		}
+		country_rank = rank_county
+		capital = uffenheim
+		#dynasty = hohenlohe_dynasty #hohenlohe-uffenheim_dynasty
+	}
+
+	KTZ = {  # Katzenelnbogen #Darmstadt
+		own_control_core = {
+			darmstadt nidda friedberg_hesse giessen alsfeld lauterbach
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = { 
+			ruler = ktz_landgrave_georg_von_hessen
+			ruler_term = {	 character = ktz_landgrave_georg_von_hessen start_date = 1644.1.1 regnal_number = 2	}
+
+		}
+		country_rank = rank_county
+		capital = katzenelnbogen
+	}
+
+	HNA = {	#Hanau
+		own_control_core = {
+			hanau lohr
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = hna_friedrich_casimir_hanau
+			ruler_term = {	character = hna_friedrich_casimir_hanau start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+				name_ulrick = 2
+			}
+		}
+		country_rank = rank_county
+		capital = hanau
+		dynasty = hanau_dynasty
+	}
+
+	BUD = {	#Büdingen
+		own_control_core = {
+			budingen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = bud_ernst_isenburg
+			ruler_term = {	character = bud_ernst_isenburg start_date = 1644.1.1 regnal_number = 1	} 
+
+			regnal_numbers = {
+				name_henry = 2
+			}
+		}
+		country_rank = rank_county
+		capital = budingen
+		dynasty = isenburg_dynasty
+	}
+
+	WTZ = {	#Wetzlar
+		own_control_core = {
+			wetzlar
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = wetzlar
+	}
+
+	WBG = {	#Wuerzburg
+		own_control_core = {
+			wurzburg hassfurt karlstadt mellrichstadt konigshofen schweinfurt bruckenau aschach kitzingen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			regnal_numbers = {
+				name_otto = 2
+			}
+			ruler = wbg_johann_philipp_von_schonborn
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		tolerated_cultures = {
+			rhine_franconian
+		}
+
+		country_rank = rank_county
+		capital = wurzburg
+	}
+
+	FLD = {	#Fulda
+		own_control_core = {
+			fulda hunfeld
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+
+			reforms = {
+				prince_bishopric_reform
+			}
+			ruler = fld_joachim_von_gravenegg
+
+			regnal_numbers = {
+				name_henry = 6
+			}
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = fulda
+	}
+
+	HES = {	#Hesse
+		own_control_core = {
+			kassel rotenburg eschwege frankenberg marburg
+			melsungen ziegenhain hersfeld
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = hes_willhelm_iv_hessen
+
+			ruler_term = {	character = hes_willhelm_iv_hessen start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+				name_otto = 1
+				name_henry = 2
+			}
+			reforms = {
+				landgraviate
+			}
+		}
+
+		tolerated_cultures = {
+			angrian
+		}
+
+		country_rank = rank_county
+		capital = kassel
+		dynasty = hessen_dynasty
+	}
+
+	WDE = {  # Waldeck (North Germany)
+		own_control_core = {
+			korbach
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = wde_philipp_dietrich_von_waldeck
+
+			ruler_term = { character = wde_philipp_dietrich_von_waldeck start_date = 1644.1.1 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_adolf = 2
+				name_henry = 4
+				name_otto = 1
+			}
+		}
+		tolerated_cultures = {
+			angrian
+		}
+		country_rank = rank_county
+		capital = korbach
+	}
+
+	ENS = ( #Ernestinischelande
+		own_control_core = {
+			altenburg coburg saalfeld eisenberg apolda
+			hildburghausen schmalkalden eisenach meiningen gotha ohrdruf schleusingen arnstadt
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = ens_friedrich_wilhelm_von_wettin
+
+			ruler_term = {
+				character = ens_friedrich_wilhelm_von_wettin start_date = 1644.1.1 regnal_number = 2
+			}
+
+			regnal_numbers = {
+				name_conrad = 1
+				name_henry = 2
+				name_otto = 4
+				name_waldemar = 1
+				name_magnus = 1
+			}
+
+			reforms = {
+				margraviate
+			}
+
+			offensive_vs_defensive = 10
+			belligerent_vs_conciliatory = 0
+			outward_vs_inward = 0
+
+
+		}
+		country_rank = rank_duchy
+		capital = altenburg
+		dynasty = wettin_dynasty
+		tolerated_cultures = {
+			sorbian
+		}
+	}
+
+	QUB = {	#Gera / sold by Quedlinburg
+		own_control_core = {
+			gera schleiz
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+
+			ruler = random #Heinrich XIX Reuss - 17 yrs old
+		}
+
+		tolerated_cultures = {
+			east_franconian
+		}
+
+		country_rank = rank_county
+		capital = gera
+	}
+
+	THU = {	#Thuringia
+		own_control_core = {
+			weimar
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+
+		country_rank = rank_duchy
+		capital = weimar
+		government = {
+			ruler = tur_wilhelm_von_wettin
+
+			reforms = {
+				landgraviate
+			}
+		}
+	}
+
+	WTG = {	#Wittgenstein
+		own_control_core = {
+			berleburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = random #Johann II von Sponheim - 28 yrs old
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = berleburg
+		dynasty = wittgenstein_dynasty
+	}
+
+	HAM = { #Hamburg
+		own_control_core = {
+			hamburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_free_city"
+
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			ashkenazi
+		}
+
+		country_rank = rank_county
+		capital = hamburg
+	}
+
+	MAG = {	#Magdeburg
+		own_control_core = {
+			magdeburg juterbog jerichow burg wolmirstedt
+			haldensleben calbe halle_an_der_saale belzig
+			helmstedt halberstadt
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_bishopric_no_coast"
+		include = "expl_northern_europe"
+		country_rank = rank_duchy
+		government = {
+			ruler = mag_august_von_wettin
+		}
+
+		tolerated_cultures = {
+			saxon
+			eastphalian
+		}
+
+		capital = magdeburg
+	}
+
+	ANH = {	#Anhalt
+		own_control_core = {
+			zerbst bernburg quedlinburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = anh_johann_kasimir_askanier
+			ruler_term = {	character = anh_johann_kasimir_askanier start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+				name_henry = 1
+				Siegfried = 1
+				name_albert = 2
+			}
+		}
+
+		country_rank = rank_county
+		capital = zerbst
+		dynasty = askanier_dynasty
+	}
+
+	MLH = {	#Mühlhausen
+		own_control_core = {
+			muhlhausen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = muhlhausen
+	}
+
+	MFE = {	#Mansfeld
+		own_control_core = {
+			eisleben
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = mfe_bruno_von_querfurt
+			heir = mfe_franz_maximilian_von_querfurt 
+
+			regnal_numbers = {
+				name_bernard = 3
+			}
+		}
+
+		country_rank = rank_county
+		capital = eisleben
+		dynasty = mansfeld_dynasty
+	}
+
+	
+	SHS = {	#Sondershausen
+		own_control_core = {
+			sondershausen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = random #Ludwig Gunther I von Schwarzburg? - 63 yrs old
+
+			regnal_numbers = {
+				name_henry = 5
+			}
+		}
+
+		country_rank = rank_county
+		capital = sondershausen
+	}
+
+	NHS = {	#Nordhausen
+		own_control_core = {
+			nordhausen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = nordhausen
+	}
+
+	LUN = {	#Lüneburg
+		own_control_core = {
+			luneburg celle winsen harburg ebstorf isenhagen winsen_aller fallingbostel
+			dannenberg #County of Danneberg
+			luchow #County of Lüchow
+			uelzen #Amt of Bodenteich
+			diepholz
+			einbeck gifhorn meinersen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		country_rank = rank_duchy
+		government = {
+
+			ruler = lun_friedrich_von_welf
+			heir = lun_christian_ludwig_von_welf
+
+			ruler_term = {
+				character = lun_friedrich_von_welf start_date = 1644.1.1 regnal_number = 1
+			}
+
+			regnal_numbers = {
+				name_william = 2
+				name_otto = 3
+				name_albert = 1
+				name_john = 1
+			}
+		}
+
+		tolerated_cultures = {
+			angrian
+			polabian
+		}
+
+		capital = luneburg
+		dynasty = welfen_dynasty
+	}
+
+	LPP = {	#Lippe
+		own_control_core = {
+			lippstadt detmold
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = lpp_simon_philipp_lippe
+			ruler_term = {	 character = lpp_simon_philipp_lippe start_date = 1644.1.1 regnal_number = 3	}
+
+			regnal_numbers = {
+				name_bernard = 4
+				name_simeon = 2
+				name_herman = 2
+			}
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = lippstadt
+		dynasty = lippe_dynasty
+	}
+
+	BRE = {	#Bremen
+		own_control_core = {
+			stade neuhaus gestenthorpe osterholz achim bremervorde zeven ritzebuttel
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_bishopric"
+		include = "expl_northern_europe"
+		country_rank = rank_duchy
+		government = {
+			ruler = bre_friedrich_von_oldenburg
+		}
+
+		tolerated_cultures = {
+			frisian
+		}
+
+		capital = bremervorde
+	}
+
+	VRD = {	#Verden
+		own_control_core = {
+			verden soltau
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = bre_friedrich_von_oldenburg
+			
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+		country_rank = rank_county
+		capital = verden
+	}
+
+	BRM = {	#Free Imperial Bremen City
+		own_control_core = {
+			bremen
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_free_city"
+		country_rank = rank_county
+		capital = bremen
+		government = {
+			ruler = random
+		}
+	}
+
+	OLD = {	#Oldenburg
+		own_control_core = {
+			oldenburg elsfleth
+			delmenhorst
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = old_anton_gunther_oldenburg
+
+			ruler_term = {	character = old_anton_gunther_oldenburg start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+				name_christian = 4
+				name_john = 3
+				name_otto = 2
+				Moritz = 1
+				Egilmar = 2
+			}
+		}
+
+		tolerated_cultures = {
+			frisian
+		}
+
+		country_rank = rank_county
+		capital = oldenburg
+		dynasty = oldenburg_dynasty
+	}
+
+	MDN = {	#Minden
+		own_control_core = {
+			minden
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			ruler = lun_christian_ludwig_von_welf
+
+			ruler_term = { character = lun_christian_ludwig_von_welf start_date = 1644.1.1 regnal_number = 1 }
+			
+		}
+		country_rank = rank_county
+		capital = minden
+	}
+
+	PDB = {	#Paderborn
+		own_control_core = {
+			paderborn buren warburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = kol_ferdinand_von_wittelsbach
+
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		tolerated_cultures = {
+			rhine_franconian
+		}
+
+		country_rank = rank_county
+		capital = paderborn
+	}
+
+	RBG = {  # Rietberg (North Germany)
+		own_control_core = {
+			rietberg
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = random #Johann IV Cirkensa? - 26 yrs old
+
+			regnal_numbers = {
+				name_henry = 1
+				name_frederick = 1
+				name_conrad = 1
+			}
+		}
+		tolerated_cultures = {
+		}
+		country_rank = rank_county
+		capital = rietberg
+	}
+
+	GOS = {	#Goslar
+		own_control_core = {
+			goslar
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = goslar
+	}
+
+	NIE = {	#Nienburg
+		own_control_core = {
+			nienburg hoya hanover hamelin neustadt_am_rubenberge
+			gottingen burgdorf
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = lun_christian_ludwig_von_welf
+
+			ruler_term = {
+				character = lun_christian_ludwig_von_welf start_date = 1644.1.1 regnal_number = 1
+			}
+
+			regnal_numbers = {
+				name_henry = 3
+				name_gerard = 3
+				name_otto = 2
+				name_john = 2
+				name_albert = 1
+			}
+		}
+		country_rank = rank_county
+		capital = nienburg
+		dynasty = welfen_dynasty
+	}
+
+	HOX = {	#Corvey
+		own_control_core = {
+			hoxter
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_abbey"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = hoxter
+	}
+
+	BBG = {	#Blankenburg
+		own_control_core = {
+			blankenburg wolfenbuttel brunswick buckeburg herzberg holzminden gandersheim
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = bbg_rudolf_august_von_welf
+			ruler_term = {	character = bbg_rudolf_august_von_welf start_date = 1644.1.1 regnal_number = 3	}
+
+			regnal_numbers = {
+				name_ulrick = 3
+				name_albert = 2
+				name_gunther = 20
+				name_henry = 6
+			}
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = blankenburg
+		dynasty = welfen_dynasty
+	}
+
+	WGO = {  # Wernigerode
+		own_control_core = {
+			wernigerode
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = random
+
+			regnal_numbers = {
+				name_albert = 5
+				name_conrad = 4
+				name_gebhard = 1
+				name_burchard = 1
+			}
+		}
+		country_rank = rank_county
+		capital = wernigerode
+	}
+
+	HDH = {	#Hildesheim
+		own_control_core = {
+			hildesheim alfeld
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = kol_ferdinand_von_wittelsbach
+			
+			regnal_numbers = {
+				name_otto = 2
+				name_henry = 3
+			}
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+
+		tolerated_cultures = {
+			angrian
+		}
+
+		country_rank = rank_county
+		capital = hildesheim
+	}
+
+	LAU = {	#Saxe-Lauenburg
+		own_control_core = {
+			lauenburg
+		}
+
+		starting_technology_level = 3
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = lau_julius_heinrich_askanier
+			ruler_term = {	character = lau_julius_heinrich_askanier start_date = 1644.1.1 regnal_number = 1	}
+
+			regnal_numbers = {
+				name_john = 2
+				name_albert = 4
+				name_eric = 1
+			}
+		}
+
+		tolerated_cultures = {
+			polabian
+			western_pomeranian
+		}
+
+		country_rank = rank_duchy
+		capital = lauenburg
+		dynasty = askanier_dynasty
+	}
+
+	LCU = {	#Lucerne
+		own_control_core = {
+			lucerne wolhusen baden_im_aargau
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = lucerne
+	}
+
+	ZUR = {	#Zurich
+		own_control_core = {
+			zurich kyburg
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = zurich
+	}
+
+	STG = {	#St. Gallen
+		own_control_core = {
+			st_gallen frauenfeld
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = st_gallen
+	}
+
+	TGG = {  # Toggenburg
+		own_control_core = {
+			toggenburg davos
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+		tolerated_cultures = {
+			romansh
+		}
+		country_rank = rank_county
+		capital = toggenburg
+
+	}
+
+	WER = {	#Werdenberg
+		own_control_core = {
+			werdenberg bludenz
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		government = {
+
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			romansh
+		}
+
+		country_rank = rank_county
+		capital = werdenberg
+	}
+
+	BLM = {  # Belmont (Switzerland)
+		own_control_core = {
+			ilanz chur davos disentis
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = { ruler = random }
+		tolerated_cultures = {
+			romansh
+		}
+		country_rank = rank_county
+		capital = ilanz
+	}
+
+	SYZ = {	#Schwyz
+		own_control_core = {
+			schwyz
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = schwyz
+	}
+
+	OBW = {	#Obwalden
+		own_control_core = {
+			sarnen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = sarnen
+	}
+
+	SIT = {	#Sion / Sitten
+		own_control_core = {
+			sion brig martigny altdorf
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_republic_no_coast"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			high_alemannic
+		}
+		country_rank = rank_county
+		capital = sion
+
+	}
+
+	MSO = {  # Mesocco
+		own_control_core = {
+			bellinzona locarno mesocco lugano
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+
+			laws = {
+				mining_law = burghers_mining_law
+			}
+		}		country_rank = rank_county
+		capital = mesocco
+	}
+
+
+	BCH = {	#Bishopric of Chur
+		own_control_core = {
+			tresivio zuoz tarasp bormio chiavenna
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		capital = zuoz
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			romansh
+		}
+
+		country_rank = rank_county
+	}
+
+	GLR = {	#Glarus
+		own_control_core = {
+			glarus
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "swiss_republic"
+		government = {
+			ruler = random
+		}
+		country_rank = rank_county
+		capital = glarus
+	}
+}
+}

@@ -1,0 +1,11 @@
+﻿{
+	"name":	"Anno 1600: The General Crisis",
+	"id":	"cosc",
+	"version":	"0.1",
+	"supported_game_version":	"1.0.1",
+	"short_description":	"The year is 1600 — and Europe stands on the brink of catastrophe. What begins in the streets of Prague will ignite a continent, as kingdoms clash, faiths fracture, and empires crumble beneath the weight of ambition. From the Thirty Years’ War to the dawn of absolutism, this mod plunges you into an age of fire and reformation — where religion, power, and survival intertwine. The fate of the seventeenth century is yours to command.",
+	"tags":	["Events", "Historical", "Map", "Missions", "Overhaul"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}

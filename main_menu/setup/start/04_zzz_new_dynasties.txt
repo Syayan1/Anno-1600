@@ -1,0 +1,85 @@
+dynasty_manager = {
+	default_dynasty = { name = { name = default_dynasty } home = vattnajokull }				#just for default coat of arms
+
+###British
+	stuart_dynasty = {
+		name = { name = stuart_dynasty }
+		home = edinburgh
+	}
+	
+	devereux_dynasty = {
+		name = { name = devereux_dynasty }
+		home = london
+	}
+	
+	oneill_dynasty = {
+		name = { name = oneill_dynasty }
+		home = dungannon
+	}
+	
+###Iberia
+	spanish_habsburg_dynasty = {
+		name = { name = spanish_habsburg_dynasty }
+		home = bruges
+	}
+	
+	braganza_dynasty = {
+		name = { name = braganza_dynasty }
+		home = lisbon
+	}
+	
+###Scandinavia
+	vasa_dynasty = {
+		name = { name = vasa_dynasty }
+		home = stockholm
+	}
+
+###HRE
+van_oranje_dynasty_dynasty = { 
+		name = { name = van_oranje_dynasty_dynasty }
+		home = amsterdam
+		male_names = {
+			name_florence name_john name_wido name_william
+		}
+		female_names = {
+			name_elizabeth name_joanna name_margaret name_mary name_matilda name_philippa
+		}
+	}
+
+	cirksena_dynasty = {
+		name = { name = van_oranje_dynasty_dynasty }
+		home = emden
+	}
+
+	de_bergaigne_dynasty = {
+		name = { name = de_bergaigne_dynasty }
+		home = cambrai
+	}
+
+	de_la_tour_dynasty = {
+		name = { name = de_bergaigne_dynasty }
+		home = bouillon
+	}
+
+	von_gotterswick_dynasty = {
+		name = { name = von_gotterswick_dynasty }
+		home = bentheim
+	}
+
+	kyburg_dynasty = {
+		name = { name = kyburg_dynasty }
+		home = gruyere
+	}
+	sponheim_dynasty = {
+		name = { name = sponheim_dynasty }
+		home = altenkirchen
+	}
+	ostein_dynasty = {
+		name = { name = ostein_dynasty }
+		home = basel
+	}
+	lodron_dynasty = {
+		name = { name = lodron_dynasty }
+		home = salzburg
+	}	
+}
